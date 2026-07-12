@@ -22,13 +22,16 @@ export const zh: SiteContent = {
   },
   nav: {
     links: [
-      { label: "业务领域", href: "/zh/#practice-areas" },
-      { label: "行业领域", href: "/zh/#industries" },
+      { label: "核心业务", href: "/zh/#practice-areas" },
       { label: "专业团队", href: "/zh/people" },
-      { label: "代表性案例", href: "/zh/#cases" },
-      { label: "关于我们", href: "/zh/#about" },
       { label: "新闻与洞察", href: "/zh/#insights" },
     ],
+    urgent: {
+      label: "Schedule A 紧急应诉",
+      href: "/zh/#ecommerce-defense",
+      ariaLabel: "Schedule A 与跨境电商紧急应诉",
+    },
+    positioningLabel: "精通中英文的中美跨境法律顾问",
     contactLabel: "联系我们",
     menuLabel: "菜单",
     languageToggleLabel: "EN",
@@ -143,52 +146,45 @@ export const zh: SiteContent = {
     ],
   },
   practiceAreas: {
-    title: "面向全球商业的综合法律解决方案",
-    subtitle: "满足企业在美国、中国及其他地区运营时复杂的多法域法律需求。",
-    items: [
+    title: "专注跨境商业的精品法律服务",
+    subtitle: "CBC Law 凭借中英文双语能力和中美两地经验，平衡发展两大核心业务：重大争议解决与推动企业发展的跨境交易。",
+    primaryLabel: "核心业务",
+    primaryItems: [
       {
-        name: "争议解决",
+        name: "知识产权与商业诉讼",
         description:
-          "我们的争议解决业务专注于协助涉及国际争端的中国企业。我们的诉讼团队在知识产权诉讼、违约案件和国际仲裁方面拥有丰富经验。",
-        subareas: ["商业诉讼", "国际仲裁", "知识产权争端", "合同纠纷", "电子商务案件", "劳动争议"],
+          "为中国企业及跨境企业处理专利、商标、版权和商业秘密争议，涵盖联邦与州法院诉讼、美国国际贸易委员会第 337 条调查及仲裁。",
+        subareas: ["专利、商标与版权", "商业秘密", "联邦与州法院", "ITC 第 337 条", "仲裁"],
       },
       {
-        name: "投资与并购",
+        name: "公司与跨境法律顾问",
         description:
-          "CBC Law 的跨境投资与并购服务旨在帮助企业在全球市场实现战略扩张。我们提供专业指导，识别投资机会、评估风险并制定有效策略。",
-      },
-      {
-        name: "知识产权",
-        description:
-          "CBC Law 提供专业的知识产权法律服务，致力于保护您的创意与创新。我们团队丰富的经验使我们能够提供量身定制的咨询与支持，确保您的知识产权得到全面保护。",
-      },
-      {
-        name: "合规咨询",
-        description:
-          "CBC Law 为出海企业、高科技企业以及文化娱乐企业提供全方位的合规咨询服务，帮助管理外国投资法、出口管制、反制裁以及隐私与数据合规等方面的风险。",
+          "为中国企业在美国及全球市场开展跨境并购、投资、合规与实体架构提供公司法律顾问服务。",
+        subareas: ["并购", "投资", "合规", "实体架构"],
       },
     ],
-  },
-  industries: {
-    title: "行业聚焦",
-    subtitle: "提供远超传统法律解决方案的战略服务和资源支持。",
-    items: [
+    supportingLabel: "配套业务",
+    supportingTitle: "围绕核心事务提供专门支持",
+    supportingItems: [
       {
-        name: "新兴科技与新经济",
-        description:
-          "从人工智能和区块链到 SaaS 和半导体公司，我们为面临复杂跨境法律环境的科技创新企业提供专业顾问服务。",
+        eyebrow: "紧急应诉",
+        name: "跨境电商与亚马逊卖家抗辩",
+        description: "为面临美国紧急诉讼的企业处理 Schedule A、临时限制令、平台及跨境卖家抗辩。",
       },
       {
+        eyebrow: "争议支持",
+        name: "国际仲裁",
+        description: "在不同仲裁机构及法律体系下代理国际商事争议。",
+      },
+      {
+        eyebrow: "行业顾问",
         name: "文化娱乐与传媒",
-        description: "为电影制作、内容授权、艺人协议和国际发行交易提供全面的法律支持。",
+        description: "为影视制作、内容授权、艺人协议和国际发行提供法律顾问服务。",
       },
       {
-        name: "跨境贸易与投资",
-        description: "为从事国际贸易的企业提供战略性法律顾问服务，包括电商平台、进出口贸易和跨境供应链。",
-      },
-      {
+        eyebrow: "私募资本",
         name: "基金与家族办公室",
-        description: "为基金设立、投资管理和跨多法域的家族办公室架构提供专业指导。",
+        description: "就基金设立、投资管理及跨境家族办公室架构提供法律指导。",
       },
     ],
   },

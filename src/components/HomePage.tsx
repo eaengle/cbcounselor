@@ -6,7 +6,6 @@ import StatsBar from "@/components/sections/StatsBar";
 import FeaturedCases from "@/components/sections/FeaturedCases";
 import About from "@/components/sections/About";
 import PracticeAreas from "@/components/sections/PracticeAreas";
-import Industries from "@/components/sections/Industries";
 import Offices from "@/components/sections/Offices";
 import Team from "@/components/sections/Team";
 import Testimonial from "@/components/sections/Testimonial";
@@ -23,7 +22,6 @@ export default function HomePage({ content }: { content: SiteContent }) {
         <FeaturedCases content={content} />
         <About content={content} />
         <PracticeAreas content={content} />
-        <Industries content={content} />
         <Offices content={content} />
         <Team content={content} />
         <Testimonial content={content} />

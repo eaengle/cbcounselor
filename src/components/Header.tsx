@@ -20,22 +20,34 @@ export default function Header({
   return (
     <header className="sticky top-0 z-50 border-b border-white/10 bg-navy/95 backdrop-blur">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
-        <Link href={content.locale === "en" ? "/" : "/zh"} aria-label="CBC Law" className="shrink-0">
-          <Image
-            src={withBasePath("/brand/logo-cbc-white.svg")}
-            alt="CBC Law"
-            width={219}
-            height={87}
-            priority
-            className="h-10 w-auto"
-          />
-        </Link>
-        <nav className="hidden items-center gap-8 text-sm text-white/80 lg:flex">
+        <div className="flex min-w-0 items-center gap-4">
+          <Link href={content.locale === "en" ? "/" : "/zh"} aria-label="CBC Law" className="shrink-0">
+            <Image
+              src={withBasePath("/brand/logo-cbc-white.svg")}
+              alt="CBC Law"
+              width={219}
+              height={87}
+              priority
+              className="h-10 w-auto"
+            />
+          </Link>
+          <p className="hidden max-w-32 border-l border-white/20 pl-4 text-xs leading-snug text-white/60 xl:block">
+            {content.nav.positioningLabel}
+          </p>
+        </div>
+        <nav className="hidden items-center gap-7 text-sm text-white/80 lg:flex" aria-label={content.nav.menuLabel}>
           {content.nav.links.map((link) => (
             <a key={link.href} href={withBasePath(link.href)} className="transition-colors hover:text-white">
               {link.label}
             </a>
           ))}
+          <a
+            href={withBasePath(content.nav.urgent.href)}
+            aria-label={content.nav.urgent.ariaLabel}
+            className="font-medium text-accent-light transition-colors hover:text-white"
+          >
+            {content.nav.urgent.label}
+          </a>
         </nav>
         <div className="flex items-center gap-4 text-sm">
           <Link
@@ -79,6 +91,9 @@ export default function Header({
             transition={{ duration: 0.25, ease: "easeOut" }}
           >
             <div className="mx-auto flex max-w-6xl flex-col px-6 py-4">
+              <p className="border-b border-white/10 pb-4 text-xs font-medium uppercase tracking-wider text-accent-light">
+                {content.nav.positioningLabel}
+              </p>
               {content.nav.links.map((link) => (
                 <a
                   key={link.href}
@@ -89,6 +104,14 @@ export default function Header({
                   {link.label}
                 </a>
               ))}
+              <a
+                href={withBasePath(content.nav.urgent.href)}
+                aria-label={content.nav.urgent.ariaLabel}
+                className="border-b border-white/5 py-3 text-sm font-medium text-accent-light transition-colors hover:text-white"
+                onClick={() => setMenuOpen(false)}
+              >
+                {content.nav.urgent.label}
+              </a>
               <Link
                 href={contactHref}
                 className="mt-4 rounded-full bg-accent px-4 py-2 text-center text-sm font-medium text-white transition-colors hover:bg-accent-light"

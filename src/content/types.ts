@@ -5,6 +5,10 @@ export interface NavLink {
   href: string;
 }
 
+export interface NavCallout extends NavLink {
+  ariaLabel: string;
+}
+
 export interface StatItem {
   value: string;
   label: string;
@@ -23,11 +27,6 @@ export interface Differentiator {
   description: string;
 }
 
-export interface Industry {
-  name: string;
-  description: string;
-}
-
 export interface OfficeGroup {
   country: string;
   cities: string[];
@@ -37,6 +36,10 @@ export interface PracticeArea {
   name: string;
   description: string;
   subareas?: string[];
+}
+
+export interface SupportingCapability extends PracticeArea {
+  eyebrow: string;
 }
 
 export type AttorneyRole =
@@ -107,6 +110,8 @@ export interface SiteContent {
   };
   nav: {
     links: NavLink[];
+    urgent: NavCallout;
+    positioningLabel: string;
     contactLabel: string;
     menuLabel: string;
     languageToggleLabel: string;
@@ -137,12 +142,11 @@ export interface SiteContent {
   practiceAreas: {
     title: string;
     subtitle: string;
-    items: PracticeArea[];
-  };
-  industries: {
-    title: string;
-    subtitle: string;
-    items: Industry[];
+    primaryLabel: string;
+    primaryItems: [PracticeArea, PracticeArea];
+    supportingLabel: string;
+    supportingTitle: string;
+    supportingItems: SupportingCapability[];
   };
   offices: {
     title: string;

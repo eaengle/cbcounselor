@@ -17,13 +17,16 @@ export const en: SiteContent = {
   },
   nav: {
     links: [
-      { label: "Services", href: "/#practice-areas" },
-      { label: "Industries", href: "/#industries" },
+      { label: "Practices", href: "/#practice-areas" },
       { label: "People", href: "/people" },
-      { label: "Cases", href: "/#cases" },
-      { label: "About", href: "/#about" },
       { label: "News & Insights", href: "/#insights" },
     ],
+    urgent: {
+      label: "Schedule A Defense",
+      href: "/#ecommerce-defense",
+      ariaLabel: "Urgent Schedule A and e-commerce defense",
+    },
+    positioningLabel: "Bilingual U.S.–China counsel",
     contactLabel: "Contact",
     menuLabel: "Menu",
     languageToggleLabel: "中",
@@ -151,62 +154,56 @@ export const en: SiteContent = {
     ],
   },
   practiceAreas: {
-    title: "Core Practice Areas",
-    subtitle: "Full-service counsel across the matters that matter most.",
-    items: [
+    title: "Boutique Counsel for Cross-Border Business",
+    subtitle:
+      "CBC Law brings Chinese-fluent, U.S.–China experience to two co-equal practices: high-stakes disputes and the transactions that move enterprises forward.",
+    primaryLabel: "Primary practices",
+    primaryItems: [
       {
-        name: "Dispute Resolution",
+        name: "IP & Business Litigation",
         description:
-          "Our dispute resolution practice specializes in assisting Chinese companies involved in international disputes. Our litigation team has extensive experience in intellectual property litigation, breach of contract cases, and international arbitration.",
+          "Counsel for Chinese companies and cross-border enterprises in patent, trademark, copyright, and trade-secret disputes in federal and state courts, ITC Section 337 investigations, and arbitration.",
         subareas: [
-          "Commercial Litigation",
-          "International Arbitration",
-          "IP Disputes",
-          "Contract Disputes",
-          "E-Commerce Cases",
-          "Employment Disputes",
+          "Patent, Trademark & Copyright",
+          "Trade Secrets",
+          "Federal & State Courts",
+          "ITC Section 337",
+          "Arbitration",
         ],
       },
       {
-        name: "Investment & M&A",
+        name: "Corporate & Cross-Border Counsel",
         description:
-          "CBC Law's cross-border investment and M&A services help companies achieve strategic expansion in the global market. We provide expert guidance to identify investment opportunities, assess risks, and formulate effective strategies.",
-      },
-      {
-        name: "Intellectual Property",
-        description:
-          "CBC Law provides professional intellectual property legal services dedicated to safeguarding your creativity and innovation. Our team's extensive experience enables us to offer tailored advice and support, ensuring comprehensive protection of your IP.",
-      },
-      {
-        name: "Compliance",
-        description:
-          "CBC Law provides comprehensive compliance consulting services to outbound companies, high-tech enterprises, and cultural and entertainment businesses. We help manage risks related to foreign investment laws, export controls, sanctions, and privacy and data compliance.",
+          "Corporate counsel for Chinese enterprises navigating cross-border M&A, investment, compliance, and entity structuring in the United States and global markets.",
+        subareas: ["M&A", "Investment", "Compliance", "Entity Structuring"],
       },
     ],
-  },
-  industries: {
-    title: "Industry Focus",
-    subtitle: "Sector depth that goes beyond the law.",
-    items: [
+    supportingLabel: "Supporting capabilities",
+    supportingTitle: "Focused support around the core matters",
+    supportingItems: [
       {
-        name: "Emerging Technologies & New Economy",
+        eyebrow: "Urgent response",
+        name: "E-Commerce & Amazon Seller Defense",
         description:
-          "From AI and blockchain to SaaS and semiconductor companies, we advise technology innovators navigating complex cross-border legal landscapes.",
+          "Schedule A, TRO, marketplace, and cross-border seller defense for businesses facing urgent U.S. proceedings.",
       },
       {
+        eyebrow: "Dispute support",
+        name: "International Arbitration",
+        description:
+          "Representation in international commercial disputes across institutions and legal systems.",
+      },
+      {
+        eyebrow: "Industry counsel",
         name: "Entertainment & Media",
         description:
-          "Comprehensive legal support for film production, content licensing, talent agreements, and international distribution deals.",
+          "Counsel for production, content licensing, talent agreements, and international distribution.",
       },
       {
-        name: "Cross-Border Trade & Investment",
-        description:
-          "Strategic counsel for companies engaged in international trade, including e-commerce platforms, import/export, and cross-border supply chains.",
-      },
-      {
+        eyebrow: "Private capital",
         name: "Funds & Family Offices",
         description:
-          "Expert guidance for fund formation, investment management, and family office structuring across multiple jurisdictions.",
+          "Guidance on fund formation, investment management, and cross-border family-office structures.",
       },
     ],
   },
