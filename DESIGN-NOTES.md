@@ -23,14 +23,16 @@ should serve both audiences.
   connecting offices. Slow and ambient (~20s loops), not flashy.
 
 ### The Bilingual Angle (biggest differentiator)
-- [ ] **Chinese typography as a design element** — large elegant characters as
+- [x] **Chinese typography as a design element** — large elegant characters as
   section watermarks (e.g. 跨境 "cross-border" in a light calligraphic weight
   behind English headlines).
-- [ ] **Genuinely design the 中文 version** — Chinese text sets denser; tune
+- [x] **Genuinely design the 中文 version** — Chinese text sets denser; tune
   line-height, font (Noto Sans SC / Source Han Sans), and spacing separately.
   Chinese visitors can tell when a site was designed English-first.
-- [ ] **WeChat presence** — QR code in footer/contact section; note that
+- [x] **WeChat presence** — QR code in footer/contact section; note that
   consultations are available in Mandarin. Non-negotiable for Chinese clients.
+  (The layout and labeled placeholder are live; the source site currently publishes
+  no working WeChat link or ID, so the official QR remains a firm-supplied asset.)
 - [ ] **China performance audit** — check loading behind the Great Firewall.
   Self-host fonts and assets; avoid Google Fonts / YouTube embeds / blocked CDNs.
   Note: GitHub Pages (current host) is not reliably reachable from mainland
@@ -60,20 +62,17 @@ should serve both audiences.
 ### Priority pick (if only three)
 1. Accent color ✅
 2. Animated stat bar ✅
-3. First-class Chinese typography + WeChat presence ⬜
+3. First-class Chinese typography + WeChat presence ✅
 
 ## Known Gaps / Placeholders (current build)
 
 - **Team section** shows generic role titles — real attorney names, photos, and
   bios still needed.
 - **Insights cards** aren't linked to actual articles yet.
-- **Contact email** is a placeholder (`contact@cbcounselor.com`) — replace with
-  the real address.
-- **Chinese copy is a stub** — machine-assisted translation in
-  `src/content/zh.ts`; needs professional legal-translation review before launch.
-- **`<html lang="en">` is hardcoded** globally; the `/zh` route should set
-  `lang="zh"` (SEO/accessibility). Fine for now, fix if the site scales to full
-  i18n routing.
+- **Contact email** uses the verified firm address, `info@cbcounselor.com`.
+- **Chinese copy** — corresponding homepage sections now use the Chinese localization
+  published by the firm; copy unique to this rebuild should still receive a final
+  native-speaker review before launch.
 - **Assets** — logo files, attorney headshots, and any case-study imagery still
   to be collected.
 

@@ -6,6 +6,14 @@ export const en: SiteContent = {
     title: "CBC Law | Cross-Border Legal Solutions",
     description:
       "CBC Law assists global businesses with their most challenging cross-border legal matters spanning the U.S., China, and beyond.",
+    keywords: [
+      "cross-border law firm",
+      "U.S. China legal counsel",
+      "international business law",
+      "cross-border M&A",
+      "intellectual property litigation",
+      "international arbitration",
+    ],
   },
   nav: {
     links: [
@@ -27,6 +35,7 @@ export const en: SiteContent = {
     subheadline:
       "CBC Law assists global businesses with their most challenging cross-border legal matters spanning the U.S., China, and beyond.",
     cta: "Learn More",
+    watermark: "跨境",
   },
   stats: [
     { value: "$66M+", label: "Jury verdict secured for a client" },
@@ -37,6 +46,7 @@ export const en: SiteContent = {
   featuredCases: {
     title: "Notable Results",
     subtitle: "A track record built across borders.",
+    watermark: "成果",
     items: [
       {
         category: "IP Litigation",
@@ -200,6 +210,14 @@ export const en: SiteContent = {
     body: "Reach out to discuss your cross-border legal needs with our team.",
     email: "info@cbcounselor.com",
     button: "Get in Touch",
+  },
+  wechat: {
+    title: "Connect on WeChat",
+    idLabel: "WeChat ID",
+    id: "Email us for the current WeChat ID",
+    qrAlt: "Placeholder for CBC Law's WeChat QR code",
+    availability: "Consultations available in Mandarin.",
+    placeholder: "Official QR code coming soon",
   },
   footer: {
     tagline: "Cross-border legal solutions for global enterprises.",

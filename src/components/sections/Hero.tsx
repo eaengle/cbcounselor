@@ -14,12 +14,20 @@ export default function Hero({ content }: { content: SiteContent }) {
             "radial-gradient(circle at 15% 20%, rgba(154,42,36,0.35), transparent 40%), radial-gradient(circle at 85% 0%, rgba(20,44,71,0.6), transparent 45%)",
         }}
       />
+      <div
+        aria-hidden="true"
+        lang="zh"
+        className="pointer-events-none absolute -right-6 top-1/2 -translate-y-1/2 select-none whitespace-nowrap font-extralight text-white/[0.035]"
+        style={{ fontSize: "clamp(8rem, 24vw, 22rem)", letterSpacing: "-0.08em" }}
+      >
+        {content.hero.watermark}
+      </div>
       <div className="relative mx-auto max-w-4xl text-center">
         <motion.p
           initial={{ opacity: 0, y: 12 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
-          className="mb-4 text-sm font-medium uppercase tracking-[0.2em] text-accent-light"
+          className="locale-eyebrow mb-4 text-sm font-medium uppercase tracking-[0.2em] text-accent-light"
         >
           {content.hero.eyebrow}
         </motion.p>

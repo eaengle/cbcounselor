@@ -46,6 +46,7 @@ export interface SiteContent {
   meta: {
     title: string;
     description: string;
+    keywords: string[];
   };
   nav: {
     links: NavLink[];
@@ -59,11 +60,13 @@ export interface SiteContent {
     headline: string;
     subheadline: string;
     cta: string;
+    watermark: string;
   };
   stats: StatItem[];
   featuredCases: {
     title: string;
     subtitle: string;
+    watermark: string;
     items: CaseItem[];
   };
   about: {
@@ -107,6 +110,14 @@ export interface SiteContent {
     body: string;
     email: string;
     button: string;
+  };
+  wechat: {
+    title: string;
+    idLabel: string;
+    id: string;
+    qrAlt: string;
+    availability: string;
+    placeholder: string;
   };
   footer: {
     tagline: string;

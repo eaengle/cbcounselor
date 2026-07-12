@@ -56,23 +56,28 @@ Bugs and gaps found in review on 2026-07-11. All are self-contained; no new cont
 
 From DESIGN-NOTES priority pick #3. Mostly code; one external dependency flagged below.
 
-- [ ] **Chinese typography pass.** Add a proper zh font stack (system-first:
+- [x] **Chinese typography pass.** Add a proper zh font stack (system-first:
   `"PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif` — avoids shipping a
   multi-MB webfont; optionally layer a subsetted Noto Sans SC via `next/font` later).
   When locale is zh: slightly reduced letter-spacing, larger line-height on body text,
   no tracking on CJK headlines (the `tracking-[0.2em]` eyebrow looks wrong in Chinese).
-- [ ] **Chinese watermark characters as section design elements** (e.g. 跨境 behind the
+- [x] **Chinese watermark characters as section design elements** (e.g. 跨境 behind the
   hero/cases headline in a light weight, low opacity). One or two sections, not every one.
-- [ ] **WeChat block in footer + contact section:** QR code placeholder image, WeChat ID
+- [x] **WeChat block in footer + contact section:** QR code placeholder image, WeChat ID
   text, and a "Consultations available in Mandarin" line (both locales).
-- [ ] **Per-locale metadata polish:** OpenGraph tags, zh-specific description, keywords
+- [x] **Per-locale metadata polish:** OpenGraph tags, zh-specific description, keywords
   Baidu cares about.
-- [ ] **Replace the machine-assisted `src/content/zh.ts` with the live site's Chinese
+- [x] **Replace the machine-assisted `src/content/zh.ts` with the live site's Chinese
   copy** wherever sections correspond — the firm already publishes and stands behind that
   text. Only genuinely new copy (sections that don't exist on the old site) needs
   🔶 review by a native speaker, a far smaller ask than translating the whole site.
 - [ ] **Pull the real WeChat QR / WeChat ID and LinkedIn URL from the live site's footer**
   instead of using placeholders.
+  *Blocked by the source site as of 2026-07-11: its production footer renders both
+  LinkedIn and WeChat as literal `href="#"` links, and its public homepage payload and
+  JavaScript bundles contain no QR image, WeChat ID, or LinkedIn URL. The rebuild uses
+  an explicitly labeled QR placeholder and directs visitors to the verified firm email
+  until the firm supplies the official social details.*
 
 **Done when:** `/zh` looks designed-for-Chinese rather than translated, its copy matches
 the live site's published Chinese, and the WeChat/LinkedIn presence is real.

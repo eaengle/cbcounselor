@@ -6,9 +6,19 @@ export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: en.meta.title,
   description: en.meta.description,
+  keywords: en.meta.keywords,
   alternates: {
     canonical: "/",
     languages: localeAlternates,
+  },
+  openGraph: {
+    type: "website",
+    siteName: "CBC Law",
+    title: en.meta.title,
+    description: en.meta.description,
+    url: "/",
+    locale: "en_US",
+    alternateLocale: ["zh_CN"],
   },
 };
 
