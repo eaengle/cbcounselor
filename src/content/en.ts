@@ -3,9 +3,9 @@ import { SiteContent } from "./types";
 export const en: SiteContent = {
   locale: "en",
   meta: {
-    title: "CBC Law | Cross-Border Legal Solutions",
+    title: "CBC Law | Litigation and Cross-Border Counsel for Chinese Companies",
     description:
-      "CBC Law assists global businesses with their most challenging cross-border legal matters spanning the U.S., China, and beyond.",
+      "Boutique U.S.–China counsel for Chinese companies in intellectual property and business litigation, corporate matters, M&A, investment, and compliance.",
     keywords: [
       "cross-border law firm",
       "U.S. China legal counsel",
@@ -34,92 +34,47 @@ export const en: SiteContent = {
   },
   hero: {
     eyebrow: "U.S. ↔ China ↔ Beyond",
-    headline: "Comprehensive Cross-Border Legal Solutions for Global Enterprises",
+    headline: "Serious Counsel for Chinese Companies — In the Courtroom and in the Boardroom.",
     subheadline:
-      "CBC Law assists global businesses with their most challenging cross-border legal matters spanning the U.S., China, and beyond.",
-    cta: "Learn More",
+      "CBC Law represents Chinese companies and cross-border enterprises in U.S. patent, trademark, and copyright litigation, and in the corporate, M&A, and investment matters that come with doing business across borders. Our team draws on training at top law schools and experience at top-tier firms.",
+    actions: [
+      {
+        label: "Facing a Schedule A Lawsuit? Start Here",
+        href: "/#ecommerce-defense",
+        emphasis: "primary",
+      },
+      { label: "Talk to Our Team", href: "/contact", emphasis: "secondary" },
+    ],
     watermark: "跨境",
     clientDescriptors: [
-      "U.S. infrastructure manufacturer",
-      "Shenzhen-listed healthcare company",
-      "Leading U.S. LED manufacturer",
+      "Chinese enterprises",
+      "Cross-border companies",
       "Cross-border e-commerce sellers",
+      "U.S. operating businesses",
     ],
   },
-  stats: [
-    { value: "$66M+", label: "Jury verdict secured for a client" },
-    { value: "8", label: "Offices worldwide" },
-    { value: "3", label: "Countries covered" },
-    { value: "24/7", label: "Coverage across time zones" },
-  ],
-  featuredCases: {
-    title: "Notable Results",
-    subtitle: "A track record built across borders.",
-    watermark: "成果",
-    filterLabel: "Filter results",
-    allLabel: "All results",
+  featuredBar: {
+    label: "Cross-border priorities",
     items: [
       {
-        category: "IP Litigation",
-        result:
-          "Two ITC Section 337 investigations defended for a major Chinese LED manufacturer.",
-        client: "Chinese LED Manufacturer",
-        practiceArea: "IP Litigation",
-        industries: ["Technology", "Manufacturing"],
+        title: "Corporate & Cross-Border Transactions",
+        description:
+          "M&A, investment, and structuring counsel for Chinese enterprises expanding globally.",
       },
       {
-        category: "Trade Secrets",
-        result:
-          "$66M jury verdict for a U.S. LED manufacturer over high-power chip trade secrets.",
-        client: "U.S. LED Manufacturer",
-        practiceArea: "IP Litigation",
-        industries: ["Technology", "Manufacturing"],
+        title: "Patent, Trademark & Copyright Litigation",
+        description:
+          "Federal court, ITC, and arbitration representation for Chinese companies, including urgent U.S. litigation.",
       },
       {
-        category: "Cross-Border M&A",
-        result:
-          "Represented Hepalink in a U.S. competitor acquisition and healthcare fund investment.",
-        client: "Shenzhen-listed Healthcare Company",
-        practiceArea: "Investment & M&A",
-        industries: ["Healthcare"],
-      },
-      {
-        category: "E-Commerce",
-        result:
-          "Schedule A defense playbook for cross-border sellers facing U.S. TROs.",
-        client: "Cross-Border Sellers",
-        practiceArea: "Dispute Resolution",
-        industries: ["E-Commerce"],
-      },
-      {
-        category: "International Arbitration",
-        result:
-          "Secured a multimillion-dollar ICC arbitration award for a U.S. infrastructure manufacturer.",
-        client: "U.S. Infrastructure Manufacturer",
-        practiceArea: "Dispute Resolution",
-        industries: ["Infrastructure", "Manufacturing"],
-      },
-      {
-        category: "Cross-Border M&A",
-        result:
-          "Represented Shanghai Automotive Air-Conditioning Factory in acquiring equity in a Delphi Automotive joint venture.",
-        client: "SAACF",
-        practiceArea: "Investment & M&A",
-        industries: ["Automotive", "Manufacturing"],
-      },
-      {
-        category: "Patent Defense",
-        result:
-          "Resolved a six-patent medical-imaging dispute through a favorable settlement before expert discovery and a Markman hearing.",
-        client: "Medical Device Company",
-        practiceArea: "IP Litigation",
-        industries: ["Healthcare"],
+        title: "Business Organization & Compliance",
+        description: "Advice for Chinese companies operating in the U.S.",
       },
     ],
   },
   about: {
     title: "About CBC Law",
-    body: "CBC Law is a full-service law firm originating from Silicon Valley, dedicated to guiding clients through complex cross-border legal challenges.",
+    body: "CBC Law is a boutique cross-border firm originating from Silicon Valley, guiding Chinese companies and cross-border enterprises through consequential U.S. disputes and business matters.",
     differentiators: [
       {
         title: "Professional Excellence",
@@ -154,7 +109,7 @@ export const en: SiteContent = {
     ],
   },
   practiceAreas: {
-    title: "Boutique Counsel for Cross-Border Business",
+    title: "Two Practices, One Standard: Serious Counsel for Chinese Enterprises.",
     subtitle:
       "CBC Law brings Chinese-fluent, U.S.–China experience to two co-equal practices: high-stakes disputes and the transactions that move enterprises forward.",
     primaryLabel: "Primary practices",
@@ -333,7 +288,7 @@ export const en: SiteContent = {
     href: "https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MzU5MDk2ODc2NA==&scene=124#wechat_redirect",
   },
   footer: {
-    tagline: "Cross-border legal solutions for global enterprises.",
+    tagline: "Serious U.S. litigation and cross-border business counsel for Chinese enterprises.",
     copyright: `© ${new Date().getFullYear()} CBC Law. All rights reserved.`,
   },
 };

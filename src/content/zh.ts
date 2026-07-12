@@ -6,9 +6,9 @@ import { SiteContent } from "./types";
 export const zh: SiteContent = {
   locale: "zh",
   meta: {
-    title: "CBC Law | 跨境法律解决方案",
+    title: "CBC Law | 为中国企业提供美国诉讼与跨境法律顾问服务",
     description:
-      "CBC Law 是一家起源于美国硅谷的综合性律师事务所，专注为全球企业提供中美跨境投资、并购、知识产权、国际争议解决与合规法律服务。",
+      "CBC Law 是一家精品中美跨境律师事务所，为中国企业提供知识产权与商业诉讼、公司事务、并购、投资及合规法律服务。",
     keywords: [
       "跨境律师事务所",
       "中美跨境法律服务",
@@ -39,85 +39,45 @@ export const zh: SiteContent = {
   },
   hero: {
     eyebrow: "美国 ↔ 中国 ↔ 全球",
-    headline: "为全球企业提供全方位跨境法律解决方案",
+    headline: "为中国企业提供严肃法律顾问——从法庭到董事会。",
     subheadline:
-      "CBC Law 协助全球企业处理涉及美国、中国及其他地区的最具挑战性的跨境法律事务。",
-    cta: "了解更多",
+      "CBC Law 为中国企业及跨境企业代理美国专利、商标和版权诉讼，并就跨境经营涉及的公司事务、并购与投资提供法律服务。我们的团队拥有顶尖法学院教育背景及顶级律师事务所执业经验。",
+    actions: [
+      {
+        label: "正面临 Schedule A 诉讼？从这里开始",
+        href: "/zh/#ecommerce-defense",
+        emphasis: "primary",
+      },
+      { label: "与我们的团队沟通", href: "/zh/contact", emphasis: "secondary" },
+    ],
     watermark: "跨境",
     clientDescriptors: [
-      "美国基础设施制造商",
-      "深圳上市医疗企业",
-      "美国领先 LED 制造商",
+      "中国企业",
+      "跨境公司",
       "跨境电商卖家",
+      "在美运营企业",
     ],
   },
-  stats: [
-    { value: "$66M+", label: "为客户赢得的陪审团裁决" },
-    { value: "8", label: "全球办公室" },
-    { value: "3", label: "覆盖国家" },
-    { value: "24/7", label: "跨时区全天候服务" },
-  ],
-  featuredCases: {
-    title: "代表性案例",
-    subtitle: "跨越国界的专业经验与卓越成果。",
-    watermark: "成果",
-    filterLabel: "筛选案例",
-    allLabel: "全部案例",
+  featuredBar: {
+    label: "跨境业务重点",
     items: [
       {
-        category: "知识产权诉讼",
-        result: "为中国大型 LED 制造商代理两起 ITC 第 337 条款调查。",
-        client: "中国 LED 制造商",
-        practiceArea: "知识产权诉讼",
-        industries: ["科技", "制造业"],
+        title: "公司与跨境交易",
+        description: "为拓展全球业务的中国企业提供并购、投资及架构设计法律服务。",
       },
       {
-        category: "商业秘密",
-        result: "为美国领先 LED 制造商赢得 6,600 万美元商业秘密侵占陪审团裁决。",
-        client: "美国 LED 制造商",
-        practiceArea: "知识产权诉讼",
-        industries: ["科技", "制造业"],
+        title: "专利、商标与版权诉讼",
+        description: "为中国企业代理联邦法院、ITC 及仲裁案件，包括美国紧急诉讼。",
       },
       {
-        category: "跨境并购",
-        result: "代理海普瑞收购美国竞争对手并投资美国医疗基金。",
-        client: "深圳上市医疗企业",
-        practiceArea: "投资与并购",
-        industries: ["医疗健康"],
-      },
-      {
-        category: "电子商务",
-        result: "为跨境电商卖家应对美国 TRO 提供 Schedule A 应诉策略。",
-        client: "跨境电商卖家",
-        practiceArea: "争议解决",
-        industries: ["电子商务"],
-      },
-      {
-        category: "国际仲裁",
-        result: "在国际商会（ICC）仲裁中为一家美国基础设施制造商赢得数百万美元裁决。",
-        client: "美国基础设施制造商",
-        practiceArea: "争议解决",
-        industries: ["基础设施", "制造业"],
-      },
-      {
-        category: "跨境并购",
-        result: "代理上海汽车空调器厂收购其与德尔福汽车合资企业的股权。",
-        client: "上海汽车空调器厂",
-        practiceArea: "投资与并购",
-        industries: ["汽车", "制造业"],
-      },
-      {
-        category: "专利抗辩",
-        result: "为一家医疗器械公司就六项医学影像专利争议进行抗辩，并在专家证据开示和 Markman 听证前达成有利和解。",
-        client: "医疗器械公司",
-        practiceArea: "知识产权诉讼",
-        industries: ["医疗健康"],
+        title: "企业设立与合规",
+        description: "为在美国运营的中国企业提供法律建议。",
       },
     ],
   },
   about: {
     title: "致力于帮助全球企业跨越国界蓬勃发展",
-    body: "CBC Law 是一家起源于美国硅谷的综合性律师事务所，致力于协助全球企业处理最具挑战性的跨境法律事务。我们的核心业务领域包括企业交易、跨境投资与并购、合规咨询、知识产权、国际诉讼、仲裁以及其他争议解决。我们在涉及美国和中国的跨境争议和交易方面尤其拥有丰富经验。",
+    body: "CBC Law 是一家起源于美国硅谷的精品跨境律师事务所，致力于协助中国企业及跨境企业处理重要的美国争议与商业事务。",
     differentiators: [
       {
         title: "卓越专业",
@@ -146,7 +106,7 @@ export const zh: SiteContent = {
     ],
   },
   practiceAreas: {
-    title: "专注跨境商业的精品法律服务",
+    title: "两大核心业务，同一专业标准：为中国企业提供严肃法律顾问。",
     subtitle: "CBC Law 凭借中英文双语能力和中美两地经验，平衡发展两大核心业务：重大争议解决与推动企业发展的跨境交易。",
     primaryLabel: "核心业务",
     primaryItems: [
@@ -311,7 +271,7 @@ export const zh: SiteContent = {
     href: "https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MzU5MDk2ODc2NA==&scene=124#wechat_redirect",
   },
   footer: {
-    tagline: "一家起源于硅谷的综合性律师事务所，致力于协助全球企业处理跨境法律事务。",
+    tagline: "为中国企业提供严肃的美国诉讼与跨境商业法律顾问服务。",
     copyright: `© ${new Date().getFullYear()} CBC Law. 版权所有。`,
   },
 };

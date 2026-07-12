@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { SiteContent } from "@/content/types";
+import { withBasePath } from "@/lib/base-path";
 
 export default function Hero({ content }: { content: SiteContent }) {
   return (
@@ -50,7 +51,7 @@ export default function Hero({ content }: { content: SiteContent }) {
           initial={{ opacity: 0, y: 16 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
-          className="mx-auto mt-6 max-w-2xl text-lg text-white/70"
+          className="mx-auto mt-6 max-w-3xl text-lg leading-relaxed text-white/75"
         >
           {content.hero.subheadline}
         </motion.p>
@@ -58,14 +59,21 @@ export default function Hero({ content }: { content: SiteContent }) {
           initial={{ opacity: 0, y: 16 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.3 }}
-          className="mt-10"
+          className="mt-10 flex flex-col items-stretch justify-center gap-3 sm:flex-row sm:items-center"
         >
-          <a
-            href="#about"
-            className="inline-flex items-center justify-center rounded-full bg-accent px-8 py-3 text-base font-medium text-white transition-colors hover:bg-accent-light"
-          >
-            {content.hero.cta}
-          </a>
+          {content.hero.actions.map((action) => (
+            <a
+              key={action.href}
+              href={withBasePath(action.href)}
+              className={
+                action.emphasis === "primary"
+                  ? "inline-flex items-center justify-center rounded-full bg-accent px-7 py-3 text-sm font-semibold text-white transition-colors hover:bg-accent-light focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+                  : "inline-flex items-center justify-center rounded-full border border-white/35 px-7 py-3 text-sm font-semibold text-white transition-colors hover:border-white hover:bg-white/10 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+              }
+            >
+              {action.label}
+            </a>
+          ))}
         </motion.div>
         <motion.ul
           initial={{ opacity: 0 }}

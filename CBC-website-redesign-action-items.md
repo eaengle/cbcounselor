@@ -6,50 +6,50 @@ This checklist consolidates the accepted redlines into implementation tasks. Whe
 
 ## 1. Positioning and site structure
 
-- [ ] Reposition CBC Law as a boutique cross-border firm rather than a broad generalist.
-- [ ] Present two co-equal primary practices with equal visual and copy weight:
+- [x] Reposition CBC Law as a boutique cross-border firm rather than a broad generalist.
+- [x] Present two co-equal primary practices with equal visual and copy weight:
   - IP and business litigation: patent, trademark, copyright, trade secrets, ITC Section 337, federal/state court, and arbitration.
   - Corporate and cross-border counsel: M&A, investment, compliance, and entity structuring for Chinese enterprises.
-- [ ] Treat e-commerce/Amazon seller defense, international arbitration, entertainment/media, and funds/family offices as supporting capabilities rather than competing primary pillars.
-- [ ] Keep the main navigation compact; do not introduce a mega-menu or a long, large-firm-style list of practice areas.
-- [ ] Make the bilingual, Chinese-fluent cross-border practice a central differentiator throughout the site.
+- [x] Treat e-commerce/Amazon seller defense, international arbitration, entertainment/media, and funds/family offices as supporting capabilities rather than competing primary pillars.
+- [x] Keep the main navigation compact; do not introduce a mega-menu or a long, large-firm-style list of practice areas.
+- [x] Make the bilingual, Chinese-fluent cross-border practice a central differentiator throughout the site.
 
 ## 2. Homepage
 
 ### Hero
 
-- [ ] Replace the current hero headline with: **“Serious Counsel for Chinese Companies — In the Courtroom and in the Boardroom.”**
-- [ ] Use the approved hero body copy: **“CBC Law represents Chinese companies and cross-border enterprises in U.S. patent, trademark, and copyright litigation, and in the corporate, M&A, and investment matters that come with doing business across borders — led by attorneys trained at top law schools and top-tier firms, averaging 20 years experience each.”**
-- [ ] Add hero/sub-navigation CTAs:
+- [x] Replace the current hero headline with: **“Serious Counsel for Chinese Companies — In the Courtroom and in the Boardroom.”**
+- [ ] Use a revised version of the approved hero body copy that replaces “averaging 20 years experience each” with the firm-approved qualitative language: **“Attorneys at the firm have decades of experience handling complex legal matters.”** Do not publish the numeric average.
+- [x] Add hero/sub-navigation CTAs:
   - **Facing a Schedule A Lawsuit? Start Here**
   - **Talk to Our Team**
-- [ ] Add a short description and link to the *Kangol* Seventh Circuit opinion near the top of the homepage. The holding/victory description will be supplied later.
+- [ ] Add a short description and link to the *Kangol* Seventh Circuit opinion near the top of the homepage. Use Alan's supplied description together with his qualification that the court reversed and remanded and that Hague Service Convention requirements apply when the defendant's address is known; do not call it a complete victory.
 
 ### Featured bar
 
-- [ ] Replace the generic three-card carousel and lead with e-commerce/cross-border relevance.
-- [ ] Use these three featured items:
+- [x] Replace the generic three-card carousel and lead with e-commerce/cross-border relevance.
+- [x] Use these three featured items:
   - Corporate & Cross-Border Transactions — M&A, investment, and structuring counsel for Chinese enterprises expanding globally.
   - Patent, Trademark & Copyright Litigation — Federal court, ITC, and arbitration representation for Chinese companies, including urgent U.S. litigation.
   - Business organization and compliance advice for Chinese companies operating in the U.S.
 
 ### Practice section
 
-- [ ] Replace “Comprehensive Legal Solutions for Global Business” with **“Two Practices, One Standard: Serious Counsel for Chinese Enterprises.”**
-- [ ] Explain that half of the senior partners lead litigation and half lead corporate/cross-border work.
-- [ ] Display the two main practices as equal pillars; place the supporting capabilities in a smaller secondary row.
+- [x] Replace “Comprehensive Legal Solutions for Global Business” with **“Two Practices, One Standard: Serious Counsel for Chinese Enterprises.”**
+- [ ] Do not distinguish senior partners or identify practice leaders. Use inclusive firm-level language such as: **“Our attorneys have substantial experience across a range of corporate work, litigation, or both.”**
+- [x] Display the two main practices as equal pillars; place the supporting capabilities in a smaller secondary row.
 
 ### Credibility section
 
 - [ ] Replace the generic “Professional Excellence,” “24/7 Coverage,” and “Technology-Driven” tiles with specific, verified claims.
 - [ ] Use verified versions of these proof points:
-  - Average years of experience per attorney.
-  - Schedule A matters handled.
+  - Attorneys at the firm have decades of experience handling complex legal matters; do not publish the numeric average.
+  - Dozens of Schedule A cases; do not infer or publish a more precise number.
   - Two ITC Section 337 investigations as lead counsel.
   - Eight cities across three countries, if the locations are confirmed.
   - Bilingual partners with U.S. and China legal/practice experience.
-- [ ] Include patent, trademark, copyright, trade-secret, state/federal court, arbitration, and ITC experience in the supporting copy.
-- [ ] Do not use the $66 million trade-secret verdict as a firm-wide homepage credential; confine it to Ben Stolter’s bio.
+- [x] Include patent, trademark, copyright, trade-secret, state/federal court, arbitration, and ITC experience in the supporting copy.
+- [x] Do not use the $66 million trade-secret verdict as a firm-wide homepage credential; confine it to Ben Stolter’s bio.
 - [ ] Mention the *Kangol* Seventh Circuit Schedule A victory at least twice across the site.
 
 ### Persistent urgent intake
@@ -70,7 +70,7 @@ This checklist consolidates the accepted redlines into implementation tasks. Whe
 - [ ] Add reasons to choose CBC: bilingual U.S./China experience, cross-time-zone office coverage, and direct WeChat communication.
 - [ ] Add a representative-results section.
 - [ ] Feature and link the following opinion using this citation until an official reporter citation is available: *Kangol LLC v. Hangzhou Chuanyue Silk Import & Export Co.*, 2026 WL 1502198 (7th Cir. May 29, 2026).
-- [ ] Add the attorney-supplied summary of the *Kangol* holding/victory when received.
+- [ ] Add the attorney-supplied *Kangol* description, including the reversal/remand and known-address qualification; do not characterize it as an unqualified victory.
 - [ ] Add only verified case results, such as amounts released, dismissals, or account-reinstatement timelines.
 - [ ] Add a short intake form labeled **“Urgent — Active U.S. Litigation.”**
 
@@ -80,7 +80,7 @@ This checklist consolidates the accepted redlines into implementation tasks. Whe
 - [ ] Do not implement the draft proposal to feature only one litigation partner and one corporate partner side by side; the accepted redline calls for the full role-based hierarchy.
 - [ ] Give every profile a `cbcounselor.com` email address.
 - [ ] Add WeChat links/details to profiles where available.
-- [ ] Place these credential markers beside or immediately below each attorney’s name and title:
+- [ ] Standardize profiles in the conventional order Alan supplied—name, title, admissions, education, and contact—and include these credential markers where verified:
   - J.D. and law school.
   - Years of experience in the attorney’s practice.
   - Bar admissions.
@@ -113,13 +113,13 @@ This checklist consolidates the accepted redlines into implementation tasks. Whe
 
 ## 7. Content and fact verification before publication
 
-- [ ] Verify the “20 years average experience” claim and clarify whether it applies to all attorneys, litigators, or senior attorneys.
-- [ ] Verify the number of Schedule A matters handled; do not publish `[X]` or an unsupported estimate.
+- [x] Replace the numeric average-experience claim with Alan's approved qualitative statement: **“Attorneys at the firm have decades of experience handling complex legal matters.”**
+- [x] Use Alan's approved Schedule A volume description: **“dozens of Schedule A cases.”** Do not convert it to a precise number.
 - [ ] Verify the two ITC Section 337 lead-counsel matters.
 - [ ] Verify all office locations and the “8 cities, 3 countries” claim: Silicon Valley, Los Angeles, Seattle, Chicago, Beijing, Shanghai, Shenzhen, and Cancún.
 - [ ] Verify all verdict amounts and other representative-result claims.
 - [ ] Obtain the correct URL for the *Kangol* opinion.
-- [ ] Obtain the attorney-written short summary of the *Kangol* holding/victory.
+- [x] Obtain the attorney-written short description of the *Kangol* result and its reversal/remand and known-address qualification.
 - [ ] Gather each attorney’s law school, years of practice, bar admissions, language/practice history, CBC email address, and WeChat details.
 - [ ] Confirm the real WeChat Official Account and obtain its QR code.
 - [ ] Remove all bracketed placeholders before publication.

@@ -2,9 +2,9 @@
 
 Source checklist: `CBC-website-redesign-action-items.md`
 
-This plan covers the **51 of 69 checklist items that can be completed with the information currently available**. It deliberately excludes the 18 items that require firm-supplied facts, contact details, approved language, proprietary assets, or purchasing access.
+This plan covers the **60 of 69 checklist items that can be completed with the information currently available**. It deliberately excludes the 9 items that still require firm-supplied contact details, proprietary assets, or purchasing access.
 
-Each session is sized for one focused conversation with a capable LLM coding assistant: one coherent area of the site, roughly four to eight checklist items, and a concrete verification gate. Sessions should normally be completed in order because later sessions build on the content model, routes, and components created earlier.
+Each session is sized for one focused conversation with a capable LLM coding assistant: one coherent area of the site and a concrete verification gate. Sessions should normally be completed in order because later sessions build on the content model, routes, and components created earlier.
 
 ## Customer guidance received
 
@@ -16,6 +16,13 @@ Alan Engle provided the following additional direction:
 - Alan said he plans to obtain new headshots. The standardized-headshot item remains blocked until those files are delivered.
 - Alan plans to review the source memo and send a revised draft. Reconcile that draft with this plan when it arrives; do not silently override accepted guidance.
 - Alan previously supplied a public WeChat interview URL: `https://mp.weixin.qq.com/s/-DRCnYtP-zMq9LEiBceDAw`. This is a specific interview article, not CBC's WeChat account homepage. It may be offered as optional browser-readable content only when labeled accurately. Do not represent the supplied article/content QR as the official-account homepage QR.
+- Replace the proposed average-experience metric with: **“Attorneys at the firm have decades of experience handling complex legal matters.”** Alan confirmed that the average across all attorneys is more than 20 years, but does not consider an average-years claim typical firm-website copy. Do not publish the numeric average.
+- The approved public description of the firm's Schedule A volume is **“dozens of Schedule A cases.”** Do not convert “dozens” into a more precise number.
+- Do not distinguish “senior partners,” identify Alan as the litigation lead, or identify Ning as the corporate/cross-border lead. Use inclusive firm-level language such as: **“Our attorneys have substantial experience across a range of corporate work, litigation, or both.”**
+- Use a conventional profile order: name, title, admissions, education, and contact. Alan supplied his own profile as the format example, including California and U.S. Patent and Trademark Office admissions; UC Berkeley School of Law, J.D.; University of Pittsburgh PhD studies; University of California, San Diego, B.S. and B.A.; and `aengle@cbcounselor.com`. Treat these as Alan-specific facts, not defaults for other attorneys.
+- Alan supplied an attorney-written Kangol description. Preserve its substance but include the qualification in his accompanying note: the Seventh Circuit reversed the default judgment and remanded because Hague Service Convention requirements apply when the defendant's address is known. Do not characterize the remand as an unqualified or complete victory. The approved significance is that the decision affects Schedule A e-commerce litigation in which Chinese defendants may have accounts seized without lawful service.
+- Alan also supplied Eric Goldman's May 2026 blog discussion as background context: `https://blog.ericgoldman.org/archives/2026/05/seventh-circuit-limits-email-service-to-chinese-sad-scheme-defendants-kangol-v-hangzhou-silk.htm`. Treat it as a secondary commentary source, not as the authoritative opinion URL required by source item 55.
+- Alan indicated that the rest of his answers will follow. Profile data for other attorneys, the official WeChat QR asset and instructions, new headshots, and the photography decision remain outstanding.
 
 Eric emailed the consolidated request for the remaining information to Alan at `alanengle@rushpost.com` on July 11, 2026.
 
@@ -63,24 +70,25 @@ Eric emailed the consolidated request for the remaining information to Alan at `
 
 ## Session 2 — Homepage hero, featured bar, and practice presentation
 
-**Goal:** Implement the approved homepage positioning and primary calls to action while omitting the unverified experience metric.
+**Goal:** Implement the approved homepage positioning and primary calls to action using the approved qualitative experience language.
 
-**Source items:** 6, 8, 10, 11, 12, 14, 17, 18
+**Source items:** 6, 7, 8, 10, 11, 12, 13, 14, 17, 18
 
 ### Steps
 
 1. Replace the English hero headline with the approved headline from the source checklist.
-2. Do **not** publish the approved hero paragraph verbatim yet because it contains the blocked “averaging 20 years experience each” claim. The “top law schools” portion of the positioning is customer-confirmed and may be used in restrained copy, but it must not imply that every roster member attended one of the four specifically identified schools.
+2. Revise the proposed hero paragraph to remove “averaging 20 years experience each.” Use the approved qualitative statement, “Attorneys at the firm have decades of experience handling complex legal matters,” where it reads naturally. The “top law schools” portion of the positioning is customer-confirmed and may be used in restrained copy, but it must not imply that every roster member attended one of the four specifically identified schools.
 3. Add the two approved hero/sub-navigation calls to action:
    - “Facing a Schedule A Lawsuit? Start Here” targeting the future e-commerce route.
    - “Talk to Our Team” targeting the contact path.
 4. Replace the generic featured carousel with the three approved featured subjects and their supplied descriptions.
 5. Replace the practice-section heading with “Two Practices, One Standard: Serious Counsel for Chinese Enterprises.”
-6. Render the two primary practices with equal layout, typography, spacing, and interaction weight.
-7. Render supporting capabilities in a visibly secondary row without hiding them from keyboard or mobile users.
-8. Ensure the supporting litigation copy includes patent, trademark, copyright, trade-secret, state/federal court, arbitration, and ITC experience.
-9. Remove the $66 million result from firm-wide homepage positioning. Preserve it only in Benjamin Solter's profile, using the spelling and profile association already present in the repository.
-10. Add equivalent Chinese structure and faithful copy that does not reintroduce the blocked experience claim.
+6. Replace the proposed “half of the senior partners” claim with inclusive firm-level wording: “Our attorneys have substantial experience across a range of corporate work, litigation, or both.” Do not name practice leaders or distinguish a senior-partner subset.
+7. Render the two primary practices with equal layout, typography, spacing, and interaction weight.
+8. Render supporting capabilities in a visibly secondary row without hiding them from keyboard or mobile users.
+9. Ensure the supporting litigation copy includes patent, trademark, copyright, trade-secret, state/federal court, arbitration, and ITC experience.
+10. Remove the $66 million result from firm-wide homepage positioning. Preserve it only in Benjamin Solter's profile, using the spelling and profile association already present in the repository.
+11. Add equivalent Chinese structure and faithful copy using qualitative experience and practice language rather than the numeric average or a leadership split.
 
 ### Definition of done
 
@@ -93,7 +101,7 @@ Eric emailed the consolidated request for the remaining information to Alan at `
 
 **Goal:** Establish the evidence-backed claims and site-wide pathways needed by the homepage and e-commerce work.
 
-**Source items:** 15, 19, 20, 27, 52, 53, 54, 55
+**Source items:** 9, 15, 16, 19, 20, 27, 50, 51, 52, 53, 54, 55, 56
 
 ### Steps
 
@@ -103,24 +111,24 @@ Eric emailed the consolidated request for the remaining information to Alan at `
 4. Audit verdict amounts and representative results against the corresponding published profiles/content. Narrow any wording that exceeds the source.
 5. Locate the authoritative public URL for the Kangol opinion. Prefer an official court or government source; record the URL and access date in the claim ledger.
 6. Add the supplied interim citation for the opinion. Do not claim that it is an official reporter citation.
-7. Use a short, neutral description limited to the court's publicly verifiable disposition and holding. Do not label this text as the requested attorney-written summary.
+7. Use Alan's supplied Kangol description with his stated qualification: the Seventh Circuit reversed the default judgment and remanded, and Hague Service Convention requirements apply when a defendant's address is known. Explain the significance for Schedule A defendants without describing the remand as a complete victory.
 8. Mention the Kangol Schedule A result in two appropriate site locations, such as a homepage credibility/insight treatment and the e-commerce page foundation.
-9. Replace the generic credibility tiles only with claims that survived the audit. It is acceptable to publish fewer proof points rather than fill space with an unverified metric.
+9. Replace the generic credibility tiles only with claims that survived the audit. The approved qualitative proof points now include “Attorneys at the firm have decades of experience handling complex legal matters” and “dozens of Schedule A cases.” Do not publish a numeric average or infer a precise case count from “dozens.”
 10. Add a persistent site-wide urgent-intake control linking to the e-commerce intake section. Make it accessible, unobtrusive, and responsive.
 
 ### Definition of done
 
 - Every live credibility statement has an identified source.
-- No average-experience or Schedule A matter-count metric is published.
+- No numeric average-experience claim or more precise Schedule A case count than “dozens” is published.
 - The Kangol citation and authoritative opinion link are stored centrally and reusable.
-- The neutral Kangol description is clearly distinct from the still-blocked attorney-supplied summary.
+- The Kangol description reflects both Alan's supplied summary and his remand/address-known qualification.
 - The urgent route is reachable from every rendered site page by keyboard and touch.
 
 ## Session 4 — E-Commerce & Amazon Seller Defense page
 
 **Goal:** Build the bilingual urgent-services landing page and intake experience using only approved services and verified results.
 
-**Source items:** 21, 22, 23, 24, 25, 26, 29, 30
+**Source items:** 21, 22, 23, 24, 25, 26, 28, 29, 30
 
 ### Steps
 
@@ -135,7 +143,7 @@ Eric emailed the consolidated request for the remaining information to Alan at `
    - Amazon, PayPal, Payoneer, and Alipay asset/fund-freeze release.
    - U.S. entity structuring and compliance for high-volume sellers.
 6. Add the approved reasons to choose CBC, using the verified firm-level bilingual and WeChat information. Do not infer language fluency for a specific attorney.
-7. Build a representative-results section populated only from the Session 3 claim ledger. Use the Kangol result and other directly relevant verified results; omit unsupported amounts, release totals, dismissal counts, and reinstatement timelines.
+7. Build a representative-results section populated only from the Session 3 claim ledger. Use the qualified attorney-supplied Kangol description and other directly relevant verified results; omit unsupported amounts, release totals, dismissal counts, and reinstatement timelines.
 8. Add the Kangol citation and opinion link from the shared structured content.
 9. Add a short intake form labeled “Urgent — Active U.S. Litigation.” Reuse the site's privacy-preserving contact mechanism unless a backend has been explicitly authorized.
 10. Include practical fields such as name, email, marketplace/platform, deadline or hearing date, and a short matter description. Do not request privileged documents through an insecure workflow.
@@ -162,10 +170,12 @@ Eric emailed the consolidated request for the remaining information to Alan at `
 4. Keep the directory data-driven so roster changes do not require layout rewrites.
 5. Standardize every profile's section order, label treatment, spacing, image dimensions, and handling of missing fields. Use the same underlying structure in both locales.
 6. Refine name, title, education, and bar-admission presentation so credentials are visible but secondary to the person's identity and practice.
-7. Apply Alan's confirmed school guidance: show law schools at normal profile prominence and do not turn them into oversized homepage badges or promotional tiles.
-8. Confirm the following four school associations against the existing profile records while implementing the standardized layout: Ning Zhang — Georgetown; Charles Cheng — Stanford; Alan Engle — Berkeley; Edwin Wheeler — University of Chicago.
-9. Do not add missing years of experience, emails, language history, or WeChat details. Do not derive emails from name patterns.
-10. Verify the same hierarchy on English and Chinese people pages and confirm each existing profile link resolves.
+7. Use the conventional field order Alan supplied: name, title, admissions, education, and contact. Omit any section with no verified data rather than changing the order or displaying an empty label.
+8. Apply Alan's confirmed school guidance: show law schools at normal profile prominence and do not turn them into oversized homepage badges or promotional tiles.
+9. Confirm the following four school associations against the existing profile records while implementing the standardized layout: Ning Zhang — Georgetown; Charles Cheng — Stanford; Alan Engle — Berkeley; Edwin Wheeler — University of Chicago.
+10. Confirm Alan's supplied profile facts against the existing record and add or correct them where needed: California and U.S. Patent and Trademark Office admissions; UC Berkeley School of Law, J.D.; University of Pittsburgh PhD studies; University of California, San Diego, B.S. and B.A.; and `aengle@cbcounselor.com`.
+11. Do not add missing years of experience, emails, language history, or WeChat details for other attorneys. Do not derive emails from name patterns.
+12. Verify the same hierarchy on English and Chinese people pages and confirm each existing profile link resolves.
 
 ### Definition of done
 
@@ -248,7 +258,7 @@ Eric emailed the consolidated request for the remaining information to Alan at `
 
 **Goal:** Remove temporary content, validate the completed actionable scope, and produce a precise launch handoff.
 
-**Source items:** 59, 60, 61, 63, 67
+**Source items:** 59, 60, 61, 62, 63, 67
 
 ### Steps
 
@@ -278,14 +288,14 @@ Eric emailed the consolidated request for the remaining information to Alan at `
 | Session | Actionable source items | Count |
 |---|---|---:|
 | 1. Positioning and architecture | 1, 2, 3, 4, 5 | 5 |
-| 2. Homepage presentation | 6, 8, 10, 11, 12, 14, 17, 18 | 8 |
-| 3. Credibility, Kangol, urgent intake | 15, 19, 20, 27, 52, 53, 54, 55 | 8 |
-| 4. E-commerce defense page | 21, 22, 23, 24, 25, 26, 29, 30 | 8 |
+| 2. Homepage presentation | 6, 7, 8, 10, 11, 12, 13, 14, 17, 18 | 10 |
+| 3. Credibility, Kangol, urgent intake | 9, 15, 16, 19, 20, 27, 50, 51, 52, 53, 54, 55, 56 | 13 |
+| 4. E-commerce defense page | 21, 22, 23, 24, 25, 26, 28, 29, 30 | 9 |
 | 5. Team hierarchy | 31, 32, 36, 64 | 4 |
 | 6. Chinese and WeChat experience | 38, 39, 41, 66, 69 | 5 |
 | 7. Visual system | 42, 43, 45, 46, 47, 48, 49, 68 | 8 |
-| 8. Acceptance and cleanup | 59, 60, 61, 63, 67 | 5 |
-| **Total** | **51 items** | **51** |
+| 8. Acceptance and cleanup | 59, 60, 61, 62, 63, 67 | 6 |
+| **Total** | **60 items** | **60** |
 
 ## Blocked items intentionally excluded
 
@@ -293,23 +303,14 @@ These items should be revisited when the stated input is available. Their exclus
 
 | Source item | Missing input or dependency |
 |---:|---|
-| 7 | Verified scope and calculation for the “averaging 20 years experience each” claim; the supplied paragraph cannot be published unchanged until then. |
-| 9 | Attorney-approved short Kangol holding/victory description. The authoritative URL can be obtained under item 55, but that does not replace approved wording. |
-| 13 | Definition of “senior partners” and confirmation that half lead each practice; the current roster has five partners. |
-| 16 | Verified average-experience scope, Schedule A matter count, and confirmation of every proposed proof point as a combined set. |
-| 28 | Attorney-supplied Kangol summary. |
 | 33 | CBC email addresses for every profile; 11 of the 23 English roster records currently have `email: null`. |
 | 34 | Confirmation of which attorneys have publishable individual WeChat details and the actual details. |
-| 35 | The school-positioning approach and four school associations are confirmed, but years of experience and China-specific language/practice history remain missing for applicable attorneys. Education and bar data can be standardized now, but the entire requested marker set cannot be completed. |
+| 35 | The layout, Alan's profile facts, school-positioning approach, and four school associations are confirmed, but years of experience and China-specific language/practice history remain missing for applicable attorneys. The entire requested marker set cannot yet be completed for every profile. |
 | 37 | Alan said he will obtain new headshots. This remains blocked pending delivery of the consistently photographed files; remind him if they are not included with his revised memo/materials. |
 | 40 | Official WeChat QR-code asset supplied or explicitly approved by the firm. A home-generated code should not be represented as the official asset. |
 | 44 | Access and authority needed to license premium stock imagery within the stated $100 experiment budget. Free/firm-owned images used in Session 7 can later be swapped. |
-| 50 | Verified attorney start dates and a decision about whether the average covers all attorneys, litigators, partners, or senior attorneys. |
-| 51 | Firm-confirmed number of Schedule A matters handled. |
-| 56 | Attorney-written Kangol holding/victory summary. |
-| 57 | Four law-school associations are now confirmed, but remaining attorney school/practice-year/bar/language/email/WeChat data is still needed, especially the fields identified above. |
+| 57 | Alan's profile facts and four law-school associations are now confirmed, but remaining attorney school/practice-year/bar/language/email/WeChat data is still needed, especially the fields identified above. |
 | 58 | The account is identified in the repository, but the official QR asset is still missing. |
-| 62 | Completion depends on the attorney-approved homepage Kangol description from items 9/56. |
 | 65 | Completion depends on missing CBC emails and credential/contact data from items 33–35 and 57. |
 
 ## Recommended handoff prompt for each new session

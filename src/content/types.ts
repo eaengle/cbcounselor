@@ -9,17 +9,13 @@ export interface NavCallout extends NavLink {
   ariaLabel: string;
 }
 
-export interface StatItem {
-  value: string;
-  label: string;
+export interface HeroAction extends NavLink {
+  emphasis: "primary" | "secondary";
 }
 
-export interface CaseItem {
-  category: string;
-  result: string;
-  client?: string;
-  practiceArea: string;
-  industries: string[];
+export interface FeaturedItem {
+  title: string;
+  description: string;
 }
 
 export interface Differentiator {
@@ -121,18 +117,13 @@ export interface SiteContent {
     eyebrow: string;
     headline: string;
     subheadline: string;
-    cta: string;
+    actions: [HeroAction, HeroAction];
     watermark: string;
     clientDescriptors: string[];
   };
-  stats: StatItem[];
-  featuredCases: {
-    title: string;
-    subtitle: string;
-    watermark: string;
-    filterLabel: string;
-    allLabel: string;
-    items: CaseItem[];
+  featuredBar: {
+    label: string;
+    items: [FeaturedItem, FeaturedItem, FeaturedItem];
   };
   about: {
     title: string;

@@ -16,10 +16,10 @@ export default function PracticeAreas({ content }: { content: SiteContent }) {
         </Reveal>
         <div className="mt-10 grid gap-6 sm:grid-cols-2">
           {content.practiceAreas.primaryItems.map((area, i) => (
-            <Reveal key={area.name} delay={i * 0.08}>
-              <div className="h-full rounded-2xl border border-neutral-200 p-8">
+            <Reveal key={area.name} delay={i * 0.08} className="h-full">
+              <article className="h-full rounded-2xl border border-neutral-200 bg-white p-8 shadow-sm">
                 <h3 className="text-xl font-semibold text-navy">{area.name}</h3>
-                <p className="mt-3 text-neutral-600">{area.description}</p>
+                <p className="mt-3 leading-relaxed text-neutral-600">{area.description}</p>
                 {area.subareas && (
                   <div className="mt-4 flex flex-wrap gap-2">
                     {area.subareas.map((sub) => (
@@ -32,7 +32,7 @@ export default function PracticeAreas({ content }: { content: SiteContent }) {
                     ))}
                   </div>
                 )}
-              </div>
+              </article>
             </Reveal>
           ))}
         </div>
@@ -50,7 +50,7 @@ export default function PracticeAreas({ content }: { content: SiteContent }) {
           </Reveal>
           <div className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
             {content.practiceAreas.supportingItems.map((capability, i) => (
-              <Reveal key={capability.name} delay={i * 0.06}>
+              <Reveal key={capability.name} delay={i * 0.06} className="h-full">
                 <article className="h-full rounded-xl bg-neutral-50 p-5 ring-1 ring-neutral-100">
                   <p className="text-xs font-semibold uppercase tracking-wider text-accent">
                     {capability.eyebrow}
