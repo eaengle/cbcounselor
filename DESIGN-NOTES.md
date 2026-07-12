@@ -29,10 +29,13 @@ should serve both audiences.
 - [x] **Genuinely design the 中文 version** — Chinese text sets denser; tune
   line-height, font (Noto Sans SC / Source Han Sans), and spacing separately.
   Chinese visitors can tell when a site was designed English-first.
-- [x] **WeChat presence** — QR code in footer/contact section; note that
+- [ ] **WeChat presence** — QR code in footer/contact section; note that
   consultations are available in Mandarin. Non-negotiable for Chinese clients.
-  (The layout and labeled placeholder are live; the source site currently publishes
-  no working WeChat link or ID, so the official QR remains a firm-supplied asset.)
+  (Decided 2026-07-11: the firm has no valid WeChat or LinkedIn presence to link —
+  the source site's footer links are dead `href="#"` stubs — so the placeholder QR
+  card was removed rather than shipped. The "Consultations available in Mandarin"
+  line lives in the contact section. Re-add a QR card if/when the firm supplies
+  an official QR code and WeChat ID.)
 - [ ] **China performance audit** — check loading behind the Great Firewall.
   Self-host fonts and assets; avoid Google Fonts / YouTube embeds / blocked CDNs.
   Note: GitHub Pages (current host) is not reliably reachable from mainland
@@ -62,7 +65,8 @@ should serve both audiences.
 ### Priority pick (if only three)
 1. Accent color ✅
 2. Animated stat bar ✅
-3. First-class Chinese typography + WeChat presence ✅
+3. First-class Chinese typography ✅ (+ WeChat presence — on hold until the firm
+   supplies real WeChat details)
 
 ## Known Gaps / Placeholders (current build)
 

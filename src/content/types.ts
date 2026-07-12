@@ -110,14 +110,7 @@ export interface SiteContent {
     body: string;
     email: string;
     button: string;
-  };
-  wechat: {
-    title: string;
-    idLabel: string;
-    id: string;
-    qrAlt: string;
-    availability: string;
-    placeholder: string;
+    mandarinNote: string;
   };
   footer: {
     tagline: string;

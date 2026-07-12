@@ -210,14 +210,7 @@ export const en: SiteContent = {
     body: "Reach out to discuss your cross-border legal needs with our team.",
     email: "info@cbcounselor.com",
     button: "Get in Touch",
-  },
-  wechat: {
-    title: "Connect on WeChat",
-    idLabel: "WeChat ID",
-    id: "Email us for the current WeChat ID",
-    qrAlt: "Placeholder for CBC Law's WeChat QR code",
-    availability: "Consultations available in Mandarin.",
-    placeholder: "Official QR code coming soon",
+    mandarinNote: "Consultations available in Mandarin.",
   },
   footer: {
     tagline: "Cross-border legal solutions for global enterprises.",

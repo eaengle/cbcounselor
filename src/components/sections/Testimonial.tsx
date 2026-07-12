@@ -10,7 +10,7 @@ export default function Testimonial({ content }: { content: SiteContent }) {
           <p className="mt-2 text-xl font-medium leading-relaxed text-navy sm:text-2xl">
             {content.testimonial.quote}
           </p>
-          <p className="mt-6 text-sm font-medium uppercase tracking-wide text-neutral-500">
+          <p className="locale-eyebrow mt-6 text-sm font-medium uppercase tracking-wide text-neutral-500">
             {content.testimonial.attribution}
           </p>
         </Reveal>

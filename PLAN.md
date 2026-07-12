@@ -65,22 +65,26 @@ From DESIGN-NOTES priority pick #3. Mostly code; one external dependency flagged
   hero/cases headline in a light weight, low opacity). One or two sections, not every one.
 - [x] **WeChat block in footer + contact section:** QR code placeholder image, WeChat ID
   text, and a "Consultations available in Mandarin" line (both locales).
+  *Superseded 2026-07-11: the firm has no valid WeChat details (see the blocked item
+  below), so the placeholder card was removed. The Mandarin-consultations line remains
+  in the contact section; re-add a QR card when real details arrive.*
 - [x] **Per-locale metadata polish:** OpenGraph tags, zh-specific description, keywords
   Baidu cares about.
 - [x] **Replace the machine-assisted `src/content/zh.ts` with the live site's Chinese
   copy** wherever sections correspond — the firm already publishes and stands behind that
   text. Only genuinely new copy (sections that don't exist on the old site) needs
   🔶 review by a native speaker, a far smaller ask than translating the whole site.
-- [ ] **Pull the real WeChat QR / WeChat ID and LinkedIn URL from the live site's footer**
+- [x] **Pull the real WeChat QR / WeChat ID and LinkedIn URL from the live site's footer**
   instead of using placeholders.
-  *Blocked by the source site as of 2026-07-11: its production footer renders both
+  *Resolved 2026-07-11 by removal: the source site's production footer renders both
   LinkedIn and WeChat as literal `href="#"` links, and its public homepage payload and
-  JavaScript bundles contain no QR image, WeChat ID, or LinkedIn URL. The rebuild uses
-  an explicitly labeled QR placeholder and directs visitors to the verified firm email
-  until the firm supplies the official social details.*
+  JavaScript bundles contain no QR image, WeChat ID, or LinkedIn URL — the firm has no
+  valid ones to link. Per user decision, the placeholder QR card was removed entirely;
+  contact goes through the verified firm email. Revisit only if the firm supplies
+  official social details.*
 
 **Done when:** `/zh` looks designed-for-Chinese rather than translated, its copy matches
-the live site's published Chinese, and the WeChat/LinkedIn presence is real.
+the live site's published Chinese, and no fake/placeholder social links ship.
 
 ---
 

@@ -23,7 +23,7 @@ export default function Offices({ content }: { content: SiteContent }) {
           {content.offices.groups.map((group, i) => (
             <Reveal key={group.country} delay={i * 0.1}>
               <div>
-                <p className="text-sm font-semibold uppercase tracking-wide text-accent-light">
+                <p className="locale-eyebrow text-sm font-semibold uppercase tracking-wide text-accent-light">
                   {group.country}
                 </p>
                 <ul className="mt-3 space-y-2">

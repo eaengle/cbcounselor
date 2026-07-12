@@ -27,8 +27,11 @@ body {
   font-family: var(--font-body), sans-serif;
 }
 
+/* Geist stays first so Latin text and figures match the EN page; CJK glyphs
+   fall through to the system Chinese fonts. */
 html:lang(zh) {
-  --font-body: "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+  --font-body: var(--font-geist-sans), "PingFang SC", "Hiragino Sans GB",
+    "Microsoft YaHei", sans-serif;
 }
 
 html:lang(zh) body {

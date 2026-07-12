@@ -193,14 +193,7 @@ export const zh: SiteContent = {
     body: "无论您在哪里遇到法律问题，CBC Law 都能为您对接所需的专业力量。立即联系我们，讨论我们如何协助您的跨境法律事务。",
     email: "info@cbcounselor.com",
     button: "联系我们",
-  },
-  wechat: {
-    title: "通过微信联系我们",
-    idLabel: "微信号",
-    id: "请发送邮件获取最新微信号",
-    qrAlt: "CBC Law 官方微信二维码占位图",
-    availability: "可提供普通话咨询服务。",
-    placeholder: "官方二维码即将发布",
+    mandarinNote: "可提供普通话咨询服务。",
   },
   footer: {
     tagline: "一家起源于硅谷的综合性律师事务所，致力于协助全球企业处理跨境法律事务。",
