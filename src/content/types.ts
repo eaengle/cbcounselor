@@ -50,6 +50,7 @@ export interface SiteContent {
   nav: {
     links: NavLink[];
     contactLabel: string;
+    menuLabel: string;
     languageToggleLabel: string;
     languageToggleHref: string;
   };

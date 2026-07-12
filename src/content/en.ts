@@ -17,6 +17,7 @@ export const en: SiteContent = {
       { label: "News & Insights", href: "#insights" },
     ],
     contactLabel: "Contact",
+    menuLabel: "Menu",
     languageToggleLabel: "中",
     languageToggleHref: "/zh",
   },
@@ -197,7 +198,7 @@ export const en: SiteContent = {
   contactCta: {
     title: "Wherever you encounter legal issues, we can help.",
     body: "Reach out to discuss your cross-border legal needs with our team.",
-    email: "contact@cbcounselor.com",
+    email: "info@cbcounselor.com",
     button: "Get in Touch",
   },
   footer: {

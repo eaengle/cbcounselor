@@ -19,6 +19,7 @@ export const zh: SiteContent = {
       { label: "新闻与洞见", href: "#insights" },
     ],
     contactLabel: "联系我们",
+    menuLabel: "菜单",
     languageToggleLabel: "EN",
     languageToggleHref: "/",
   },
@@ -178,7 +179,7 @@ export const zh: SiteContent = {
   contactCta: {
     title: "无论您在何处遇到法律问题，我们都能提供帮助。",
     body: "欢迎联系我们的团队，讨论您的跨境法律需求。",
-    email: "contact@cbcounselor.com",
+    email: "info@cbcounselor.com",
     button: "联系我们",
   },
   footer: {
