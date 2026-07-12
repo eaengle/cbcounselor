@@ -25,9 +25,9 @@ export default function Header({ content }: { content: SiteContent }) {
         </Link>
         <nav className="hidden items-center gap-8 text-sm text-white/80 lg:flex">
           {content.nav.links.map((link) => (
-            <Link key={link.href} href={link.href} className="transition-colors hover:text-white">
+            <a key={link.href} href={withBasePath(link.href)} className="transition-colors hover:text-white">
               {link.label}
-            </Link>
+            </a>
           ))}
         </nav>
         <div className="flex items-center gap-4 text-sm">
@@ -37,12 +37,12 @@ export default function Header({ content }: { content: SiteContent }) {
           >
             {content.nav.languageToggleLabel}
           </Link>
-          <Link
-            href={content.locale === "en" ? "/#contact" : "/zh/#contact"}
+          <a
+            href={withBasePath(content.locale === "en" ? "/#contact" : "/zh/#contact")}
             className="hidden rounded-full bg-accent px-4 py-2 font-medium text-white transition-colors hover:bg-accent-light sm:block"
           >
             {content.nav.contactLabel}
-          </Link>
+          </a>
           <button
             type="button"
             className="flex h-9 w-9 items-center justify-center rounded-md text-white/80 transition-colors hover:text-white lg:hidden"
@@ -73,22 +73,22 @@ export default function Header({ content }: { content: SiteContent }) {
           >
             <div className="mx-auto flex max-w-6xl flex-col px-6 py-4">
               {content.nav.links.map((link) => (
-                <Link
+                <a
                   key={link.href}
-                  href={link.href}
+                  href={withBasePath(link.href)}
                   className="border-b border-white/5 py-3 text-sm text-white/80 transition-colors last:border-b-0 hover:text-white"
                   onClick={() => setMenuOpen(false)}
                 >
                   {link.label}
-                </Link>
+                </a>
               ))}
-              <Link
-                href={content.locale === "en" ? "/#contact" : "/zh/#contact"}
+              <a
+                href={withBasePath(content.locale === "en" ? "/#contact" : "/zh/#contact")}
                 className="mt-4 rounded-full bg-accent px-4 py-2 text-center text-sm font-medium text-white transition-colors hover:bg-accent-light"
                 onClick={() => setMenuOpen(false)}
               >
                 {content.nav.contactLabel}
-              </Link>
+              </a>
             </div>
           </motion.nav>
         )}
