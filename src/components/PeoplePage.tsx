@@ -4,12 +4,15 @@ import AttorneyCard from "@/components/AttorneyCard";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
+// Role-based hierarchy per the accepted redline: partners first, then counsel,
+// then associates last. Alliance partners sit with the partner tier; foreign law
+// counsel sit with the of-counsel tier.
 const roleOrder: AttorneyRole[] = [
   "partner",
-  "of-counsel",
-  "associate",
-  "foreign-law-counsel",
   "alliance-partner",
+  "of-counsel",
+  "foreign-law-counsel",
+  "associate",
 ];
 
 export default function PeoplePage({ content }: { content: SiteContent }) {

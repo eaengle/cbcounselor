@@ -4,6 +4,8 @@ Source: `CBC LAw website redesign redlines ACCEPTED.docx`
 
 This checklist consolidates the accepted redlines into implementation tasks. Where the document contains conflicting draft suggestions, the later accepted feedback is treated as controlling.
 
+**Status convention:** `[x]` means the item is built or drafted in the codebase — it does **not** mean publication-ready. Any claim marked ⚠ below is drafted but **gated on fact-verification (Section 7)** and must clear the Section 8 acceptance checks before it goes live.
+
 ## 1. Positioning and site structure
 
 - [x] Reposition CBC Law as a boutique cross-border firm rather than a broad generalist.
@@ -45,8 +47,8 @@ This checklist consolidates the accepted redlines into implementation tasks. Whe
 - [x] Use verified versions of these proof points:
   - Attorneys at the firm have decades of experience handling complex legal matters; do not publish the numeric average.
   - Dozens of Schedule A cases; do not infer or publish a more precise number.
-  - Two ITC Section 337 investigations as lead counsel.
-  - Eight cities across three countries, if the locations are confirmed.
+  - Two ITC Section 337 investigations as lead counsel. ⚠ Gated on Alan's verification (§7).
+  - Eight cities across three countries. (All eight assumed confirmed for now; Alan to confirm before final publication.)
   - Bilingual partners with U.S. and China legal/practice experience.
 - [x] Include patent, trademark, copyright, trade-secret, state/federal court, arbitration, and ITC experience in the supporting copy.
 - [x] Do not use the $66 million trade-secret verdict as a firm-wide homepage credential; confine it to Ben Stolter’s bio.
@@ -69,30 +71,30 @@ This checklist consolidates the accepted redlines into implementation tasks. Whe
   - U.S. entity structuring and compliance for high-volume sellers.
 - [x] Add reasons to choose CBC: bilingual U.S./China experience, cross-time-zone office coverage, and direct WeChat communication.
 - [x] Add a representative-results section.
-- [x] Feature and link the following opinion using this citation until an official reporter citation is available: *Kangol LLC v. Hangzhou Chuanyue Silk Import & Export Co.*, 2026 WL 1502198 (7th Cir. May 29, 2026).
+- [x] Feature and link the following opinion using this citation until an official reporter citation is available: *Kangol LLC v. Hangzhou Chuanyue Silk Import & Export Co.*, 2026 WL 1502198 (7th Cir. May 29, 2026). Publishing on this Westlaw cite is fine for now; swap to the official reporter citation/URL when available (§7).
 - [x] Add the attorney-supplied *Kangol* description, including the reversal/remand and known-address qualification; do not characterize it as an unqualified victory.
-- [x] Add only verified case results, such as amounts released, dismissals, or account-reinstatement timelines.
+- [x] Add only verified case results, such as amounts released, dismissals, or account-reinstatement timelines. ⚠ Gated on verifying amounts/results (§7).
 - [x] Add a short intake form labeled **“Urgent — Active U.S. Litigation.”**
 
 ## 4. Team and attorney profiles
 
-- [ ] Order the team directory by role: partners first, then of counsel, then associates.
-- [ ] Do not implement the draft proposal to feature only one litigation partner and one corporate partner side by side; the accepted redline calls for the full role-based hierarchy.
-- [ ] Show a `cbcounselor.com` email on each profile that has one. For the 11 attorneys with no associated CBC email, **remove the contact entirely** rather than inventing or guessing one (Alan: they generally do not have a CBC email — often attorneys who worked on one or two matters, or Chinese attorneys on a different domain).
-- [ ] Do **not** add individual WeChat links/details to attorney profiles. (Alan: "we don't for now.") WeChat is handled at the firm level only.
-- [ ] Standardize profiles in the conventional order Alan supplied—name, title, admissions, education, and contact—and include these credential markers where verified:
+- [x] Order the team directory by role: partners first, then of counsel, then associates. *(Implemented in `roleOrder` in `src/components/PeoplePage.tsx`: partner → alliance-partner → of-counsel → foreign-law-counsel → associate, so associates sort last per the seniority hierarchy.)*
+- [x] Do not implement the draft proposal to feature only one litigation partner and one corporate partner side by side; the accepted redline calls for the full role-based hierarchy. *(The full role hierarchy renders on `/people` via `roleOrder`; the homepage `Team` section in `src/components/sections/Team.tsx` features three partners — Ning Zhang, Charles Cheng, Alan Engle — via `featuredSlugs`, not the rejected one-litigation/one-corporate pairing.)*
+- [x] Show a `cbcounselor.com` email on each profile that has one. For the 11 attorneys with no associated CBC email, **remove the contact entirely** rather than inventing or guessing one (Alan: they generally do not have a CBC email — often attorneys who worked on one or two matters, or Chinese attorneys on a different domain). *(`email: string | null` in `src/content/attorneys.ts` — exactly 11 nulls / 12 present, with an identical slug→email mapping across both `en` and `zh`. `AttorneyProfile.tsx` renders the contact block only when `attorney.email` is set; `AttorneyCard.tsx` shows no email at all. No invented addresses.)*
+- [x] Do **not** add individual WeChat links/details to attorney profiles. (Alan: "we don't for now.") WeChat is handled at the firm level only. *(No WeChat reference exists in `AttorneyProfile.tsx`, `AttorneyCard.tsx`, or the attorney data — WeChat appears only in firm-level footer/contact components.)*
+- [x] Standardize profiles in the conventional order Alan supplied—name, title, admissions, education, and contact—and include these credential markers where verified: *(In `AttorneyProfile.tsx` the header shows title + name and the aside renders in order: Bar Admissions → Education → Contact.)* **Note — deviates from Alan's stated order:** the profile hero renders **title above name** (title as an eyebrow label over the name headline), whereas Alan's order was "name, title." Kept as-is intentionally per Eric (eyebrow-label styling is a deliberate visual convention); flagged here because it disagrees with Alan's advice.
   - J.D. and law school. *(Already present for all 23 attorneys in `src/content/attorneys.ts`; consolidated in `CBC-attorney-credentials-reference.md`.)*
   - Bar admissions. *(Same — already present for all 23; no gathering needed.)*
-- [ ] Do **not** list per-attorney years of experience (Alan: "generally not listed on firm sites"), languages spoken (Alan: "don't list, it's complicated"), or China-specific practice history (Alan: "don't list").
-- [ ] Keep credentials visible but restrained; do not turn school/firm pedigree into an oversized promotional claim.
+- [x] Do **not** add **structured/labeled profile fields** for per-attorney years of experience (Alan: "generally not listed on firm sites"), languages spoken (Alan: "don't list, it's complicated"), or China-specific practice history (Alan: "don't list"). **Scope is structured fields only** — narrative bio prose may retain existing experience/China references (e.g., "over 20 years," China-matter descriptions); do not scrub the bios. *(The `Attorney` type in `src/content/types.ts` has no years-of-experience, languages, or China-history fields; only narrative `bio` prose carries such references, which is left intact.)*
+- [x] Keep credentials visible but restrained; do not turn school/firm pedigree into an oversized promotional claim. *(Credentials sit in a restrained sidebar block, not oversized promotional callouts.)*
 - [ ] Use consistent editorial-style headshots with the same lighting and backdrop across the team. *(Blocked: new headshots are ~1 month out; Alan or a future admin will organize them.)*
 
 ## 5. Chinese-language and WeChat experience
 
 - [ ] Audit the Chinese-language site and make it a complete, current parallel experience rather than a thin translation.
-- [ ] Replace every placeholder WeChat link (`#`) with the real WeChat Official Account.
-- [ ] Add the official WeChat QR code. *(Blocked: Ning does not have the QR and may not yet have access to generate one; treat as outstanding, do not substitute a home-generated code.)*
-- [ ] Treat WeChat as a firm-level client-communication channel. Alan confirmed the account can be used for urgent inquiries, though ~95% of inquiries route through Ning Zhang or Charles Cheng. Do **not** add per-attorney WeChat touchpoints (see Section 4).
+- [ ] **Remove all WeChat links for now** — both the real official-account links and the placeholder `#` links. There is no clear path forward on a browser-safe official-account destination, so surface no WeChat link rather than a broken or app-only one. Revisit when a verified browser-safe destination exists. **This supersedes Section 9.**
+- [ ] Official WeChat QR code: **deferred** along with the links above. (Also blocked upstream: Ning does not have the QR and may not yet have access to generate one; do not substitute a home-generated code.)
+- [ ] WeChat remains a firm-level client-communication channel **operationally** — Alan confirmed the account can handle urgent inquiries, though ~95% of inquiries route through Ning Zhang or Charles Cheng — but it is **not surfaced on-site at all for this pass** (no links, and no copyable account name/ID). Do **not** add per-attorney WeChat touchpoints (see Section 4).
 
 ## 6. Visual design and photography
 
@@ -114,30 +116,33 @@ This checklist consolidates the accepted redlines into implementation tasks. Whe
 
 - [x] Replace the numeric average-experience claim with Alan's approved qualitative statement: **“Attorneys at the firm have decades of experience handling complex legal matters.”**
 - [x] Use Alan's approved Schedule A volume description: **“dozens of Schedule A cases.”** Do not convert it to a precise number.
-- [ ] Verify the two ITC Section 337 lead-counsel matters.
-- [ ] Verify all office locations and the “8 cities, 3 countries” claim: Silicon Valley, Los Angeles, Seattle, Chicago, Beijing, Shanghai, Shenzhen, and Cancún.
-- [ ] Verify all verdict amounts and other representative-result claims.
+- [ ] Verify the two ITC Section 337 lead-counsel matters. *(Alan is the source of truth.)*
+- [ ] Verify all office locations and the “8 cities, 3 countries” claim: Silicon Valley, Los Angeles, Seattle, Chicago, Beijing, Shanghai, Shenzhen, and Cancún. *(All eight assumed confirmed for now; Alan to confirm before final publication.)*
+- [ ] Verify all verdict amounts and other representative-result claims. *(Alan is the source of truth.)*
 - [ ] Obtain the correct URL for the *Kangol* opinion.
 - [x] Obtain the attorney-written short description of the *Kangol* result and its reversal/remand and known-address qualification.
 - [x] Law school and bar admissions confirmed present for all 23 attorneys in `src/content/attorneys.ts` (both locales), consolidated in `CBC-attorney-credentials-reference.md`; no gathering required. Do **not** gather or publish years of practice, languages, China practice history, or individual WeChat details (Alan directed these be omitted). Use a CBC email only where one exists; remove the contact block for the 11 attorneys without one.
 - [x] Resolve individual-WeChat and per-attorney-experience data requirements: Alan directed that these fields be omitted rather than collected, so they are no longer outstanding inputs.
-- [ ] Confirm the real WeChat Official Account and obtain its QR code. *(QR still outstanding — see Section 5.)*
-- [ ] Remove all bracketed placeholders before publication.
+- [ ] WeChat links are being **removed for now** (see Section 5); confirming the official account and obtaining the QR code is **deferred**, not a pre-publication blocker for this pass.
+- [ ] Remove all bracketed placeholders before publication. (The provisional *Kangol* Westlaw citation is fine to publish now; swap it for the official reporter citation/URL when available — not a publication blocker.)
 
 ## 8. Acceptance checks
 
-- [ ] Corporate and litigation receive equal visual prominence on the homepage.
+- [ ] Corporate and litigation receive equal visual prominence on the homepage (two co-equal pillars, same tile size/weight; supporting capabilities in a smaller secondary row).
 - [ ] Patent, trademark, and copyright litigation are visible; the firm is not positioned primarily around the trade-secret verdict.
 - [ ] The *Kangol* victory appears at least twice, including once near the beginning of the homepage with an opinion link.
-- [ ] The Schedule A urgent-intake route is easy to reach from every page.
+- [ ] The Schedule A urgent-intake route is reachable from every page (persistent element — sticky bar or corner tab — rendered on every route).
 - [ ] Partners, of counsel, and associates appear in the accepted hierarchy.
-- [ ] Every attorney profile shows a CBC email where one exists and the profiles for the 11 attorneys without one carry no invented contact; profiles show school and bar admissions only, with no years-of-experience, language, China-history, or individual-WeChat fields.
+- [ ] Every attorney profile shows a CBC email where one exists and the profiles for the 11 attorneys without one carry no invented contact; profiles show school and bar admissions only, with no **structured** years-of-experience, language, China-history, or individual-WeChat fields. (Scope is structured fields only — narrative bio prose is not scrubbed.)
 - [ ] Office addresses appear on the site (see Section 10).
-- [ ] The Chinese experience is complete and current, and no placeholder WeChat links remain.
+- [ ] The Chinese experience is complete and current, and no WeChat links remain on the site (all removed for this pass — real and placeholder).
 - [ ] No unverified metrics, locations, outcomes, or placeholders are published.
 - [ ] The site uses photography and the agreed visual system rather than the current SaaS-style icons and world map.
+- [ ] The visual system is applied consistently: navy/charcoal/white base with a single accent (deep red or gold), one serif/sans pairing, and a defined type scale (Section 6).
 
 ## 9. Browser-safe WeChat access
+
+> **Deferred / superseded (2026-07-11):** Per updated direction, remove WeChat links entirely for now rather than building landing pages (see Section 5). Keep this design on file for if/when a browser-safe path is revisited; do **not** implement it in the current pass.
 
 - [ ] Create browser-safe CBC WeChat landing pages at `/wechat/` and `/zh/wechat/` rather than sending every visitor directly to an app-only link or presenting an article as the company's WeChat homepage:
   - Point normal website WeChat links to the appropriate CBC-owned landing page.
