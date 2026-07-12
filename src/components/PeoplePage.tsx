@@ -43,7 +43,12 @@ export default function PeoplePage({ content }: { content: SiteContent }) {
                 </div>
                 <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
                   {group.map((attorney) => (
-                    <AttorneyCard key={attorney.slug} attorney={attorney} locale={content.locale} />
+                    <AttorneyCard
+                      key={attorney.slug}
+                      attorney={attorney}
+                      locale={content.locale}
+                      eager={attorney.slug === attorneys[0]?.slug}
+                    />
                   ))}
                 </div>
               </section>

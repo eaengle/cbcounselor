@@ -52,6 +52,7 @@ export default function OfficeMap({ content }: { content: SiteContent }) {
           src={withBasePath("/world-map-dots-real.svg")}
           alt=""
           fill
+          loading="eager"
           sizes="(max-width: 1280px) 100vw, 1152px"
           className="pointer-events-none select-none object-contain opacity-40"
         />

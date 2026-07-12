@@ -7,10 +7,12 @@ export default function AttorneyCard({
   attorney,
   locale,
   revealDetails = false,
+  eager = false,
 }: {
   attorney: Attorney;
   locale: Locale;
   revealDetails?: boolean;
+  eager?: boolean;
 }) {
   const href = `${locale === "zh" ? "/zh" : ""}/people/${attorney.slug}`;
   const notableResult = attorney.representativeMatters[0];
@@ -25,6 +27,7 @@ export default function AttorneyCard({
           src={withBasePath(attorney.photo.src)}
           alt={attorney.name}
           fill
+          loading={eager ? "eager" : "lazy"}
           sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
           className="object-cover object-top grayscale-[35%] contrast-[1.08] transition duration-500 group-hover:scale-[1.03] group-hover:grayscale-0"
         />
