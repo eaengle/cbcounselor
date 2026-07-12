@@ -44,3 +44,23 @@ html:lang(zh) body {
 html:lang(zh) :is(h1, h2, h3, .locale-eyebrow) {
   letter-spacing: 0;
 }
+
+.hero-network path {
+  fill: none;
+  stroke: rgba(255, 255, 255, 0.2);
+  stroke-width: 1;
+  stroke-dasharray: 8 14;
+  animation: hero-drift 20s linear infinite;
+}
+
+.hero-network path:nth-child(2) { animation-duration: 26s; animation-direction: reverse; }
+.hero-network path:nth-child(3) { animation-duration: 32s; }
+.hero-network circle { fill: #e47669; filter: drop-shadow(0 0 7px rgba(228, 118, 105, 0.8)); }
+
+@keyframes hero-drift {
+  to { stroke-dashoffset: -220; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-network path { animation: none; }
+}

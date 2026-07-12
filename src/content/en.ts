@@ -53,48 +53,64 @@ export const en: SiteContent = {
     title: "Notable Results",
     subtitle: "A track record built across borders.",
     watermark: "成果",
+    filterLabel: "Filter results",
+    allLabel: "All results",
     items: [
       {
         category: "IP Litigation",
         result:
           "Two ITC Section 337 investigations defended for a major Chinese LED manufacturer.",
         client: "Chinese LED Manufacturer",
+        practiceArea: "IP Litigation",
+        industries: ["Technology", "Manufacturing"],
       },
       {
         category: "Trade Secrets",
         result:
           "$66M jury verdict for a U.S. LED manufacturer over high-power chip trade secrets.",
         client: "U.S. LED Manufacturer",
+        practiceArea: "IP Litigation",
+        industries: ["Technology", "Manufacturing"],
       },
       {
         category: "Cross-Border M&A",
         result:
           "Represented Hepalink in a U.S. competitor acquisition and healthcare fund investment.",
         client: "Shenzhen-listed Healthcare Company",
+        practiceArea: "Investment & M&A",
+        industries: ["Healthcare"],
       },
       {
         category: "E-Commerce",
         result:
           "Schedule A defense playbook for cross-border sellers facing U.S. TROs.",
         client: "Cross-Border Sellers",
+        practiceArea: "Dispute Resolution",
+        industries: ["E-Commerce"],
       },
       {
         category: "International Arbitration",
         result:
           "Secured a multimillion-dollar ICC arbitration award for a U.S. infrastructure manufacturer.",
         client: "U.S. Infrastructure Manufacturer",
+        practiceArea: "Dispute Resolution",
+        industries: ["Infrastructure", "Manufacturing"],
       },
       {
         category: "Cross-Border M&A",
         result:
           "Represented Shanghai Automotive Air-Conditioning Factory in acquiring equity in a Delphi Automotive joint venture.",
         client: "SAACF",
+        practiceArea: "Investment & M&A",
+        industries: ["Automotive", "Manufacturing"],
       },
       {
         category: "Patent Defense",
         result:
           "Resolved a six-patent medical-imaging dispute through a favorable settlement before expert discovery and a Markman hearing.",
         client: "Medical Device Company",
+        practiceArea: "IP Litigation",
+        industries: ["Healthcare"],
       },
     ],
   },
@@ -197,6 +213,7 @@ export const en: SiteContent = {
   offices: {
     title: "Global Presence",
     subtitle: "Eight offices, three countries, one team.",
+    mapLabel: "Map showing connections among CBC Law offices in the United States, China, and Mexico",
     groups: [
       { country: "United States", cities: ["Silicon Valley", "Los Angeles", "Seattle", "Chicago"] },
       { country: "China", cities: ["Beijing", "Shanghai", "Shenzhen"] },
@@ -246,28 +263,31 @@ export const en: SiteContent = {
         title: "The Dilemma of U.S. Schedule A Cases and How to Break It",
         date: "2025-01-20",
         summary: "A practical playbook for cross-border merchants navigating Schedule A TRO proceedings in U.S. district courts.",
-        href: "https://cbcounselor.com/insights/schedule-a-cases-resolution/",
+        href: "/insights/schedule-a-cases-resolution",
       },
       {
         title: "The Intellectual Property Dilemma of Chinese Cross-Border E-Commerce Sellers",
         date: "2024-09-15",
         summary: "An analysis of the IP risks Chinese sellers face on global e-commerce platforms, with practical defensive strategies.",
-        href: "https://cbcounselor.com/insights/ip-dilemma-cross-border-sellers/",
+        href: "/insights/ip-dilemma-cross-border-sellers",
       },
       {
         title: "What Impact Does the U.S. Government's Antitrust Lawsuit Against Amazon Have on Chinese Cross-Border E-Commerce?",
         date: "2024-07-08",
         summary: "How the FTC's antitrust action may reshape platform rules and seller obligations for Chinese cross-border merchants.",
-        href: "https://cbcounselor.com/insights/amazon-antitrust-impact/",
+        href: "/insights/amazon-antitrust-impact",
       },
       {
         title: "TikTok Ban in the U.S.: What Are the Chances of Legal Success?",
         date: "2024-05-15",
         summary: "First Amendment, foreign-affairs deference, and bill-of-attainder analysis of the TikTok divestiture statute.",
-        href: "https://cbcounselor.com/insights/tiktok-ban-legal-challenge/",
+        href: "/insights/tiktok-ban-legal-challenge",
       },
     ],
     readMore: "Read more",
+    articleLabel: "Publication",
+    backLabel: "Back to News & Insights",
+    archiveNote: "This is the complete article content currently published by CBC Law. Additional body copy has not yet been released in the firm's source archive.",
   },
   contactCta: {
     title: "Wherever you encounter legal issues, we can help.",

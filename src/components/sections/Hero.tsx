@@ -14,6 +14,13 @@ export default function Hero({ content }: { content: SiteContent }) {
             "radial-gradient(circle at 15% 20%, rgba(154,42,36,0.35), transparent 40%), radial-gradient(circle at 85% 0%, rgba(20,44,71,0.6), transparent 45%)",
         }}
       />
+      <svg aria-hidden="true" viewBox="0 0 1200 620" preserveAspectRatio="none" className="hero-network pointer-events-none absolute inset-0 h-full w-full opacity-35">
+        <path d="M-80 430 C250 30 690 40 1280 390" />
+        <path d="M-40 520 C340 150 780 120 1260 470" />
+        <path d="M120 610 C380 280 820 210 1130 30" />
+        <circle cx="235" cy="228" r="3" />
+        <circle cx="907" cy="218" r="3" />
+      </svg>
       <div
         aria-hidden="true"
         lang="zh"

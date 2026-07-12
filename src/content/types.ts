@@ -14,6 +14,8 @@ export interface CaseItem {
   category: string;
   result: string;
   client?: string;
+  practiceArea: string;
+  industries: string[];
 }
 
 export interface Differentiator {
@@ -67,6 +69,8 @@ export interface InsightArticle {
   date: string;
   summary: string;
   href: string;
+  slug?: string;
+  author?: string;
 }
 
 export interface TestimonialItem {
@@ -102,6 +106,8 @@ export interface SiteContent {
     title: string;
     subtitle: string;
     watermark: string;
+    filterLabel: string;
+    allLabel: string;
     items: CaseItem[];
   };
   about: {
@@ -122,6 +128,7 @@ export interface SiteContent {
   offices: {
     title: string;
     subtitle: string;
+    mapLabel: string;
     groups: OfficeGroup[];
   };
   team: {
@@ -149,6 +156,9 @@ export interface SiteContent {
     subtitle: string;
     articles: InsightArticle[];
     readMore: string;
+    articleLabel: string;
+    backLabel: string;
+    archiveNote: string;
   };
   contactCta: {
     title: string;

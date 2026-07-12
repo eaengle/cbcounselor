@@ -175,3 +175,30 @@ export const insightsByLocale = {
     }
   ]
 } satisfies Record<Locale, InsightArticle[]>;
+
+const authors: Record<string, string> = {
+  "schedule-a-cases-resolution": "Daniel Yuan",
+  "ip-dilemma-cross-border-sellers": "Ning Zhang",
+  "amazon-antitrust-impact": "Ning Zhang",
+  "tiktok-ban-legal-challenge": "Charles Cheng",
+};
+
+export function getInsightSlug(article: InsightArticle) {
+  return article.href.match(/\/insights\/([^/]+)/)?.[1] ?? "";
+}
+
+export function getInsights(locale: Locale): InsightArticle[] {
+  return insightsByLocale[locale].map((article) => {
+    const slug = getInsightSlug(article);
+    return {
+      ...article,
+      slug,
+      author: authors[slug],
+      href: `${locale === "zh" ? "/zh" : ""}/insights/${slug}`,
+    };
+  });
+}
+
+export function getInsight(locale: Locale, slug: string) {
+  return getInsights(locale).find((article) => article.slug === slug);
+}

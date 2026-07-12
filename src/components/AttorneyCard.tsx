@@ -26,8 +26,9 @@ export default function AttorneyCard({
           alt={attorney.name}
           fill
           sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-          className="object-cover object-top grayscale-[20%] transition duration-500 group-hover:scale-[1.03] group-hover:grayscale-0"
+          className="object-cover object-top grayscale-[35%] contrast-[1.08] transition duration-500 group-hover:scale-[1.03] group-hover:grayscale-0"
         />
+        <div aria-hidden className="absolute inset-0 bg-gradient-to-tr from-navy/35 via-transparent to-accent/20 mix-blend-color transition-opacity duration-500 group-hover:opacity-0" />
       </div>
       <div className="p-6">
         <h3 className="text-xl font-semibold text-navy">{attorney.name}</h3>

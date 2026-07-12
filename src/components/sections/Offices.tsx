@@ -1,41 +1,27 @@
 import { SiteContent } from "@/content/types";
 import Reveal from "@/components/Reveal";
+import OfficeMap from "@/components/OfficeMap";
 
 export default function Offices({ content }: { content: SiteContent }) {
   return (
-    <section className="relative overflow-hidden bg-navy px-6 py-20 text-white">
-      <div
-        aria-hidden
-        className="pointer-events-none absolute inset-0 opacity-20"
-        style={{
-          backgroundImage:
-            "radial-gradient(circle at 20% 30%, rgba(193,69,58,0.4), transparent 35%), radial-gradient(circle at 80% 70%, rgba(193,69,58,0.3), transparent 35%)",
-        }}
-      />
+    <section className="relative overflow-hidden bg-neutral-50 px-6 py-20">
       <div className="relative mx-auto max-w-6xl">
         <Reveal>
-          <h2 className="text-3xl font-semibold tracking-tight sm:text-4xl">
-            {content.offices.title}
-          </h2>
-          <p className="mt-3 text-lg text-white/70">{content.offices.subtitle}</p>
+          <div className="mx-auto max-w-3xl text-center">
+            <h2 className="text-3xl font-semibold tracking-tight text-navy sm:text-4xl">{content.offices.title}</h2>
+            <p className="mt-3 text-lg leading-relaxed text-neutral-600">{content.offices.subtitle}</p>
+          </div>
         </Reveal>
-        <div className="mt-10 grid gap-8 sm:grid-cols-3">
-          {content.offices.groups.map((group, i) => (
-            <Reveal key={group.country} delay={i * 0.1}>
-              <div>
-                <p className="locale-eyebrow text-sm font-semibold uppercase tracking-wide text-accent-light">
-                  {group.country}
-                </p>
-                <ul className="mt-3 space-y-2">
-                  {group.cities.map((city) => (
-                    <li key={city} className="text-white/80">
-                      {city}
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            </Reveal>
-          ))}
+        <div className="mt-12 lg:mt-16">
+          <Reveal><OfficeMap content={content} /></Reveal>
+        </div>
+        <div className="grid gap-4 sm:grid-cols-2 lg:sr-only">
+          {content.offices.groups.flatMap((group) => group.cities.map((city) => (
+            <div key={city} className="rounded-xl border border-neutral-200 bg-white p-5">
+              <p className="font-semibold text-navy">{city}</p>
+              <p className="mt-1 text-sm text-neutral-500">{group.country}</p>
+            </div>
+          )))}
         </div>
       </div>
     </section>

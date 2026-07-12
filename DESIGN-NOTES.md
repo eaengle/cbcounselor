@@ -11,14 +11,14 @@ should serve both audiences.
   `#c1453a`), used for CTAs, link hovers, stat numbers, section dividers. Deep red
   reads as auspicious/prosperous to Chinese clients while feeling bold to Western
   eyes. Avoid bright "fire engine" red.
-- [ ] **Gradient or duotone treatments on imagery** — wash hero/section backgrounds
+- [x] **Gradient or duotone treatments on imagery** — wash hero/section backgrounds
   in navy-to-deep-teal gradients; apply duotone filter to photos so stock imagery
   feels like one cohesive brand. (Partial: hero/offices use radial accent washes.)
 
 ### Hero & First Impression
 - [x] **Lead with the numbers** — animated stat bar under the hero:
   $66M+ verdict · 8 offices · 3 countries · 24/7 coverage. Count-up on scroll.
-- [ ] **Subtle motion in the hero** — slow-panning skyline blend (Silicon Valley ↔
+- [x] **Subtle motion in the hero** — slow-panning skyline blend (Silicon Valley ↔
   Shanghai/Shenzhen) or abstract animated line-art of the Pacific with arcs
   connecting offices. Slow and ambient (~20s loops), not flashy.
 
@@ -43,9 +43,9 @@ should serve both audiences.
   before real launch.
 
 ### Interaction & Depth
-- [ ] **Filterable case wall** — let visitors filter case results by practice
+- [x] **Filterable case wall** — let visitors filter case results by practice
   area or industry instead of a static grid.
-- [ ] **Upgrade the world map** — animate office dots with a soft pulse; draw
+- [x] **Upgrade the world map** — animate office dots with a soft pulse; draw
   arcing connection lines between U.S. and China offices on scroll. (Current
   version is a text list — map still to come.)
 - [x] **Scroll-triggered reveals** — restrained fade-ups (~0.5s, once per
@@ -60,7 +60,7 @@ should serve both audiences.
   translation. Chinese business culture weighs reputation/referrals heavily.
 - [x] **Client logos or anonymized descriptors** — "A NASDAQ-listed EV
   manufacturer," "A top-10 Chinese e-commerce platform" in a strip near the hero.
-- [ ] **Insights section visual polish** — real cover images or typographic
+- [x] **Insights section visual polish** — real cover images or typographic
   covers per article instead of plain cards.
 
 ### Priority pick (if only three)
@@ -73,8 +73,10 @@ should serve both audiences.
 
 - **Team section** now uses the 23-person bilingual roster and profile content
   published by the firm, with local headshots and statically generated bio pages.
-- **Insights cards** link to the live articles; the complete bilingual metadata index
-  is local and ready for Session 4 body migration.
+- **Insights cards** link to statically generated local bilingual article pages. The
+  complete metadata index and every abstract published by the firm are local. The live
+  source currently contains CMS placeholders instead of article bodies, so body
+  migration remains blocked on source material from the firm.
 - **Contact email** uses the verified firm address, `info@cbcounselor.com`.
 - **Chinese copy** — corresponding homepage sections now use the Chinese localization
   published by the firm; copy unique to this rebuild should still receive a final

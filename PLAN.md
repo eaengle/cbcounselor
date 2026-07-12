@@ -155,17 +155,22 @@ information matches the live site.
 
 Pure enhancement — safe to reorder or trim. From DESIGN-NOTES:
 
-- [ ] **Filterable case wall:** expand `featuredCases` data with practice-area/industry
+- [x] **Filterable case wall:** expand `featuredCases` data with practice-area/industry
   tags; client-side filter chips. Case entries ported from the live site in Session 3.
-- [ ] **Offices world map:** SVG Pacific-centered map, office dots with soft pulse, arced
+- [x] **Offices world map:** SVG Pacific-centered map, office dots with soft pulse, arced
   connection lines drawn on scroll. Replaces the current text list (keep the list as the
   accessible fallback / mobile view).
-- [ ] **Hero ambient motion:** slow (~20s loop) skyline blend or animated line-art arcs.
+- [x] **Hero ambient motion:** slow (~20s loop) skyline blend or animated line-art arcs.
   Respect reduced-motion from Session 1.
 - [ ] **Insights v2:** typographic cover cards with real publication dates; port full
   article bodies from the live site into `/insights/[slug]` static pages (MDX), replacing
   the interim links to the old site.
-- [ ] **Duotone/gradient imagery treatment** once real photos exist (depends on Session 3
+  *Typographic covers and 28 bilingual, statically generated local article routes are
+  implemented. Source-blocked as of 2026-07-11: the live article pages publish only
+  titles, authors, dates, and abstracts, followed by a CMS “content will be displayed”
+  placeholder. All published copy is local, but there are no full bodies to port without
+  source material from the firm; the site does not invent legal editorial content.*
+- [x] **Duotone/gradient imagery treatment** once real photos exist (depends on Session 3
   assets).
 
 **Done when:** the three "if only three" DESIGN-NOTES picks are all ✅ and the case wall
