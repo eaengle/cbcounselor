@@ -2,7 +2,7 @@
 
 Source checklist: `CBC-website-redesign-action-items.md`
 
-This plan covers the **60 of 69 checklist items that can be completed with the information currently available**. It deliberately excludes the 9 items that still require firm-supplied contact details, proprietary assets, or purchasing access.
+This plan covers the **67 of 70 checklist items that can be completed with the information currently available**. It deliberately excludes the 3 items that still require firm-supplied assets (the official WeChat QR and new headshots). *Originally 60 of 69; Alan's July 11, 2026 follow-up unblocked items 33, 34, 35, 44, 57, and 65 and added item 70 (office addresses).*
 
 Each session is sized for one focused conversation with a capable LLM coding assistant: one coherent area of the site and a concrete verification gate. Sessions should normally be completed in order because later sessions build on the content model, routes, and components created earlier.
 
@@ -22,9 +22,25 @@ Alan Engle provided the following additional direction:
 - Use a conventional profile order: name, title, admissions, education, and contact. Alan supplied his own profile as the format example, including California and U.S. Patent and Trademark Office admissions; UC Berkeley School of Law, J.D.; University of Pittsburgh PhD studies; University of California, San Diego, B.S. and B.A.; and `aengle@cbcounselor.com`. Treat these as Alan-specific facts, not defaults for other attorneys.
 - Alan supplied an attorney-written Kangol description. Preserve its substance but include the qualification in his accompanying note: the Seventh Circuit reversed the default judgment and remanded because Hague Service Convention requirements apply when the defendant's address is known. Do not characterize the remand as an unqualified or complete victory. The approved significance is that the decision affects Schedule A e-commerce litigation in which Chinese defendants may have accounts seized without lawful service.
 - Alan also supplied Eric Goldman's May 2026 blog discussion as background context: `https://blog.ericgoldman.org/archives/2026/05/seventh-circuit-limits-email-service-to-chinese-sad-scheme-defendants-kangol-v-hangzhou-silk.htm`. Treat it as a secondary commentary source, not as the authoritative opinion URL required by source item 55.
-- Alan indicated that the rest of his answers will follow. Profile data for other attorneys, the official WeChat QR asset and instructions, new headshots, and the photography decision remain outstanding.
+- Alan indicated that the rest of his answers would follow. His follow-up reply (recorded below) resolved most of the outstanding profile and asset questions.
 
 Eric emailed the consolidated request for the remaining information to Alan at `alanengle@rushpost.com` on July 11, 2026.
+
+### Alan's follow-up answers (received July 11, 2026)
+
+- **Site purpose:** Almost no one uses the site to contact or hire the firm; it functions mainly as a **credibility** reference (e.g., opposing counsel vetting the firm's and attorneys' backgrounds). Design and copy should favor credibility and clear firm/attorney information over lead capture. The accepted urgent-intake redlines still stand.
+- **Office addresses:** The site should list CBC's office addresses and apparently does not currently. Add them (contact area/footer), publishing only firm-confirmed addresses. Tracked as source item 70 (Section 10 of the action items).
+- **Attorney profile fields — omit, do not collect:**
+  - Years of experience → do not list ("generally not listed on firm sites").
+  - Languages spoken → do not list ("it's complicated").
+  - China-specific practice history → do not list.
+  - Individual WeChat → do not list ("we don't for now"). WeChat stays firm-level only.
+  - Bar admissions and law school → keep. **Already present** in `src/content/attorneys.ts` for all 23 attorneys in both locales; no gathering needed. Consolidated in `CBC-attorney-credentials-reference.md` (verified 2026-07-11).
+- **Attorneys with no CBC email (Conrad Everhard, Leonard Nuara, Chris Klug, Daniel Yuan, Yi Fan, Gong Chen, Roberto Luo, Yenting Feng, Leo Zheng, Ziqi Yu, Yiyang Huang Daciuk):** They generally do not have a CBC email. **Remove the contact entirely** for any attorney with no associated email rather than guessing one.
+- **WeChat account:** Confirmed usable for urgent inquiries; ~95% of inquiries route through Ning Zhang or Charles Cheng. The official **QR code remains unavailable** — Ning does not have it and may not yet have access to generate one. Do not substitute a home-generated QR. Items 40 and 58 stay blocked.
+- **Headshots:** Still ~1 month out; Alan or a future admin will organize consistent headshots. Item 37 stays blocked.
+- **Photography (item 44) — unblocked:** Alan approved buying stock images and supplied a payment method out-of-band. Either purchase directly or start with properly licensed free images and swap later — he is fine with either. **Do not store the payment-card details in any repository file.**
+- **Redlined memo:** Alan re-sent the redlined draft. Its tracked changes are consistent with the accepted action items; the only reconciliation is that this follow-up supersedes the redline's "probably wechat links" note on profiles — individual WeChat is now omitted.
 
 ## Working rules for every session
 
@@ -160,7 +176,7 @@ Eric emailed the consolidated request for the remaining information to Alan at `
 
 **Goal:** Align the team directory with the accepted hierarchy without fabricating missing profile data.
 
-**Source items:** 31, 32, 36, 64
+**Source items:** 31, 32, 33, 34, 35, 36, 57, 64, 65, 70 *(33/34/35/57/65 became actionable once Alan directed the disputed fields be omitted and the missing-email contacts removed; 70 is the new office-address item.)*
 
 ### Steps
 
@@ -172,10 +188,13 @@ Eric emailed the consolidated request for the remaining information to Alan at `
 6. Refine name, title, education, and bar-admission presentation so credentials are visible but secondary to the person's identity and practice.
 7. Use the conventional field order Alan supplied: name, title, admissions, education, and contact. Omit any section with no verified data rather than changing the order or displaying an empty label.
 8. Apply Alan's confirmed school guidance: show law schools at normal profile prominence and do not turn them into oversized homepage badges or promotional tiles.
-9. Confirm the following four school associations against the existing profile records while implementing the standardized layout: Ning Zhang — Georgetown; Charles Cheng — Stanford; Alan Engle — Berkeley; Edwin Wheeler — University of Chicago.
+9. Confirm the following four school associations against the existing profile records while implementing the standardized layout: Ning Zhang — Georgetown; Charles Cheng — Stanford; Alan Engle — Berkeley; Edwin Wheeler — University of Chicago. (All four, and the full school/bar set for the other 19 attorneys, are already present in `attorneys.ts` and consolidated in `CBC-attorney-credentials-reference.md`.)
 10. Confirm Alan's supplied profile facts against the existing record and add or correct them where needed: California and U.S. Patent and Trademark Office admissions; UC Berkeley School of Law, J.D.; University of Pittsburgh PhD studies; University of California, San Diego, B.S. and B.A.; and `aengle@cbcounselor.com`.
-11. Do not add missing years of experience, emails, language history, or WeChat details for other attorneys. Do not derive emails from name patterns.
-12. Verify the same hierarchy on English and Chinese people pages and confirm each existing profile link resolves.
+11. Omit per-attorney years of experience, languages, China practice history, and individual WeChat by decision — Alan directed these not be listed, so their absence is intentional, not a placeholder. Do not derive emails from name patterns.
+12. Show a `cbcounselor.com` email only where the record already has one. For the 11 attorneys with `email: null` (Everhard, Nuara, Klug, Yuan, Yi Fan, Gong Chen, Luo, Feng, Zheng, Yu, Huang Daciuk), remove the contact block entirely rather than rendering an empty or guessed contact.
+13. Add CBC's office addresses to the contact area/footer if the firm-confirmed addresses are available in the repository; otherwise carry item 70 forward as pending firm confirmation. Do not invent addresses.
+14. Verify the same hierarchy on English and Chinese people pages and confirm each existing profile link resolves. Reconcile the two locale photo gaps found on 2026-07-11: the **Chinese** records for Roberto Luo and Yenting Feng have empty `photo.src` (`/people/`) while the English records have real images — point both at the existing English asset.
+15. Bar admissions and law schools require no collection — they are already in `attorneys.ts` for all 23 attorneys (see `CBC-attorney-credentials-reference.md`). This session applies them to the standardized layout; it does not gather them.
 
 ### Definition of done
 
@@ -183,7 +202,9 @@ Eric emailed the consolidated request for the remaining information to Alan at `
 - The full published roster remains accessible.
 - Profiles use a consistent structure and visual hierarchy across both locales.
 - Credentials are readable without oversized school or former-firm promotion.
-- Missing profile fields stay absent rather than appearing as empty labels or placeholders.
+- Profiles show school and bar admissions only; years-of-experience, languages, China history, and individual WeChat are intentionally absent.
+- The 11 emailless attorneys show no contact block; no email is guessed or derived.
+- Office addresses are published if firm-confirmed, or item 70 is carried forward as pending.
 
 ## Session 6 — Chinese parallel experience and verified WeChat touchpoints
 
@@ -232,7 +253,7 @@ Eric emailed the consolidated request for the remaining information to Alan at `
 
 1. Inventory every current icon, dotted-map use, decorative graphic, and image slot.
 2. Establish a small asset manifest containing filename, intended section, source, license/ownership, alt-text intent, and crop guidance.
-3. Select both literal and abstract shipping/commerce imagery from firm-owned or explicitly free/licensed sources. Do not download or publish preview/watermarked stock.
+3. Select both literal and abstract shipping/commerce imagery from firm-owned or explicitly free/licensed sources. Do not download or publish preview/watermarked stock. Purchasing within the $100 experiment budget is now approved (Alan supplied a payment method out-of-band); either buy properly licensed stock or start with free/licensed images and swap later. Never write the payment-card details into any repository or planning file.
 4. Apply relevant imagery to:
    - Homepage hero: port, cargo, Pacific trade, or appropriate skyline imagery.
    - E-commerce page: fulfillment, containers, or product logistics.
@@ -252,7 +273,7 @@ Eric emailed the consolidated request for the remaining information to Alan at `
 - Every new bitmap has a documented right to use and meaningful alt treatment.
 - The world-map graphic and flat icons are removed from the targeted public sections.
 - The color and type systems are consistently applied in both locales.
-- Premium-stock purchasing and standardized attorney photography remain separately blocked; this session does not disguise previews or synthetic edits as supplied photography.
+- Premium-stock purchasing is now approved within the $100 budget (payment method supplied out-of-band, never stored in-repo); standardized attorney headshots remain separately blocked pending Alan's delivery. This session does not disguise previews or synthetic edits as supplied photography.
 
 ## Session 8 — Cleanup, acceptance audit, and handoff
 
@@ -271,10 +292,10 @@ Eric emailed the consolidated request for the remaining information to Alan at `
 7. Run lint and a production static build. Review build output for route, metadata, image, and hydration problems.
 8. Perform a keyboard and screen-reader-oriented smoke test of navigation, urgent CTA, filters, forms, locale switching, and profile links.
 9. Produce a final checklist report with:
-   - All 51 actionable item numbers and completion status.
+   - All 67 actionable item numbers and completion status.
    - Evidence/source location for factual claims.
    - Routes added or changed.
-   - Remaining 18 blocked items and the exact input needed for each.
+   - The 3 remaining blocked items (37 headshots, 40/58 official WeChat QR) and the exact input needed for each.
 
 ### Definition of done
 
@@ -291,11 +312,11 @@ Eric emailed the consolidated request for the remaining information to Alan at `
 | 2. Homepage presentation | 6, 7, 8, 10, 11, 12, 13, 14, 17, 18 | 10 |
 | 3. Credibility, Kangol, urgent intake | 9, 15, 16, 19, 20, 27, 50, 51, 52, 53, 54, 55, 56 | 13 |
 | 4. E-commerce defense page | 21, 22, 23, 24, 25, 26, 28, 29, 30 | 9 |
-| 5. Team hierarchy | 31, 32, 36, 64 | 4 |
+| 5. Team hierarchy | 31, 32, 33, 34, 35, 36, 57, 64, 65, 70 | 10 |
 | 6. Chinese and WeChat experience | 38, 39, 41, 66, 69 | 5 |
-| 7. Visual system | 42, 43, 45, 46, 47, 48, 49, 68 | 8 |
+| 7. Visual system | 42, 43, 44, 45, 46, 47, 48, 49, 68 | 9 |
 | 8. Acceptance and cleanup | 59, 60, 61, 62, 63, 67 | 6 |
-| **Total** | **60 items** | **60** |
+| **Total** | **67 items** | **67** |
 
 ## Blocked items intentionally excluded
 
@@ -303,15 +324,21 @@ These items should be revisited when the stated input is available. Their exclus
 
 | Source item | Missing input or dependency |
 |---:|---|
-| 33 | CBC email addresses for every profile; 11 of the 23 English roster records currently have `email: null`. |
-| 34 | Confirmation of which attorneys have publishable individual WeChat details and the actual details. |
-| 35 | The layout, Alan's profile facts, school-positioning approach, and four school associations are confirmed, but years of experience and China-specific language/practice history remain missing for applicable attorneys. The entire requested marker set cannot yet be completed for every profile. |
-| 37 | Alan said he will obtain new headshots. This remains blocked pending delivery of the consistently photographed files; remind him if they are not included with his revised memo/materials. |
-| 40 | Official WeChat QR-code asset supplied or explicitly approved by the firm. A home-generated code should not be represented as the official asset. |
-| 44 | Access and authority needed to license premium stock imagery within the stated $100 experiment budget. Free/firm-owned images used in Session 7 can later be swapped. |
-| 57 | Alan's profile facts and four law-school associations are now confirmed, but remaining attorney school/practice-year/bar/language/email/WeChat data is still needed, especially the fields identified above. |
-| 58 | The account is identified in the repository, but the official QR asset is still missing. |
-| 65 | Completion depends on missing CBC emails and credential/contact data from items 33–35 and 57. |
+| 37 | Alan will obtain new headshots (~1 month out). Blocked pending delivery of the consistently photographed files. |
+| 40 | Official WeChat QR-code asset. Ning does not have it and may not yet have access to generate one. A home-generated code must not be represented as the official asset. |
+| 58 | The account is identified in the repository, but the official QR asset is still missing (same blocker as item 40). |
+
+**Resolved by Alan's July 11, 2026 follow-up (moved from blocked to actionable — handled in Session 5 or 7):**
+
+| Source item | Resolution |
+|---:|---|
+| 33 | Show the CBC email where a record already has one; for the 11 emailless attorneys, remove the contact block entirely. No email is guessed. |
+| 34 | Individual WeChat is not published ("we don't for now"); WeChat stays firm-level. Nothing to collect. |
+| 35 | The marker set is reduced by decision: publish school and bar admissions only; omit years of experience, languages, and China practice history. School/bar data is confirmed present for all 23 profiles (`CBC-attorney-credentials-reference.md`). |
+| 44 | Premium-stock purchasing approved within the $100 budget; payment method supplied out-of-band (never stored in-repo). |
+| 57 | Only school and bar admissions are needed, and both are already in the repo for all 23 attorneys (verified 2026-07-11); all other per-attorney fields are intentionally omitted. No open profile inputs remain. |
+| 65 | Now completable once 33/34/35/57 are applied in Session 5. |
+| 70 (new) | Add firm-confirmed office addresses (Section 10). Actionable if the firm's addresses are in the repository; otherwise carried forward pending confirmation. |
 
 ## Recommended handoff prompt for each new session
 

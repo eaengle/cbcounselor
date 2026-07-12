@@ -10,6 +10,7 @@ import Team from "@/components/sections/Team";
 import Testimonial from "@/components/sections/Testimonial";
 import Insights from "@/components/sections/Insights";
 import ContactCta from "@/components/sections/ContactCta";
+import KangolFeature from "@/components/sections/KangolFeature";
 
 export default function HomePage({ content }: { content: SiteContent }) {
   return (
@@ -18,6 +19,7 @@ export default function HomePage({ content }: { content: SiteContent }) {
       <main className="flex-1">
         <Hero content={content} />
         <FeaturedBar content={content} />
+        <KangolFeature locale={content.locale} />
         <About content={content} />
         <PracticeAreas content={content} />
         <Offices content={content} />

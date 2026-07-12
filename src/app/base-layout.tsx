@@ -1,5 +1,6 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import { MotionConfig } from "framer-motion";
+import PersistentUrgentIntake from "@/components/PersistentUrgentIntake";
 import "./globals.css";
 
 // The site has one root layout per locale (route groups `(en)` and `(zh)`) so
@@ -39,7 +40,10 @@ export default function BaseLayout({
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">
-        <MotionConfig reducedMotion="user">{children}</MotionConfig>
+        <MotionConfig reducedMotion="user">
+          {children}
+          <PersistentUrgentIntake locale={lang} />
+        </MotionConfig>
       </body>
     </html>
   );

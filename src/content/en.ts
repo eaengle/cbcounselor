@@ -23,7 +23,7 @@ export const en: SiteContent = {
     ],
     urgent: {
       label: "Schedule A Defense",
-      href: "/#ecommerce-defense",
+      href: "/services/ecommerce-amazon-defense#urgent-intake",
       ariaLabel: "Urgent Schedule A and e-commerce defense",
     },
     positioningLabel: "Bilingual U.S.–China counsel",
@@ -36,11 +36,11 @@ export const en: SiteContent = {
     eyebrow: "U.S. ↔ China ↔ Beyond",
     headline: "Serious Counsel for Chinese Companies — In the Courtroom and in the Boardroom.",
     subheadline:
-      "CBC Law represents Chinese companies and cross-border enterprises in U.S. patent, trademark, and copyright litigation, and in the corporate, M&A, and investment matters that come with doing business across borders. Our team draws on training at top law schools and experience at top-tier firms.",
+      "CBC Law represents Chinese companies and cross-border enterprises in U.S. patent, trademark, and copyright litigation, and in the corporate, M&A, and investment matters that come with doing business across borders. Attorneys at the firm have decades of experience handling complex legal matters.",
     actions: [
       {
         label: "Facing a Schedule A Lawsuit? Start Here",
-        href: "/#ecommerce-defense",
+        href: "/services/ecommerce-amazon-defense#urgent-intake",
         emphasis: "primary",
       },
       { label: "Talk to Our Team", href: "/contact", emphasis: "secondary" },
@@ -77,41 +77,36 @@ export const en: SiteContent = {
     body: "CBC Law is a boutique cross-border firm originating from Silicon Valley, guiding Chinese companies and cross-border enterprises through consequential U.S. disputes and business matters.",
     differentiators: [
       {
-        title: "Professional Excellence",
+        title: "Decades of Complex-Matter Experience",
         description:
-          "Senior attorneys from top-tier law firms deliver high-quality, professional services.",
+          "Attorneys at the firm have decades of experience handling complex legal matters.",
       },
       {
-        title: "One-Stop Solutions",
+        title: "Dozens of Schedule A Cases",
         description:
-          "Attorneys from diverse practice areas offer comprehensive legal solutions under one roof.",
+          "The firm’s experience includes dozens of Schedule A cases involving cross-border e-commerce defendants.",
       },
       {
-        title: "24/7 Coverage",
+        title: "Two ITC Section 337 Investigations",
         description:
-          "Round-the-clock support covering the Americas, Asia, and Europe across all time zones.",
+          "CBC attorneys have served as lead counsel in two ITC Section 337 investigations.",
       },
       {
-        title: "Global Understanding",
+        title: "Bilingual U.S.–China Perspective",
         description:
-          "Our international team fully understands the global needs of our clients.",
+          "Bilingual partners bring legal and practice experience spanning the United States and China.",
       },
       {
-        title: "Industry Expertise",
+        title: "Disputes Across Forums",
         description:
-          "Deep industry expertise allows us to provide strategic services and resources beyond legal solutions.",
-      },
-      {
-        title: "Technology-Driven",
-        description:
-          "Leveraging the latest legal technology for efficient, cost-effective service that significantly reduces client costs.",
+          "Experience includes patent, trademark, copyright, and trade-secret matters in state and federal court, arbitration, and the ITC.",
       },
     ],
   },
   practiceAreas: {
     title: "Two Practices, One Standard: Serious Counsel for Chinese Enterprises.",
     subtitle:
-      "CBC Law brings Chinese-fluent, U.S.–China experience to two co-equal practices: high-stakes disputes and the transactions that move enterprises forward.",
+      "Our attorneys have substantial experience across a range of corporate work, litigation, or both. CBC Law brings Chinese-fluent, U.S.–China experience to both practices.",
     primaryLabel: "Primary practices",
     primaryItems: [
       {

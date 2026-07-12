@@ -28,7 +28,7 @@ export const zh: SiteContent = {
     ],
     urgent: {
       label: "Schedule A 紧急应诉",
-      href: "/zh/#ecommerce-defense",
+      href: "/zh/services/ecommerce-amazon-defense#urgent-intake",
       ariaLabel: "Schedule A 与跨境电商紧急应诉",
     },
     positioningLabel: "精通中英文的中美跨境法律顾问",
@@ -41,11 +41,11 @@ export const zh: SiteContent = {
     eyebrow: "美国 ↔ 中国 ↔ 全球",
     headline: "为中国企业提供严肃法律顾问——从法庭到董事会。",
     subheadline:
-      "CBC Law 为中国企业及跨境企业代理美国专利、商标和版权诉讼，并就跨境经营涉及的公司事务、并购与投资提供法律服务。我们的团队拥有顶尖法学院教育背景及顶级律师事务所执业经验。",
+      "CBC Law 为中国企业及跨境企业代理美国专利、商标和版权诉讼，并就跨境经营涉及的公司事务、并购与投资提供法律服务。本所律师拥有数十年处理复杂法律事务的经验。",
     actions: [
       {
         label: "正面临 Schedule A 诉讼？从这里开始",
-        href: "/zh/#ecommerce-defense",
+        href: "/zh/services/ecommerce-amazon-defense#urgent-intake",
         emphasis: "primary",
       },
       { label: "与我们的团队沟通", href: "/zh/contact", emphasis: "secondary" },
@@ -80,34 +80,30 @@ export const zh: SiteContent = {
     body: "CBC Law 是一家起源于美国硅谷的精品跨境律师事务所，致力于协助中国企业及跨境企业处理重要的美国争议与商业事务。",
     differentiators: [
       {
-        title: "卓越专业",
-        description: "来自顶级律所的资深律师提供高质量、专业化的法律服务。",
+        title: "数十年复杂事务经验",
+        description: "本所律师拥有数十年处理复杂法律事务的经验。",
       },
       {
-        title: "一站式解决方案",
-        description: "来自不同业务领域的律师在同一团队中提供综合法律解决方案。",
+        title: "数十起 Schedule A 案件",
+        description: "本所处理过数十起涉及跨境电商被告的 Schedule A 案件。",
       },
       {
-        title: "全天候服务",
-        description: "全天候支持，覆盖美洲、亚洲和欧洲所有时区。",
+        title: "两起 ITC 第 337 条调查",
+        description: "CBC 律师曾在两起 ITC 第 337 条调查中担任主办律师。",
       },
       {
-        title: "全球视野",
-        description: "我们的国际化团队充分理解全球客户的国际化需求。",
+        title: "中英双语中美视角",
+        description: "双语合伙人拥有横跨美国与中国的法律及执业经验。",
       },
       {
-        title: "行业专长",
-        description: "深厚的行业专长使我们能够提供超越法律的战略服务与资源支持。",
-      },
-      {
-        title: "科技驱动",
-        description: "充分利用最新法律科技，为客户提供高效经济的专业服务，有效降低客户成本。",
+        title: "多法域争议经验",
+        description: "经验涵盖州及联邦法院、仲裁和 ITC 中的专利、商标、版权及商业秘密事务。",
       },
     ],
   },
   practiceAreas: {
     title: "两大核心业务，同一专业标准：为中国企业提供严肃法律顾问。",
-    subtitle: "CBC Law 凭借中英文双语能力和中美两地经验，平衡发展两大核心业务：重大争议解决与推动企业发展的跨境交易。",
+    subtitle: "我们的律师在公司事务、诉讼或两者兼具的广泛领域拥有丰富经验。CBC Law 将中英双语能力及中美经验同等运用于两大核心业务。",
     primaryLabel: "核心业务",
     primaryItems: [
       {
