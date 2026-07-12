@@ -23,6 +23,9 @@ export const credibilityClaims = {
   },
   itcInvestigations: {
     wording: "Lead-counsel experience in two ITC Section 337 investigations.",
-    source: "Firm-published profiles for Charles Cheng and Edwin Wheeler",
+    // Matter appears in the profiles of Wesley Johnson and Edwin Wheeler (one LED
+    // manufacturer, two related investigations). Pending firm confirmation — see
+    // CBC-prepublication-fact-verification.md, discrepancies D2/D3.
+    source: "Firm-published profiles for Wesley Johnson and Edwin Wheeler",
   },
 } as const;

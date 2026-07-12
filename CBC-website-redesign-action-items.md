@@ -114,12 +114,15 @@ This checklist consolidates the accepted redlines into implementation tasks. Whe
 
 ## 7. Content and fact verification before publication
 
-- [x] Replace the numeric average-experience claim with Alan's approved qualitative statement: **“Attorneys at the firm have decades of experience handling complex legal matters.”**
-- [x] Use Alan's approved Schedule A volume description: **“dozens of Schedule A cases.”** Do not convert it to a precise number.
-- [ ] Verify the two ITC Section 337 lead-counsel matters. *(Alan is the source of truth.)*
-- [ ] Verify all office locations and the “8 cities, 3 countries” claim: Silicon Valley, Los Angeles, Seattle, Chicago, Beijing, Shanghai, Shenzhen, and Cancún. *(All eight assumed confirmed for now; Alan to confirm before final publication.)*
-- [ ] Verify all verdict amounts and other representative-result claims. *(Alan is the source of truth.)*
-- [ ] Obtain the correct URL for the *Kangol* opinion.
+> **Verification instrument:** `CBC-prepublication-fact-verification.md` enumerates every factual claim, its exact on-site wording, its code location, and its sign-off status. The codebase audit (2026-07-11) confirmed the mechanical items below and surfaced three discrepancies (D1–D3) that need Alan's resolution before publication.
+
+- [x] Replace the numeric average-experience claim with Alan's approved qualitative statement: **“Attorneys at the firm have decades of experience handling complex legal matters.”** *(Verified: no numeric average anywhere in `src/`; approved wording in `src/content/en.ts:82`.)*
+- [x] Use Alan's approved Schedule A volume description: **“dozens of Schedule A cases.”** Do not convert it to a precise number. *(Verified: `src/content/en.ts:85-87`; no precise count published.)*
+- [ ] Verify the two ITC Section 337 lead-counsel matters. *(Alan is the source of truth. See report B1/D2/D3: the two-investigation matter appears under Wesley Johnson and Edwin Wheeler — not Charles Cheng, whose profile has no ITC work — and rests on a single co-counseled LED engagement of two related investigations. `verified-claims.ts` source note corrected to match the data, pending firm confirmation.)*
+- [ ] Verify all office locations and the “8 cities, 3 countries” claim: Silicon Valley, Los Angeles, Seattle, Chicago, Beijing, Shanghai, Shenzhen, and Cancún. *(All eight assumed confirmed for now; Alan to confirm before final publication. See report B2.)*
+- [ ] Verify all verdict amounts and other representative-result claims. *(Alan is the source of truth. See report B3/D1: the $66M and $7.6M amounts sit in Edwin Wheeler's matters; also resolve the $66M attribution question below.)*
+- [ ] **New — $66M verdict attribution (Discrepancy D1):** the redline says confine the $66M verdict to "Ben Stolter's" bio, but it currently lives in **Edwin Wheeler's** matters (`attorneys.ts:171`), and the likely-intended attorney, associate **Benjamin "Ben" Solter**, has an empty matters list. The LED-chip detail matches Wheeler's career, so the redline likely misattributed it. *(Alan to confirm the correct attorney before publication; do not move it unconfirmed.)*
+- [x] Obtain the correct URL for the *Kangol* opinion. *(Official Seventh Circuit opinion URL in `src/content/verified-claims.ts:4-5`, wired into the e-commerce page and homepage feature. The citation itself remains the provisional Westlaw cite, which §3/§7 permit publishing now.)*
 - [x] Obtain the attorney-written short description of the *Kangol* result and its reversal/remand and known-address qualification.
 - [x] Law school and bar admissions confirmed present for all 23 attorneys in `src/content/attorneys.ts` (both locales), consolidated in `CBC-attorney-credentials-reference.md`; no gathering required. Do **not** gather or publish years of practice, languages, China practice history, or individual WeChat details (Alan directed these be omitted). Use a CBC email only where one exists; remove the contact block for the 11 attorneys without one.
 - [x] Resolve individual-WeChat and per-attorney-experience data requirements: Alan directed that these fields be omitted rather than collected, so they are no longer outstanding inputs.
