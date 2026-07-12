@@ -167,6 +167,32 @@ export interface SiteContent {
     button: string;
     mandarinNote: string;
   };
+  contactPage: {
+    eyebrow: string;
+    title: string;
+    intro: string;
+    infoTitle: string;
+    infoBody: string;
+    emailLabel: string;
+    officesLabel: string;
+    form: {
+      firstName: string;
+      lastName: string;
+      email: string;
+      message: string;
+      button: string;
+      note: string;
+      subject: string;
+    };
+  };
+  wechat: {
+    title: string;
+    accountName: string;
+    idLabel: string;
+    id: string;
+    linkLabel: string;
+    href: string;
+  };
   footer: {
     tagline: string;
     copyright: string;

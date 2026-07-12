@@ -7,8 +7,15 @@ import { AnimatePresence, motion } from "framer-motion";
 import { SiteContent } from "@/content/types";
 import { withBasePath } from "@/lib/base-path";
 
-export default function Header({ content }: { content: SiteContent }) {
+export default function Header({
+  content,
+  languageToggleHref,
+}: {
+  content: SiteContent;
+  languageToggleHref?: string;
+}) {
   const [menuOpen, setMenuOpen] = useState(false);
+  const contactHref = content.locale === "en" ? "/contact" : "/zh/contact";
 
   return (
     <header className="sticky top-0 z-50 border-b border-white/10 bg-navy/95 backdrop-blur">
@@ -32,17 +39,17 @@ export default function Header({ content }: { content: SiteContent }) {
         </nav>
         <div className="flex items-center gap-4 text-sm">
           <Link
-            href={content.nav.languageToggleHref}
+            href={languageToggleHref ?? content.nav.languageToggleHref}
             className="rounded-full border border-white/20 px-3 py-1 text-white/80 transition-colors hover:border-white/50 hover:text-white"
           >
             {content.nav.languageToggleLabel}
           </Link>
-          <a
-            href={withBasePath(content.locale === "en" ? "/#contact" : "/zh/#contact")}
+          <Link
+            href={contactHref}
             className="hidden rounded-full bg-accent px-4 py-2 font-medium text-white transition-colors hover:bg-accent-light sm:block"
           >
             {content.nav.contactLabel}
-          </a>
+          </Link>
           <button
             type="button"
             className="flex h-9 w-9 items-center justify-center rounded-md text-white/80 transition-colors hover:text-white lg:hidden"
@@ -82,13 +89,13 @@ export default function Header({ content }: { content: SiteContent }) {
                   {link.label}
                 </a>
               ))}
-              <a
-                href={withBasePath(content.locale === "en" ? "/#contact" : "/zh/#contact")}
+              <Link
+                href={contactHref}
                 className="mt-4 rounded-full bg-accent px-4 py-2 text-center text-sm font-medium text-white transition-colors hover:bg-accent-light"
                 onClick={() => setMenuOpen(false)}
               >
                 {content.nav.contactLabel}
-              </a>
+              </Link>
             </div>
           </motion.nav>
         )}

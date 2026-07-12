@@ -65,9 +65,11 @@ From DESIGN-NOTES priority pick #3. Mostly code; one external dependency flagged
   hero/cases headline in a light weight, low opacity). One or two sections, not every one.
 - [x] **WeChat block in footer + contact section:** QR code placeholder image, WeChat ID
   text, and a "Consultations available in Mandarin" line (both locales).
-  *Superseded 2026-07-11: the firm has no valid WeChat details (see the blocked item
-  below), so the placeholder card was removed. The Mandarin-consultations line remains
-  in the contact section; re-add a QR card when real details arrive.*
+  *Restored 2026-07-11 after the firm supplied a published WeChat article. Its page
+  metadata identifies the official account as `Cross Border Counselor法务资讯`, WeChat
+  ID `gh_5176c972a240`, and business ID `MzU5MDk2ODc2NA==`. The contact section and
+  footer now link to the profile URL derived from that verified business ID; no
+  placeholder QR code is used.*
 - [x] **Per-locale metadata polish:** OpenGraph tags, zh-specific description, keywords
   Baidu cares about.
 - [x] **Replace the machine-assisted `src/content/zh.ts` with the live site's Chinese
@@ -81,7 +83,8 @@ From DESIGN-NOTES priority pick #3. Mostly code; one external dependency flagged
   JavaScript bundles contain no QR image, WeChat ID, or LinkedIn URL — the firm has no
   valid ones to link. Per user decision, the placeholder QR card was removed entirely;
   contact goes through the verified firm email. Revisit only if the firm supplies
-  official social details.*
+  official social details. Superseded for WeChat on 2026-07-11 when the firm supplied
+  a published article from its official account; the verified account is now linked.*
 
 **Done when:** `/zh` looks designed-for-Chinese rather than translated, its copy matches
 the live site's published Chinese, and no fake/placeholder social links ship.
@@ -139,6 +142,11 @@ Build work once content is in:
 - [x] **Contact path:** on a static host there's no backend — wire the CTA to a form
   service (Formspree/Web3Forms) or keep mailto with `info@cbcounselor.com`. Note: pick a
   form service reachable from mainland China.
+  *The port now has dedicated bilingual `/contact` and `/zh/contact` pages matching the
+  source site's fields and contact details, plus the port's expanded office network.
+  The form prepares an
+  addressed email locally, so it works on the static host without storing client data
+  or depending on a third-party endpoint.*
 
 *Roster re-check, 2026-07-11: the live site now publishes 23 people rather than the 21
 listed when this plan was drafted. The two additions are reflected in the counts above.
