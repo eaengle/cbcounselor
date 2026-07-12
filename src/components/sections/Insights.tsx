@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { SiteContent } from "@/content/types";
 import Reveal from "@/components/Reveal";
 
@@ -26,15 +27,25 @@ export default function Insights({ content }: { content: SiteContent }) {
             <Reveal key={article.href} delay={i * 0.06}>
               <Link href={article.href} className="group grid h-full overflow-hidden rounded-2xl border border-neutral-200 bg-white transition-all hover:-translate-y-1 hover:shadow-xl focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-accent md:grid-cols-[42%_1fr]">
                 <div className={`relative min-h-52 overflow-hidden bg-gradient-to-br ${coverStyles[i % coverStyles.length]} p-6 text-white`}>
-                  <div aria-hidden className="absolute -right-8 -top-12 text-[11rem] font-bold leading-none text-white/[0.055]">{String(i + 1).padStart(2, "0")}</div>
-                  <div aria-hidden className="absolute inset-0 opacity-20" style={{ backgroundImage: "repeating-linear-gradient(118deg, transparent 0 23px, rgba(255,255,255,.22) 24px, transparent 25px 48px)" }} />
-                  <div className="relative flex h-full flex-col justify-between">
-                    <p className="text-xs font-semibold uppercase tracking-[0.18em] text-white/65">CBC Law</p>
-                    <p className="max-w-[12rem] text-xl font-semibold leading-tight">{article.title}</p>
-                  </div>
+                  {article.image ? (
+                    <>
+                      <Image src={article.image.src} alt={article.image.alt} fill sizes="(max-width: 767px) 100vw, 21vw" className="object-cover" />
+                      <span className="absolute bottom-2 left-2 rounded bg-black/65 px-2 py-1 text-[10px] text-white/90">{article.image.credit}</span>
+                    </>
+                  ) : (
+                    <>
+                      <div aria-hidden className="absolute -right-8 -top-12 text-[11rem] font-bold leading-none text-white/[0.055]">{String(i + 1).padStart(2, "0")}</div>
+                      <div aria-hidden className="absolute inset-0 opacity-20" style={{ backgroundImage: "repeating-linear-gradient(118deg, transparent 0 23px, rgba(255,255,255,.22) 24px, transparent 25px 48px)" }} />
+                      <div className="relative flex h-full flex-col justify-between">
+                        <p className="text-xs font-semibold uppercase tracking-[0.18em] text-white/65">CBC Law</p>
+                        <p className="max-w-[12rem] text-xl font-semibold leading-tight">{article.title}</p>
+                      </div>
+                    </>
+                  )}
                 </div>
                 <div className="flex flex-col p-6">
                   <time dateTime={article.date} className="text-xs font-medium uppercase tracking-wide text-neutral-400">{formatter.format(new Date(`${article.date}T00:00:00Z`))}</time>
+                  {article.image && <h3 className="mt-3 text-xl font-semibold leading-tight text-navy">{article.title}</h3>}
                   <p className="mt-3 text-sm leading-relaxed text-neutral-600">{article.summary}</p>
                   <p className="mt-auto pt-5 text-sm font-medium text-accent transition-transform group-hover:translate-x-1">{content.insights.readMore} →</p>
                 </div>

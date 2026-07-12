@@ -260,6 +260,19 @@ export const en: SiteContent = {
     subtitle: "Where cross-border law is heading next.",
     articles: [
       {
+        title: "Seventh Circuit Rules Hague Service Convention Bars Email Service on Chinese Defendants",
+        date: "2026-06-02",
+        summary: "Law.com examines the far-reaching impact of the Kangol decision and features insight from CBC Law partner and appellate counsel Wesley Johnson.",
+        href: "/insights/hague-service-convention-email-service-china",
+        image: {
+          src: "https://images.law.com/brightspot/21/eb/50dbd11a4f3083019ff65d9b2037/zawiypl-jpeg767x505-1.jpg",
+          alt: "CBC Law partner Wesley Johnson at Hangzhou China Silk Town",
+          width: 767,
+          height: 505,
+          credit: "Photo via Law.com",
+        },
+      },
+      {
         title: "The Dilemma of U.S. Schedule A Cases and How to Break It",
         date: "2025-01-20",
         summary: "A practical playbook for cross-border merchants navigating Schedule A TRO proceedings in U.S. district courts.",

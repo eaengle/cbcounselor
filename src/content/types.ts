@@ -71,6 +71,25 @@ export interface InsightArticle {
   href: string;
   slug?: string;
   author?: string;
+  category?: string;
+  body?: string[];
+  image?: {
+    src: string;
+    alt: string;
+    width: number;
+    height: number;
+    credit: string;
+  };
+  source?: {
+    label: string;
+    url: string;
+    cta: string;
+  };
+  relatedAttorney?: {
+    name: string;
+    href: string;
+    label: string;
+  };
 }
 
 export interface TestimonialItem {

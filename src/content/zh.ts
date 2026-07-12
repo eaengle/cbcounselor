@@ -239,6 +239,19 @@ export const zh: SiteContent = {
     subtitle: "深度解读跨境法律趋势以及国际贸易和知识产权领域的最新发展。",
     articles: [
       {
+        title: "第七巡回法院裁定《海牙送达公约》禁止向中国被告电子邮件送达",
+        date: "2026-06-02",
+        summary: "Law.com 深度报道 Kangol 案的广泛影响，并援引 CBC Law 合伙人及上诉代理律师 Wesley Johnson 的专业观点。",
+        href: "/zh/insights/hague-service-convention-email-service-china",
+        image: {
+          src: "https://images.law.com/brightspot/21/eb/50dbd11a4f3083019ff65d9b2037/zawiypl-jpeg767x505-1.jpg",
+          alt: "CBC Law 合伙人 Wesley Johnson 在杭州中国丝绸城",
+          width: 767,
+          height: 505,
+          credit: "图片来源：Law.com",
+        },
+      },
+      {
         title: "美国 Schedule A 案件的困局及破解之道",
         date: "2025-01-20",
         summary: "为跨境商家应对美国联邦地区法院 Schedule A 临时限制令程序提供实务策略。",
