@@ -13,6 +13,7 @@ export interface StatItem {
 export interface CaseItem {
   category: string;
   result: string;
+  client?: string;
 }
 
 export interface Differentiator {
@@ -36,9 +37,42 @@ export interface PracticeArea {
   subareas?: string[];
 }
 
-export interface TeamRole {
+export type AttorneyRole =
+  | "partner"
+  | "of-counsel"
+  | "associate"
+  | "foreign-law-counsel"
+  | "alliance-partner";
+
+export interface Attorney {
+  name: string;
+  slug: string;
   title: string;
-  languages: string[];
+  role: AttorneyRole;
+  barAdmissions: string;
+  education: string[];
+  practiceFocus: string[];
+  bio: string[];
+  representativeMatters: string[];
+  email: string | null;
+  photo: {
+    src: string;
+    width: number | null;
+    height: number | null;
+  };
+}
+
+export interface InsightArticle {
+  title: string;
+  date: string;
+  summary: string;
+  href: string;
+}
+
+export interface TestimonialItem {
+  quote: string;
+  attribution: string;
+  translation?: string;
 }
 
 export interface SiteContent {
@@ -61,6 +95,7 @@ export interface SiteContent {
     subheadline: string;
     cta: string;
     watermark: string;
+    clientDescriptors: string[];
   };
   stats: StatItem[];
   featuredCases: {
@@ -92,17 +127,27 @@ export interface SiteContent {
   team: {
     title: string;
     subtitle: string;
-    roles: TeamRole[];
-    comingSoon: string;
+    featuredSlugs: string[];
+    viewAll: string;
+    sectionLabels: Record<AttorneyRole, string>;
+    profileLabels: {
+      barAdmissions: string;
+      education: string;
+      practiceFocus: string;
+      representativeMatters: string;
+      contact: string;
+      backToPeople: string;
+    };
   };
-  testimonial: {
-    quote: string;
-    attribution: string;
+  testimonials: {
+    items: TestimonialItem[];
+    previous: string;
+    next: string;
   };
   insights: {
     title: string;
     subtitle: string;
-    articles: string[];
+    articles: InsightArticle[];
     readMore: string;
   };
   contactCta: {

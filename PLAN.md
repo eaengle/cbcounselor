@@ -6,7 +6,7 @@ Check items off as sessions complete.
 
 **Content source:** this project is an upgrade of the live https://cbcounselor.com/, whose
 content is accurate and trustworthy. Most "missing content" can be ported from there
-rather than gathered fresh: 21 attorney profiles at `/people/[first]-[last]/` (photos,
+rather than gathered fresh: 23 attorney profiles at `/people/[first]-[last]/` (photos,
 bar admissions, education, representative matters, individual emails), dated insight
 articles, additional case results, the real contact email (`info@cbcounselor.com` —
 **our current placeholder `contact@cbcounselor.com` is wrong**), LinkedIn/WeChat links,
@@ -93,20 +93,20 @@ the live site's published Chinese, and no fake/placeholder social links ship.
 Most content now comes from https://cbcounselor.com/ instead of fresh gathering.
 Start the session by pulling content into the typed content files:
 
-- [ ] **Port the attorney roster** from `/people` and the individual
-  `/people/[first]-[last]/` bio pages: 21 attorneys across Partners (5), Of Counsel (8),
+- [x] **Port the attorney roster** from `/people` and the individual
+  `/people/[first]-[last]/` bio pages: 23 attorneys across Partners (5), Of Counsel (9),
   Associates (3), Foreign Law Counsel (4), Alliance Partners (2) — names, titles, bar
   admissions, education, practice focus, representative matters, individual emails.
   Download headshots into `public/` (firm-owned imagery). Extend `types.ts` with a real
   `Attorney` type replacing the placeholder `TeamRole`.
-- [ ] **Port the fuller case list** — the live site also has an ICC arbitration award for
+- [x] **Port the fuller case list** — the live site also has an ICC arbitration award for
   a U.S. infrastructure manufacturer, Shanghai Automotive Air-Conditioning
   Factory / Delphi cross-border M&A, and a medical-device patent settlement. Gives the
   Session 4 filterable case wall enough entries to be worth filtering.
-- [ ] **Port insight article metadata** (titles + publication dates, e.g. Schedule A
+- [x] **Port insight article metadata** (titles + publication dates, e.g. Schedule A
   article Jan 20 2025). Link cards to the live articles for now; porting full article
   bodies into `/insights/[slug]` pages can wait for Session 4.
-- [ ] **Grab the logo/brand assets and favicon source** from the live site.
+- [x] **Grab the logo/brand assets and favicon source** from the live site.
 
 **Attorney prominence (decided by Alan Engle, 2026-07-11):**
 
@@ -125,18 +125,26 @@ Remaining 🔶 items only the user can supply:
 
 Build work once content is in:
 
-- [ ] **Homepage team scope (per the prominence decision above):** the top three get
+- [x] **Homepage team scope (per the prominence decision above):** the top three get
   homepage cards; the full roster lives on a `/people` page with `/people/[slug]` bio
   pages (static export handles these fine). This is the moment the site graduates from
   one-pager to multi-page — align nav anchors accordingly.
-- [ ] **Team section v2:** real attorney cards with photos, language badges, hover/flip
+- [x] **Team section v2:** real attorney cards with photos, language badges, hover/flip
   reveal of bar admissions + notable result.
 - [ ] **Testimonials v2:** rotating carousel, Chinese quotes shown with translation.
-- [ ] **Client descriptor strip** near the hero.
-- [ ] **Real favicon + logo,** OG share image.
-- [ ] **Contact path:** on a static host there's no backend — wire the CTA to a form
+  *Carousel and bilingual rendering are implemented; this remains open until the firm
+  supplies the requested additional testimonials. The single verified Fan He quote is live.*
+- [x] **Client descriptor strip** near the hero.
+- [x] **Real favicon + logo,** OG share image.
+- [x] **Contact path:** on a static host there's no backend — wire the CTA to a form
   service (Formspree/Web3Forms) or keep mailto with `info@cbcounselor.com`. Note: pick a
   form service reachable from mainland China.
+
+*Roster re-check, 2026-07-11: the live site now publishes 23 people rather than the 21
+listed when this plan was drafted. The two additions are reflected in the counts above.
+The live profiles do not publish spoken-language data, so the rebuilt cards show verified
+practice focus plus bar admissions/notable matters on hover instead of inventing language
+badges.*
 
 **Done when:** no placeholder text remains, real attorneys are live, and the team/bio
 information matches the live site.

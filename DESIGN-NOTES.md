@@ -50,14 +50,15 @@ should serve both audiences.
   version is a text list — map still to come.)
 - [x] **Scroll-triggered reveals** — restrained fade-ups (~0.5s, once per
   element) on section content.
-- [x] **Attorney cards with meaningful hover states** — language badges
-  (EN / 中文 / 粤语) on team cards. TODO: flip/slide on hover to show bar
-  admissions and a one-line notable result once real bios exist.
+- [x] **Attorney cards with meaningful hover states** — real photos and practice
+  focus on team cards; hover/focus reveals bar admissions and a notable result.
+  The published profiles do not identify spoken languages, so no unverified language
+  claims are shown.
 
 ### Trust & Content
 - [ ] **More than one testimonial** — rotating set, ideally some in Chinese with
   translation. Chinese business culture weighs reputation/referrals heavily.
-- [ ] **Client logos or anonymized descriptors** — "A NASDAQ-listed EV
+- [x] **Client logos or anonymized descriptors** — "A NASDAQ-listed EV
   manufacturer," "A top-10 Chinese e-commerce platform" in a strip near the hero.
 - [ ] **Insights section visual polish** — real cover images or typographic
   covers per article instead of plain cards.
@@ -70,15 +71,16 @@ should serve both audiences.
 
 ## Known Gaps / Placeholders (current build)
 
-- **Team section** shows generic role titles — real attorney names, photos, and
-  bios still needed.
-- **Insights cards** aren't linked to actual articles yet.
+- **Team section** now uses the 23-person bilingual roster and profile content
+  published by the firm, with local headshots and statically generated bio pages.
+- **Insights cards** link to the live articles; the complete bilingual metadata index
+  is local and ready for Session 4 body migration.
 - **Contact email** uses the verified firm address, `info@cbcounselor.com`.
 - **Chinese copy** — corresponding homepage sections now use the Chinese localization
   published by the firm; copy unique to this rebuild should still receive a final
   native-speaker review before launch.
-- **Assets** — logo files, attorney headshots, and any case-study imagery still
-  to be collected.
+- **Assets** — official logo files and all attorney headshots are local; dedicated
+  case-study imagery can be added during the Session 4 visual treatment.
 
 ## Hosting Notes
 

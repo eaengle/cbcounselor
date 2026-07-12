@@ -17,12 +17,12 @@ export const en: SiteContent = {
   },
   nav: {
     links: [
-      { label: "Services", href: "#practice-areas" },
-      { label: "Industries", href: "#industries" },
-      { label: "People", href: "#team" },
-      { label: "Cases", href: "#cases" },
-      { label: "About", href: "#about" },
-      { label: "News & Insights", href: "#insights" },
+      { label: "Services", href: "/#practice-areas" },
+      { label: "Industries", href: "/#industries" },
+      { label: "People", href: "/people" },
+      { label: "Cases", href: "/#cases" },
+      { label: "About", href: "/#about" },
+      { label: "News & Insights", href: "/#insights" },
     ],
     contactLabel: "Contact",
     menuLabel: "Menu",
@@ -36,6 +36,12 @@ export const en: SiteContent = {
       "CBC Law assists global businesses with their most challenging cross-border legal matters spanning the U.S., China, and beyond.",
     cta: "Learn More",
     watermark: "跨境",
+    clientDescriptors: [
+      "U.S. infrastructure manufacturer",
+      "Shenzhen-listed healthcare company",
+      "Leading U.S. LED manufacturer",
+      "Cross-border e-commerce sellers",
+    ],
   },
   stats: [
     { value: "$66M+", label: "Jury verdict secured for a client" },
@@ -52,21 +58,43 @@ export const en: SiteContent = {
         category: "IP Litigation",
         result:
           "Two ITC Section 337 investigations defended for a major Chinese LED manufacturer.",
+        client: "Chinese LED Manufacturer",
       },
       {
         category: "Trade Secrets",
         result:
           "$66M jury verdict for a U.S. LED manufacturer over high-power chip trade secrets.",
+        client: "U.S. LED Manufacturer",
       },
       {
         category: "Cross-Border M&A",
         result:
           "Represented Hepalink in a U.S. competitor acquisition and healthcare fund investment.",
+        client: "Shenzhen-listed Healthcare Company",
       },
       {
         category: "E-Commerce",
         result:
           "Schedule A defense playbook for cross-border sellers facing U.S. TROs.",
+        client: "Cross-Border Sellers",
+      },
+      {
+        category: "International Arbitration",
+        result:
+          "Secured a multimillion-dollar ICC arbitration award for a U.S. infrastructure manufacturer.",
+        client: "U.S. Infrastructure Manufacturer",
+      },
+      {
+        category: "Cross-Border M&A",
+        result:
+          "Represented Shanghai Automotive Air-Conditioning Factory in acquiring equity in a Delphi Automotive joint venture.",
+        client: "SAACF",
+      },
+      {
+        category: "Patent Defense",
+        result:
+          "Resolved a six-patent medical-imaging dispute through a favorable settlement before expert discovery and a Markman hearing.",
+        client: "Medical Device Company",
       },
     ],
   },
@@ -178,30 +206,66 @@ export const en: SiteContent = {
   team: {
     title: "Our People",
     subtitle: "Attorneys who move fluently between legal systems and languages.",
-    roles: [
-      { title: "Dispute Resolution Partner", languages: ["EN", "中文"] },
-      { title: "M&A Partner", languages: ["EN", "中文"] },
-      { title: "Intellectual Property Partner", languages: ["EN", "中文"] },
-      { title: "Compliance Partner", languages: ["EN", "中文"] },
-      { title: "Cross-Border Transactions Counsel", languages: ["EN", "中文"] },
-      { title: "Litigation Counsel", languages: ["EN", "中文", "粤语"] },
-    ],
-    comingSoon: "Full attorney profiles coming soon.",
+    featuredSlugs: ["ning-zhang", "charles-cheng", "alan-engle"],
+    viewAll: "Meet the full team",
+    sectionLabels: {
+      partner: "Partners",
+      "of-counsel": "Of Counsel",
+      associate: "Associates",
+      "foreign-law-counsel": "Foreign Law Counsel",
+      "alliance-partner": "Alliance Partners",
+    },
+    profileLabels: {
+      barAdmissions: "Bar Admissions",
+      education: "Education",
+      practiceFocus: "Areas of Expertise",
+      representativeMatters: "Representative Matters",
+      contact: "Contact",
+      backToPeople: "Back to all people",
+    },
   },
-  testimonial: {
-    quote:
-      "The legal team at CBC Law is highly professional and efficient. They achieved excellent results in handling our legal matters.",
-    attribution:
-      "Fan He, U.S. Producer of Detective Chinatown and Mojin: The Lost Legend",
+  testimonials: {
+    items: [
+      {
+        quote:
+          "The legal team at CBC Law is highly professional and efficient. They achieved excellent results in handling our legal matters.",
+        attribution:
+          "Fan He, U.S. Producer of Detective Chinatown and Mojin: The Lost Legend",
+        translation:
+          "CBC Law 的法律团队非常专业且高效。他们在处理我们的法律事务中取得了出色的成果。",
+      },
+    ],
+    previous: "Previous testimonial",
+    next: "Next testimonial",
   },
   insights: {
     title: "News & Insights",
     subtitle: "Where cross-border law is heading next.",
     articles: [
-      "The Dilemma of U.S. Schedule A Cases and How to Break It",
-      "The Intellectual Property Dilemma of Chinese Cross-Border E-Commerce Sellers",
-      "What Impact Does the U.S. Government's Antitrust Lawsuit Against Amazon Have on Chinese Cross-Border E-Commerce?",
-      "TikTok Ban in the U.S.: What Are the Chances of Legal Success?",
+      {
+        title: "The Dilemma of U.S. Schedule A Cases and How to Break It",
+        date: "2025-01-20",
+        summary: "A practical playbook for cross-border merchants navigating Schedule A TRO proceedings in U.S. district courts.",
+        href: "https://cbcounselor.com/insights/schedule-a-cases-resolution/",
+      },
+      {
+        title: "The Intellectual Property Dilemma of Chinese Cross-Border E-Commerce Sellers",
+        date: "2024-09-15",
+        summary: "An analysis of the IP risks Chinese sellers face on global e-commerce platforms, with practical defensive strategies.",
+        href: "https://cbcounselor.com/insights/ip-dilemma-cross-border-sellers/",
+      },
+      {
+        title: "What Impact Does the U.S. Government's Antitrust Lawsuit Against Amazon Have on Chinese Cross-Border E-Commerce?",
+        date: "2024-07-08",
+        summary: "How the FTC's antitrust action may reshape platform rules and seller obligations for Chinese cross-border merchants.",
+        href: "https://cbcounselor.com/insights/amazon-antitrust-impact/",
+      },
+      {
+        title: "TikTok Ban in the U.S.: What Are the Chances of Legal Success?",
+        date: "2024-05-15",
+        summary: "First Amendment, foreign-affairs deference, and bill-of-attainder analysis of the TikTok divestiture statute.",
+        href: "https://cbcounselor.com/insights/tiktok-ban-legal-challenge/",
+      },
     ],
     readMore: "Read more",
   },

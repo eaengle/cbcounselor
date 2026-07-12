@@ -60,6 +60,17 @@ export default function Hero({ content }: { content: SiteContent }) {
             {content.hero.cta}
           </a>
         </motion.div>
+        <motion.ul
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.8, delay: 0.45 }}
+          className="mt-12 flex flex-wrap justify-center gap-x-6 gap-y-3 border-t border-white/10 pt-6 text-xs uppercase tracking-wider text-white/50"
+          aria-label={content.locale === "zh" ? "客户类型" : "Representative client types"}
+        >
+          {content.hero.clientDescriptors.map((descriptor) => (
+            <li key={descriptor}>{descriptor}</li>
+          ))}
+        </motion.ul>
       </div>
     </section>
   );

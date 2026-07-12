@@ -17,9 +17,15 @@ npm run build   # static export into out/
 
 - `src/app/(en)/` and `src/app/(zh)/` — one root layout per locale so each route gets the
   correct `<html lang>`; shared markup lives in `src/app/base-layout.tsx`.
-- `src/components/` — header/footer and homepage sections.
-- `src/content/en.ts` / `zh.ts` — all copy, typed by `src/content/types.ts`. The Chinese
-  copy is a stub translation pending replacement with the live site's published Chinese.
+- `src/components/` — shared page chrome, homepage sections, the roster, and attorney
+  profile views.
+- `src/content/en.ts` / `zh.ts` — localized page copy, typed by `src/content/types.ts`.
+- `src/content/attorneys.ts` — the bilingual 23-person roster and profile content ported
+  from the firm's published profiles; `/people/[slug]` and `/zh/people/[slug]` are fully
+  statically generated.
+- `src/content/insights.ts` — complete bilingual article metadata ready for the planned
+  local article-body migration.
+- `public/people/` and `public/brand/` — local, firm-owned headshots and logo assets.
 
 ## Deployment
 

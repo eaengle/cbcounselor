@@ -2,8 +2,10 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { AnimatePresence, motion } from "framer-motion";
 import { SiteContent } from "@/content/types";
+import { withBasePath } from "@/lib/base-path";
 
 export default function Header({ content }: { content: SiteContent }) {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -11,8 +13,15 @@ export default function Header({ content }: { content: SiteContent }) {
   return (
     <header className="sticky top-0 z-50 border-b border-white/10 bg-navy/95 backdrop-blur">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
-        <Link href={content.locale === "en" ? "/" : "/zh"} className="text-lg font-semibold tracking-tight text-white">
-          CBC <span className="text-accent-light">Law</span>
+        <Link href={content.locale === "en" ? "/" : "/zh"} aria-label="CBC Law" className="shrink-0">
+          <Image
+            src={withBasePath("/brand/logo-cbc-white.svg")}
+            alt="CBC Law"
+            width={219}
+            height={87}
+            priority
+            className="h-10 w-auto"
+          />
         </Link>
         <nav className="hidden items-center gap-8 text-sm text-white/80 lg:flex">
           {content.nav.links.map((link) => (
@@ -29,7 +38,7 @@ export default function Header({ content }: { content: SiteContent }) {
             {content.nav.languageToggleLabel}
           </Link>
           <a
-            href="#contact"
+            href={content.locale === "en" ? "/#contact" : "/zh/#contact"}
             className="hidden rounded-full bg-accent px-4 py-2 font-medium text-white transition-colors hover:bg-accent-light sm:block"
           >
             {content.nav.contactLabel}
@@ -74,7 +83,7 @@ export default function Header({ content }: { content: SiteContent }) {
                 </a>
               ))}
               <a
-                href="#contact"
+                href={content.locale === "en" ? "/#contact" : "/zh/#contact"}
                 className="mt-4 rounded-full bg-accent px-4 py-2 text-center text-sm font-medium text-white transition-colors hover:bg-accent-light"
                 onClick={() => setMenuOpen(false)}
               >

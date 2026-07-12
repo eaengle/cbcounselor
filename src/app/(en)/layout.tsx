@@ -19,6 +19,20 @@ export const metadata: Metadata = {
     url: "/",
     locale: "en_US",
     alternateLocale: ["zh_CN"],
+    images: [
+      {
+        url: "/brand/cbc-law-og.png",
+        width: 1200,
+        height: 630,
+        alt: "CBC Law — Cross-Border Legal Solutions",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: en.meta.title,
+    description: en.meta.description,
+    images: ["/brand/cbc-law-og.png"],
   },
 };
 
