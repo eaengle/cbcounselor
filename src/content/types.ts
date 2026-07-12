@@ -199,14 +199,6 @@ export interface SiteContent {
       subject: string;
     };
   };
-  wechat: {
-    title: string;
-    accountName: string;
-    idLabel: string;
-    id: string;
-    linkLabel: string;
-    href: string;
-  };
   footer: {
     tagline: string;
     copyright: string;

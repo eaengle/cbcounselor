@@ -274,14 +274,6 @@ export const en: SiteContent = {
       subject: "Website inquiry for CBC Law",
     },
   },
-  wechat: {
-    title: "Official WeChat account",
-    accountName: "Cross Border Counselor法务资讯",
-    idLabel: "WeChat ID",
-    id: "gh_5176c972a240",
-    linkLabel: "Open in WeChat",
-    href: "https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MzU5MDk2ODc2NA==&scene=124#wechat_redirect",
-  },
   footer: {
     tagline: "Serious U.S. litigation and cross-border business counsel for Chinese enterprises.",
     copyright: `© ${new Date().getFullYear()} CBC Law. All rights reserved.`,

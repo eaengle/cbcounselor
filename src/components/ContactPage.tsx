@@ -2,7 +2,6 @@ import type { SiteContent } from "@/content/types";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import ContactForm from "@/components/ContactForm";
-import WeChatCard from "@/components/WeChatCard";
 
 export default function ContactPage({ content }: { content: SiteContent }) {
   const page = content.contactPage;
@@ -46,10 +45,6 @@ export default function ContactPage({ content }: { content: SiteContent }) {
                     </div>
                   ))}
                 </div>
-              </div>
-
-              <div className="mt-8 rounded-2xl bg-navy p-2 text-white">
-                <WeChatCard content={content} compact />
               </div>
             </aside>
             <ContactForm copy={page.form} recipient={content.contactCta.email} />

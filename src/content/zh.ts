@@ -258,14 +258,6 @@ export const zh: SiteContent = {
       subject: "CBC Law 网站咨询",
     },
   },
-  wechat: {
-    title: "官方微信公众号",
-    accountName: "Cross Border Counselor法务资讯",
-    idLabel: "微信号",
-    id: "gh_5176c972a240",
-    linkLabel: "在微信中打开",
-    href: "https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MzU5MDk2ODc2NA==&scene=124#wechat_redirect",
-  },
   footer: {
     tagline: "为中国企业提供严肃的美国诉讼与跨境商业法律顾问服务。",
     copyright: `© ${new Date().getFullYear()} CBC Law. 版权所有。`,

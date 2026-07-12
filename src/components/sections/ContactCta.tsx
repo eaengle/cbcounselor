@@ -1,14 +1,13 @@
 import { SiteContent } from "@/content/types";
 import Reveal from "@/components/Reveal";
-import WeChatCard from "@/components/WeChatCard";
 import Link from "next/link";
 
 export default function ContactCta({ content }: { content: SiteContent }) {
   return (
     <section id="contact" className="bg-navy px-6 py-20 text-white">
-      <div className="mx-auto grid max-w-6xl items-center gap-12 lg:grid-cols-[minmax(0,1fr)_minmax(22rem,0.8fr)]">
+      <div className="mx-auto max-w-3xl">
         <Reveal>
-          <div className="text-center lg:text-left">
+          <div className="text-center">
             <h2 className="text-3xl font-semibold tracking-tight sm:text-4xl">
               {content.contactCta.title}
             </h2>
@@ -24,9 +23,6 @@ export default function ContactCta({ content }: { content: SiteContent }) {
               {content.contactCta.mandarinNote}
             </p>
           </div>
-        </Reveal>
-        <Reveal delay={0.1}>
-          <WeChatCard content={content} />
         </Reveal>
       </div>
     </section>

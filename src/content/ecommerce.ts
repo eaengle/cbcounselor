@@ -88,9 +88,9 @@ export const ecommerceEn: EcommercePageContent = {
         "Offices and attorneys across U.S. and China time zones help the team respond when court and platform deadlines move quickly.",
     },
     {
-      title: "Direct WeChat communication",
+      title: "Responsive bilingual communication",
       description:
-        "Clients can use WeChat as a direct communication channel alongside standard email and website contact routes.",
+        "Clients reach the team directly in their preferred language across the channels they already use, alongside standard email and website contact routes.",
     },
   ],
   resultsLabel: "Representative result",
@@ -162,8 +162,8 @@ export const ecommerceZh: EcommercePageContent = {
       description: "团队横跨中美时区，可在法院及平台期限紧迫时及时响应。",
     },
     {
-      title: "微信直接沟通",
-      description: "除电子邮件及网站联系渠道外，客户还可通过微信与团队直接沟通。",
+      title: "响应迅速的双语沟通",
+      description: "除标准的电子邮件及网站联系渠道外，客户还可使用其熟悉的沟通方式，以偏好的语言与团队直接沟通。",
     },
   ],
   resultsLabel: "代表性成果",
