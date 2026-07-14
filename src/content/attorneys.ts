@@ -1,5 +1,31 @@
 import type { Attorney, Locale } from "./types";
 
+const PORTRAIT_BY_SLUG: Record<string, string> = {
+  "ning-zhang": "/people/ning-zhang-portrait-v2.webp",
+  "charles-cheng": "/people/charles-cheng-portrait-v2.webp",
+  "wesley-johnson": "/people/wesley-johnson-portrait-v2.webp",
+  "alan-engle": "/people/alan-engle-portrait-v2.webp",
+  "edwin-wheeler": "/people/edwin-wheeler-portrait-v2.webp",
+  "benjamin-solter": "/people/benjamin-solter-portrait-v2.webp",
+  "conrad-everhard": "/people/conrad-everhard-portrait-v2.webp",
+  "leonard-nuara": "/people/leonard-nuara-portrait-v2.webp",
+  "marilynn-schuyler": "/people/marilynn-portrait-v2.webp",
+  "ian-yang": "/people/ian-portrait-v2.webp",
+  "chris-klug": "/people/chris-klug-portrait-v2.webp",
+  "daniel-yuan": "/people/daniel-yuan-portrait-v2.webp",
+  "jessie-yang": "/people/jessie-portrait-v2.webp",
+  "yi-fan": "/people/yi-fan-portrait-v2.webp",
+  "cedrick-sun": "/people/weilong-portrait-v2.webp",
+  "gong-chen": "/people/gong-chen-portrait-v2.webp",
+  "roberto-luo": "/people/roberto-luo-portrait-v2.webp",
+  "yenting-feng": "/people/yenting-feng-portrait-v2.webp",
+  "leo-zheng": "/people/leo-zheng-portrait-v2.webp",
+  "ziqi-yu": "/people/ziqi-yu-portrait-v2.webp",
+  "yiyang-huang-daciuk": "/people/yiyang-huang-daciuk-portrait-v2.webp",
+  "feng-yang": "/people/feng-yang-portrait-v2.webp",
+  "funmi-owolabi": "/people/funmi-portrait-v2.webp",
+};
+
 // Ported from the firm-published roster and profile pages on cbcounselor.com.
 // Keep this data local so the static export does not depend on the live CMS at build time.
 export const attorneysByLocale = {
@@ -1525,10 +1551,16 @@ export const attorneysByLocale = {
 } satisfies Record<Locale, Attorney[]>;
 
 export function getAttorneys(locale: Locale) {
-  return attorneysByLocale[locale];
+  return attorneysByLocale[locale].map((attorney) => ({
+    ...attorney,
+    photo: {
+      src: PORTRAIT_BY_SLUG[attorney.slug] ?? attorney.photo.src,
+      width: 1152,
+      height: 1430,
+    },
+  }));
 }
 
 export function getAttorney(locale: Locale, slug: string) {
   return getAttorneys(locale).find((attorney) => attorney.slug === slug);
 }
-

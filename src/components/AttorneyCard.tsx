@@ -22,16 +22,16 @@ export default function AttorneyCard({
       href={href}
       className="group relative block h-full overflow-hidden rounded-2xl border border-neutral-200 bg-white transition-all hover:-translate-y-1 hover:border-accent/30 hover:shadow-xl focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-accent"
     >
-      <div className="relative aspect-[4/3] overflow-hidden bg-neutral-100">
+      <div className="relative aspect-[4/5] overflow-hidden bg-[#e7e5e1]">
         <Image
           src={withBasePath(attorney.photo.src)}
           alt={attorney.name}
           fill
           loading={eager ? "eager" : "lazy"}
           sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-          className="object-cover object-top grayscale-[35%] contrast-[1.08] transition duration-500 group-hover:scale-[1.03] group-hover:grayscale-0"
+          className="object-cover object-center transition duration-500 ease-out group-hover:scale-[1.025]"
         />
-        <div aria-hidden className="absolute inset-0 bg-gradient-to-tr from-navy/35 via-transparent to-accent/20 mix-blend-color transition-opacity duration-500 group-hover:opacity-0" />
+        <div aria-hidden className="absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-navy/12 to-transparent opacity-70 transition-opacity duration-500 group-hover:opacity-30" />
       </div>
       <div className="p-6">
         <h3 className="text-xl font-semibold text-navy">{attorney.name}</h3>

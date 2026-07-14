@@ -19,14 +19,14 @@ export default function AttorneyProfile({ attorney, content }: { attorney: Attor
               ← {labels.backToPeople}
             </Link>
             <div className="mt-10 grid items-end gap-10 md:grid-cols-[320px_1fr]">
-              <div className="relative aspect-[4/5] overflow-hidden rounded-2xl bg-white/5">
+              <div className="relative aspect-[4/5] overflow-hidden rounded-2xl border border-white/10 bg-[#e7e5e1] shadow-2xl shadow-black/20">
                 <Image
                   src={withBasePath(attorney.photo.src)}
                   alt={attorney.name}
                   fill
-                  priority
+                  preload
                   sizes="(max-width: 768px) 100vw, 320px"
-                  className="object-cover object-top"
+                  className="object-cover object-center"
                 />
               </div>
               <div>
