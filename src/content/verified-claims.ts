@@ -22,10 +22,13 @@ export const credibilityClaims = {
     source: "Firm-approved volume description recorded in the implementation plan",
   },
   itcInvestigations: {
-    wording: "Lead-counsel experience in two ITC Section 337 investigations.",
-    // Matter appears in the profiles of Wesley Johnson and Edwin Wheeler (one LED
-    // manufacturer, two related investigations). Pending firm confirmation — see
-    // CBC-prepublication-fact-verification.md, discrepancies D2/D3.
-    source: "Firm-published profiles for Wesley Johnson and Edwin Wheeler",
+    wording: "Lead-counsel experience in ITC Section 337 investigations.",
+    // Deliberately carries no count. The firm could not substantiate a specific number
+    // (2026-07-13) — a further ITC matter recently resolved and there may be others, and
+    // Gong Chen's profile already describes a third Section 337 action. Do not reintroduce
+    // "two" or any other figure without verified investigation numbers (337-TA-XXXX).
+    // See CBC-prepublication-fact-verification.md, discrepancy D3.
+    source:
+      "Firm-published profiles for Wesley Johnson, Edwin Wheeler, and Gong Chen",
   },
 } as const;

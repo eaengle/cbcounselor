@@ -87,9 +87,9 @@ export const en: SiteContent = {
           "The firm’s experience includes dozens of Schedule A cases involving cross-border e-commerce defendants.",
       },
       {
-        title: "Two ITC Section 337 Investigations",
+        title: "ITC Section 337 Investigations",
         description:
-          "CBC attorneys have served as lead counsel in two ITC Section 337 investigations.",
+          "CBC attorneys have served as lead counsel in ITC Section 337 investigations.",
       },
       {
         title: "Bilingual U.S.–China Perspective",

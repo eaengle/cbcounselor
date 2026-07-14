@@ -88,8 +88,8 @@ export const zh: SiteContent = {
         description: "本所处理过数十起涉及跨境电商被告的 Schedule A 案件。",
       },
       {
-        title: "两起 ITC 第 337 条调查",
-        description: "CBC 律师曾在两起 ITC 第 337 条调查中担任主办律师。",
+        title: "ITC 第 337 条调查",
+        description: "CBC 律师曾在 ITC 第 337 条调查中担任主办律师。",
       },
       {
         title: "中英双语中美视角",
