@@ -1,4 +1,5 @@
 import { SiteContent } from "./types";
+import { getInsights } from "./insights";
 
 export const en: SiteContent = {
   locale: "en",
@@ -244,45 +245,9 @@ export const en: SiteContent = {
   insights: {
     title: "News & Insights",
     subtitle: "Where cross-border law is heading next.",
-    articles: [
-      {
-        title: "Seventh Circuit Rules Hague Service Convention Bars Email Service on Chinese Defendants",
-        date: "2026-06-02",
-        summary: "Law.com examines the far-reaching impact of the Kangol decision and features insight from CBC Law partner and appellate counsel Wesley Johnson.",
-        href: "/insights/hague-service-convention-email-service-china",
-        image: {
-          src: "https://images.law.com/brightspot/21/eb/50dbd11a4f3083019ff65d9b2037/zawiypl-jpeg767x505-1.jpg",
-          alt: "CBC Law partner Wesley Johnson at Hangzhou China Silk Town",
-          width: 767,
-          height: 505,
-          credit: "Photo via Law.com",
-        },
-      },
-      {
-        title: "The Dilemma of U.S. Schedule A Cases and How to Break It",
-        date: "2025-01-20",
-        summary: "A practical playbook for cross-border merchants navigating Schedule A TRO proceedings in U.S. district courts.",
-        href: "/insights/schedule-a-cases-resolution",
-      },
-      {
-        title: "The Intellectual Property Dilemma of Chinese Cross-Border E-Commerce Sellers",
-        date: "2024-09-15",
-        summary: "An analysis of the IP risks Chinese sellers face on global e-commerce platforms, with practical defensive strategies.",
-        href: "/insights/ip-dilemma-cross-border-sellers",
-      },
-      {
-        title: "What Impact Does the U.S. Government's Antitrust Lawsuit Against Amazon Have on Chinese Cross-Border E-Commerce?",
-        date: "2024-07-08",
-        summary: "How the FTC's antitrust action may reshape platform rules and seller obligations for Chinese cross-border merchants.",
-        href: "/insights/amazon-antitrust-impact",
-      },
-      {
-        title: "TikTok Ban in the U.S.: What Are the Chances of Legal Success?",
-        date: "2024-05-15",
-        summary: "First Amendment, foreign-affairs deference, and bill-of-attainder analysis of the TikTok divestiture statute.",
-        href: "/insights/tiktok-ban-legal-challenge",
-      },
-    ],
+    // Homepage shows the newest five articles; the full set lives as Markdown
+    // files under content/insights/en/ (see content/insights/README.md).
+    articles: getInsights("en").slice(0, 5),
     readMore: "Read more",
     articleLabel: "Publication",
     backLabel: "Back to News & Insights",

@@ -1,4 +1,5 @@
 import { SiteContent } from "./types";
+import { getInsights } from "./insights";
 
 // Chinese copy below is ported from the firm-published Chinese localization on
 // cbcounselor.com. Copy for sections unique to this rebuild remains data-driven
@@ -227,45 +228,9 @@ export const zh: SiteContent = {
   insights: {
     title: "新闻、趋势与洞察",
     subtitle: "深度解读跨境法律趋势以及国际贸易和知识产权领域的最新发展。",
-    articles: [
-      {
-        title: "第七巡回法院裁定《海牙送达公约》禁止向中国被告电子邮件送达",
-        date: "2026-06-02",
-        summary: "Law.com 深度报道 Kangol 案的广泛影响，并援引 CBC Law 合伙人及上诉代理律师 Wesley Johnson 的专业观点。",
-        href: "/zh/insights/hague-service-convention-email-service-china",
-        image: {
-          src: "https://images.law.com/brightspot/21/eb/50dbd11a4f3083019ff65d9b2037/zawiypl-jpeg767x505-1.jpg",
-          alt: "CBC Law 合伙人 Wesley Johnson 在杭州中国丝绸城",
-          width: 767,
-          height: 505,
-          credit: "图片来源：Law.com",
-        },
-      },
-      {
-        title: "美国 Schedule A 案件的困局及破解之道",
-        date: "2025-01-20",
-        summary: "为跨境商家应对美国联邦地区法院 Schedule A 临时限制令程序提供实务策略。",
-        href: "/zh/insights/schedule-a-cases-resolution",
-      },
-      {
-        title: "中国跨境电商卖家的知识产权困境",
-        date: "2024-09-15",
-        summary: "分析中国卖家进入全球电商平台时面临的知识产权风险及实用应对策略。",
-        href: "/zh/insights/ip-dilemma-cross-border-sellers",
-      },
-      {
-        title: "亚马逊遭美国政府反垄断起诉，对中国跨境电商有何影响？",
-        date: "2024-07-08",
-        summary: "探讨美国联邦贸易委员会的反垄断行动如何影响平台规则与跨境卖家义务。",
-        href: "/zh/insights/amazon-antitrust-impact",
-      },
-      {
-        title: "TikTok 美国被禁：法律抗争胜算如何？",
-        date: "2024-05-15",
-        summary: "从第一修正案、外交事务司法尊重与剥夺公权法案角度分析 TikTok 剥离法案。",
-        href: "/zh/insights/tiktok-ban-legal-challenge",
-      },
-    ],
+    // 首页展示最新五篇文章；全部文章以 Markdown 文件形式存放于
+    // content/insights/zh/ 目录（参见 content/insights/README.md）。
+    articles: getInsights("zh").slice(0, 5),
     readMore: "阅读更多",
     articleLabel: "专业文章",
     backLabel: "返回新闻与洞察",
