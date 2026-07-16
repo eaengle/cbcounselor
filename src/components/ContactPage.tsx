@@ -37,11 +37,30 @@ export default function ContactPage({ content }: { content: SiteContent }) {
 
               <div className="mt-7 border-t border-navy/10 pt-7">
                 <h3 className="text-xs font-semibold uppercase tracking-[0.16em] text-navy/50">{page.officesLabel}</h3>
-                <div className="mt-4 space-y-4">
+                <div className="mt-4 space-y-6">
                   {content.offices.groups.map((group) => (
                     <div key={group.country}>
                       <p className="font-semibold text-navy">{group.country}</p>
-                      <p className="mt-1 text-sm leading-6 text-navy/60">{group.cities.join(" · ")}</p>
+                      <div className="mt-2 space-y-3">
+                        {group.cities.map((city) => (
+                          <div key={city.name} className="text-sm leading-6 text-navy/60">
+                            <p className="font-medium text-navy/85">{city.name}</p>
+                            {city.addressLines?.map((line) => (
+                              <p key={line}>{line}</p>
+                            ))}
+                            {city.phone && (
+                              <p>
+                                {content.offices.phoneLabel}: <a className="hover:text-accent" href={`tel:${city.phone.replace(/[^+\d]/g, "")}`}>{city.phone}</a>
+                              </p>
+                            )}
+                            {city.fax && (
+                              <p>
+                                {content.offices.faxLabel}: {city.fax}
+                              </p>
+                            )}
+                          </div>
+                        ))}
+                      </div>
                     </div>
                   ))}
                 </div>

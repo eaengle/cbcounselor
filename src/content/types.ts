@@ -23,9 +23,17 @@ export interface Differentiator {
   description: string;
 }
 
+export interface OfficeCity {
+  name: string;
+  /** Street address, one entry per display line. Omit until the firm confirms it. */
+  addressLines?: string[];
+  phone?: string;
+  fax?: string;
+}
+
 export interface OfficeGroup {
   country: string;
-  cities: string[];
+  cities: OfficeCity[];
 }
 
 export interface PracticeArea {
@@ -143,6 +151,8 @@ export interface SiteContent {
     title: string;
     subtitle: string;
     mapLabel: string;
+    phoneLabel: string;
+    faxLabel: string;
     groups: OfficeGroup[];
   };
   team: {

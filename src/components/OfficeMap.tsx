@@ -88,7 +88,7 @@ export default function OfficeMap({ content }: { content: SiteContent }) {
 
         {pointPositions.map((point, index) => {
           const group = content.offices.groups[point.group];
-          const city = group.cities[point.city];
+          const city = group.cities[point.city].name;
           const labelTransform = point.label.side === "left" ? "translate(-100%, -50%)" : "translate(0, -50%)";
 
           return (
@@ -127,7 +127,7 @@ export default function OfficeMap({ content }: { content: SiteContent }) {
       <div className="mt-5 grid grid-cols-2 gap-3 sm:mt-7 sm:grid-cols-4 sm:gap-4">
         {pointPositions.map((point) => {
           const group = content.offices.groups[point.group];
-          const city = group.cities[point.city];
+          const city = group.cities[point.city].name;
 
           return (
             <div

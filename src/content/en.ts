@@ -161,10 +161,49 @@ export const en: SiteContent = {
     title: "Global Presence",
     subtitle: "Eight offices, three countries, one team.",
     mapLabel: "Map showing connections among CBC Law offices in the United States, China, and Mexico",
+    phoneLabel: "Phone",
+    faxLabel: "Fax",
+    // Addresses supplied by Alan Engle, 2026-07-15. Beijing/Shenzhen pending;
+    // Seattle and Cancun unconfirmed. Map dots in OfficeMap.tsx are index-based —
+    // keep city order stable.
     groups: [
-      { country: "United States", cities: ["Silicon Valley", "Los Angeles", "Seattle", "Chicago"] },
-      { country: "China", cities: ["Beijing", "Shanghai", "Shenzhen"] },
-      { country: "Mexico", cities: ["Cancun"] },
+      {
+        country: "United States",
+        cities: [
+          {
+            name: "Silicon Valley",
+            addressLines: ["149 Commonwealth Dr, Suite 1042", "Menlo Park, CA 94025"],
+          },
+          {
+            name: "Southern California",
+            addressLines: ["Suite 1167, 7755 Center Ave", "Huntington Beach, CA 92647"],
+          },
+          { name: "Seattle" },
+          {
+            name: "Chicago",
+            addressLines: ["105 W. Madison St., Suite 2300", "Chicago, IL 60602-4678"],
+            phone: "(312) 752-4828",
+            fax: "(312) 264-2535",
+          },
+        ],
+      },
+      {
+        country: "China",
+        cities: [
+          { name: "Beijing" },
+          {
+            name: "Shanghai",
+            addressLines: [
+              "c/o Yuanda Law Firm",
+              "Room 2010B, 5 Corporate Avenue",
+              "No. 150 Hubin Road, Huangpu District",
+              "Shanghai 200021",
+            ],
+          },
+          { name: "Shenzhen" },
+        ],
+      },
+      { country: "Mexico", cities: [{ name: "Cancun" }] },
     ],
   },
   team: {

@@ -148,10 +148,48 @@ export const zh: SiteContent = {
     title: "全球网络",
     subtitle: "专业人员分布于 3 个国家 8 个城市，全天候覆盖美洲、亚洲及欧洲。",
     mapLabel: "显示 CBC Law 美国、中国和墨西哥办公室连接的地图",
+    phoneLabel: "电话",
+    faxLabel: "传真",
+    // 地址以英文显示以保证邮寄准确（2026-07-15 由 Alan Engle 提供）。
+    // 上海地址的中文版本待母语者确认后再替换。城市顺序与 OfficeMap.tsx 的坐标索引对应，勿调整。
     groups: [
-      { country: "美国", cities: ["硅谷", "洛杉矶", "西雅图", "芝加哥"] },
-      { country: "中国", cities: ["北京", "上海", "深圳"] },
-      { country: "墨西哥", cities: ["坎昆"] },
+      {
+        country: "美国",
+        cities: [
+          {
+            name: "硅谷",
+            addressLines: ["149 Commonwealth Dr, Suite 1042", "Menlo Park, CA 94025"],
+          },
+          {
+            name: "南加州",
+            addressLines: ["Suite 1167, 7755 Center Ave", "Huntington Beach, CA 92647"],
+          },
+          { name: "西雅图" },
+          {
+            name: "芝加哥",
+            addressLines: ["105 W. Madison St., Suite 2300", "Chicago, IL 60602-4678"],
+            phone: "(312) 752-4828",
+            fax: "(312) 264-2535",
+          },
+        ],
+      },
+      {
+        country: "中国",
+        cities: [
+          { name: "北京" },
+          {
+            name: "上海",
+            addressLines: [
+              "c/o Yuanda Law Firm",
+              "Room 2010B, 5 Corporate Avenue",
+              "No. 150 Hubin Road, Huangpu District",
+              "Shanghai 200021",
+            ],
+          },
+          { name: "深圳" },
+        ],
+      },
+      { country: "墨西哥", cities: [{ name: "坎昆" }] },
     ],
   },
   team: {

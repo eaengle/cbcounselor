@@ -9,7 +9,7 @@ type Position = Coordinate | null;
 
 const cities = [
   { name: "Silicon Valley", country: "United States", group: 0, city: 0, primary: true, label: { dx: -12, dy: 1, side: "left" } },
-  { name: "Los Angeles", country: "United States", group: 0, city: 1, label: { dx: 12, dy: 16, side: "right" } },
+  { name: "Southern California", country: "United States", group: 0, city: 1, label: { dx: 12, dy: 16, side: "right" } },
   { name: "Seattle", country: "United States", group: 0, city: 2, label: { dx: 12, dy: -9, side: "right" } },
   { name: "Chicago", country: "United States", group: 0, city: 3, label: { dx: 12, dy: -8, side: "right" } },
   { name: "Beijing", country: "China", group: 1, city: 0, label: { dx: -12, dy: -10, side: "left" } },
