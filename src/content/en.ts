@@ -35,7 +35,7 @@ export const en: SiteContent = {
   },
   hero: {
     eyebrow: "U.S. ↔ China ↔ Beyond",
-    headline: "Serious Counsel for Chinese Companies — In the Courtroom and in the Boardroom.",
+    headline: "Securing the Business of Foreign Companies in America.",
     subheadline:
       "CBC Law represents Chinese companies and cross-border enterprises in U.S. patent, trademark, and copyright litigation, and in the corporate, M&A, and investment matters that come with doing business across borders. Attorneys at the firm have decades of experience handling complex legal matters.",
     actions: [

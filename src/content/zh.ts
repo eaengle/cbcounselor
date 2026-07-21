@@ -40,7 +40,7 @@ export const zh: SiteContent = {
   },
   hero: {
     eyebrow: "美国 ↔ 中国 ↔ 全球",
-    headline: "为中国企业提供严肃法律顾问——从法庭到董事会。",
+    headline: "保障外国企业在美国的业务。",
     subheadline:
       "CBC Law 为中国企业及跨境企业代理美国专利、商标和版权诉讼，并就跨境经营涉及的公司事务、并购与投资提供法律服务。本所律师拥有数十年处理复杂法律事务的经验。",
     actions: [
