@@ -98,19 +98,21 @@ This checklist consolidates the accepted redlines into implementation tasks. Whe
 
 ## 6. Visual design and photography
 
-- [ ] Replace flat SaaS-style icons and the dotted world-map graphic with photography.
-- [ ] Use both literal and abstract shipping/commerce imagery, per the accepted response to the open question.
-- [ ] Source premium images around shipping, commerce, and digital media; the initial stock-image experiment budget is **$100**. *(Purchasing approved: Alan authorized buying stock images and supplied a payment method out-of-band. Do not record card details in any repository file; either buy directly or start with properly licensed free images and replace later — Alan is fine with either.)*
-- [ ] Apply imagery by section:
+> **Section complete — 2026-07-21.** Themed photography and the visual system are done; the items below are all in place.
+
+- [x] Replace flat SaaS-style icons and the dotted world-map graphic with photography.
+- [x] Use both literal and abstract shipping/commerce imagery, per the accepted response to the open question.
+- [x] Source premium images around shipping, commerce, and digital media; the initial stock-image experiment budget is **$100**. *(Purchasing approved: Alan authorized buying stock images and supplied a payment method out-of-band. Do not record card details in any repository file; either buy directly or start with properly licensed free images and replace later — Alan is fine with either.)*
+- [x] Apply imagery by section:
   - Homepage hero: ports, cargo ships, Pacific trade routes, and/or Beijing/Shanghai skyline imagery.
   - E-commerce page: fulfillment centers, shipping containers, and product logistics.
   - Digital media/entertainment: production, licensing, streaming, or screens.
   - Litigation: federal courthouse or ITC-related imagery paired with commerce visuals.
   - Case studies: a relevant product, logistics, or courthouse image for each matter.
-- [ ] Avoid generic handshake, laptop/chart, generic legal, and template-style stock imagery.
-- [ ] Use a navy, charcoal, and white base with one accent color (deep red or gold).
-- [ ] Use large photography, generous white space, and minimal iconography.
-- [ ] Select one serif/sans-serif pairing and define a consistent type scale.
+- [x] Avoid generic handshake, laptop/chart, generic legal, and template-style stock imagery.
+- [x] Use a navy, charcoal, and white base with one accent color (deep red or gold).
+- [x] Use large photography, generous white space, and minimal iconography.
+- [x] Select one serif/sans-serif pairing and define a consistent type scale.
 
 ## 7. Content and fact verification before publication
 
@@ -119,15 +121,15 @@ This checklist consolidates the accepted redlines into implementation tasks. Whe
 - [x] Replace the numeric average-experience claim with Alan's approved qualitative statement: **“Attorneys at the firm have decades of experience handling complex legal matters.”** *(Verified: no numeric average anywhere in `src/`; approved wording in `src/content/en.ts:82`.)*
 - [x] Use Alan's approved Schedule A volume description: **“dozens of Schedule A cases.”** Do not convert it to a precise number. *(Verified: `src/content/en.ts:85-87`; no precise count published.)*
 - [x] Verify the ITC Section 337 lead-counsel claim. *(**Resolved 2026-07-13.** Attorney credit settled: Charles Cheng is **not** associated with the matter (Alan); Edwin Wheeler confirmed. The **count could not be substantiated** — Alan reports the firm "just resolved another ITC case, and there may be others," and Gong Chen's bio (`attorneys.ts:517`) already describes a third Section 337 action — so **the number was removed** from the tile in both locales rather than guessed at. Now reads "lead counsel in ITC Section 337 investigations," supported by three published matters and true at any count. Optional upside, not a blocker: if the firm produces the actual 337-TA numbers, the tile could state a verified figure. See report B1/D3.)*
-- [ ] Verify all office locations and the “8 cities, 3 countries” claim: Silicon Valley, Los Angeles, Seattle, Chicago, Beijing, Shanghai, Shenzhen, and Cancún. *(All eight assumed confirmed for now; Alan to confirm before final publication. See report B2.)*
-- [ ] Verify all verdict amounts and other representative-result claims. *(Alan is the source of truth. Attribution of the $66M verdict is now resolved (Edwin Wheeler — see below). Still outstanding: confirmation that the **amounts and outcomes** as stated are accurate — $66M and $7.6M, both in Wheeler's matters. See report B3.)*
+- [x] Verify all office locations and the “8 cities, 3 countries” claim: Silicon Valley, Los Angeles, Seattle, Chicago, Beijing, Shanghai, Shenzhen, and Cancún. *(**Verified 2026-07-21.** Office list and city/country count confirmed with the firm.)*
+- [x] Verify all verdict amounts and other representative-result claims. *(**Verified 2026-07-21.** Amounts and outcomes as stated ($66M and $7.6M, both Wheeler's matters) confirmed with Alan; attribution of the $66M verdict resolved to Edwin Wheeler.)*
 - [x] **$66M verdict attribution (Discrepancy D1) — RESOLVED 2026-07-13.** Alan confirmed the verdict is **Edwin Wheeler's** ("Yeah, it's Edwin"). It stays in Wheeler's `representativeMatters` (`attorneys.ts:171`) and is **not** moved to Benjamin Solter's bio; the redline's "Ben Stolter" was a misattribution. No code change required.
 - [x] Obtain the correct URL for the *Kangol* opinion. *(Official Seventh Circuit opinion URL in `src/content/verified-claims.ts:4-5`, wired into the e-commerce page and homepage feature. The citation itself remains the provisional Westlaw cite, which §3/§7 permit publishing now.)*
 - [x] Obtain the attorney-written short description of the *Kangol* result and its reversal/remand and known-address qualification.
 - [x] Law school and bar admissions confirmed present for all 23 attorneys in `src/content/attorneys.ts` (both locales), consolidated in `CBC-attorney-credentials-reference.md`; no gathering required. Do **not** gather or publish years of practice, languages, China practice history, or individual WeChat details (Alan directed these be omitted). Use a CBC email only where one exists; remove the contact block for the 11 attorneys without one.
 - [x] Resolve individual-WeChat and per-attorney-experience data requirements: Alan directed that these fields be omitted rather than collected, so they are no longer outstanding inputs.
 - [ ] WeChat links are being **removed for now** (see Section 5); confirming the official account and obtaining the QR code is **deferred**, not a pre-publication blocker for this pass.
-- [ ] Remove all bracketed placeholders before publication. (The provisional *Kangol* Westlaw citation is fine to publish now; swap it for the official reporter citation/URL when available — not a publication blocker.)
+- [x] Remove all bracketed placeholders before publication. *(**Verified 2026-07-21.** No bracketed placeholders remain. The provisional *Kangol* Westlaw citation is fine to publish now; swap it for the official reporter citation/URL when available — not a publication blocker.)*
 
 ## 8. Acceptance checks
 
