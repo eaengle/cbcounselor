@@ -87,7 +87,7 @@ This checklist consolidates the accepted redlines into implementation tasks. Whe
   - Bar admissions. *(Same — already present for all 23; no gathering needed.)*
 - [x] Do **not** add **structured/labeled profile fields** for per-attorney years of experience (Alan: "generally not listed on firm sites"), languages spoken (Alan: "don't list, it's complicated"), or China-specific practice history (Alan: "don't list"). **Scope is structured fields only** — narrative bio prose may retain existing experience/China references (e.g., "over 20 years," China-matter descriptions); do not scrub the bios. *(The `Attorney` type in `src/content/types.ts` has no years-of-experience, languages, or China-history fields; only narrative `bio` prose carries such references, which is left intact.)*
 - [x] Keep credentials visible but restrained; do not turn school/firm pedigree into an oversized promotional claim. *(Credentials sit in a restrained sidebar block, not oversized promotional callouts.)*
-- [ ] Use consistent editorial-style headshots with the same lighting and backdrop across the team. *(Blocked: new headshots are ~1 month out; Alan or a future admin will organize them.)*
+- [x] Use consistent editorial-style headshots with the same lighting and backdrop across the team. *(**Done 2026-07-21.** New editorial headshots received and in place across the team — no longer blocked.)*
 
 ## 5. Chinese-language and WeChat experience
 
