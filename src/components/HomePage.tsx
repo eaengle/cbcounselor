@@ -11,6 +11,10 @@ import Testimonial from "@/components/sections/Testimonial";
 import Insights from "@/components/sections/Insights";
 import ContactCta from "@/components/sections/ContactCta";
 import KangolFeature from "@/components/sections/KangolFeature";
+import TradeBand from "@/components/sections/TradeBand";
+
+// Set to false to hide the container-ship divider band (easy on/off for review).
+const SHOW_TRADE_BAND = true;
 
 export default function HomePage({ content }: { content: SiteContent }) {
   return (
@@ -25,6 +29,7 @@ export default function HomePage({ content }: { content: SiteContent }) {
         <Offices content={content} />
         <Team content={content} />
         <Testimonial content={content} />
+        {SHOW_TRADE_BAND && <TradeBand locale={content.locale} />}
         <Insights content={content} />
         <ContactCta content={content} />
       </main>
