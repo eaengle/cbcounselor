@@ -35,9 +35,9 @@ export const en: SiteContent = {
   },
   hero: {
     eyebrow: "U.S. ↔ China ↔ Beyond",
-    headline: "Securing the Business of Foreign Companies in America.",
+    headline: "Securing the Business of U.S. and Foreign Companies.",
     subheadline:
-      "CBC Law represents Chinese companies and cross-border enterprises in U.S. patent, trademark, and copyright litigation, and in the corporate, M&A, and investment matters that come with doing business across borders. Attorneys at the firm have decades of experience handling complex legal matters.",
+      "CBC Law represents U.S. and cross-border enterprises in intellectual property disputes, business litigation, and in corporate, M&A, and investment matters that come with doing business across borders. Attorneys at the firm have decades of experience handling complex legal matters in each of these areas.",
     actions: [
       {
         label: "Facing a Schedule A Lawsuit? Start Here",
