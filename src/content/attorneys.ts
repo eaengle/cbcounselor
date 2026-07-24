@@ -13,7 +13,6 @@ const PORTRAIT_BY_SLUG: Record<string, string> = {
   "ian-yang": "/people/ian-portrait-v2.webp",
   "chris-klug": "/people/chris-klug-portrait-v2.webp",
   "daniel-yuan": "/people/daniel-yuan-portrait-v2.webp",
-  "jessie-yang": "/people/jessie-portrait-v2.webp",
   "yi-fan": "/people/yi-fan-portrait-v2.webp",
   "cedrick-sun": "/people/weilong-portrait-v2.webp",
   "gong-chen": "/people/gong-chen-portrait-v2.webp",
@@ -409,37 +408,6 @@ export const attorneysByLocale = {
         "src": "/people/daniel-yuan.png",
         "width": 261,
         "height": 291
-      }
-    },
-    {
-      "name": "Jessie Yang",
-      "slug": "jessie-yang",
-      "title": "Associate",
-      "role": "associate",
-      "barAdmissions": "California, PRC",
-      "education": [
-        "J.D. University of California，Irvine",
-        "LLM. Northwestern University",
-        "LLB. Southwest University of Political Science and Law"
-      ],
-      "practiceFocus": [
-        "Trademark",
-        "Copyright",
-        "Corporate Law"
-      ],
-      "bio": [
-        "Prior to joining CBC Law, Jessie worked at the top tier intellectual property law firm Knobbe Martens. She is experienced and passionate about trademark clearance, prosecution, enforcement, and portfolio strategy for both startups and multinational brands. She advises clients on trademark registration before the USPTO and manages trademark filings worldwide. She also leads enforcement efforts including oppositions, cancellations, and online brand protection. Jessie brings a practical and business focused approach to helping clients build and protect brands. "
-      ],
-      "representativeMatters": [
-        "Managed trademark portfolios and led trademark clearance, domestic filings, and international filings for multiple Fortune 500 companies in the beverage, software, and medical device industries",
-        "Successfully overcame various USPTO refusals in trademark applications, including likelihood of confusion and descriptiveness refusals",
-        "Developed creative and effective trademark enforcement strategies, including drafting cease and desist letters, and defended clients against meritless infringement claims"
-      ],
-      "email": "Jessie.yang@cbcounselor.com",
-      "photo": {
-        "src": "/people/Jessie.png",
-        "width": 562,
-        "height": 520
       }
     },
     {
@@ -1137,38 +1105,6 @@ export const attorneysByLocale = {
         "src": "/people/Ian.jpg",
         "width": 612,
         "height": 694
-      }
-    },
-    {
-      "name": "杨春白雪",
-      "slug": "jessie-yang",
-      "title": "律师",
-      "role": "associate",
-      "barAdmissions": "加州, 中国",
-      "education": [
-        "加州⼤学尔湾分校法律博⼠",
-        "西北大学法学硕士",
-        "西南政法大学法学学士"
-      ],
-      "practiceFocus": [
-        "商标注册",
-        "商标争议解决",
-        "公司法"
-      ],
-      "bio": [
-        "Jessie Yang律师拥有加州⼤学尔湾分校法学院 JD学位，之前曾在美国知产精品所Knobbe Martens ⼯作。Jessie Yang律师⻓期致⼒于商标注册及争议解决等领域，其服务的客户包括魔兽能量饮料等。"
-      ],
-      "representativeMatters": [
-        "代表某美国biotech company解决域名争议",
-        "为多家全球知名科技，软件，及⽣物医药公司提供商标检索、注册策略，商标申请及维权服务，涵盖美国及海外司法辖区。",
-        "代理多起美国商标审理与上诉委员会（TTAB）异议及撤销案件。",
-        "为多家知名公司公司提供商标及版权侵权维权服务，包括发函、谈判及诉前准备。"
-      ],
-      "email": "Jessie.yang@cbcounselor.com",
-      "photo": {
-        "src": "/people/Jessie.png",
-        "width": 562,
-        "height": 520
       }
     },
     {
