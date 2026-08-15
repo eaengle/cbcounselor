@@ -6,6 +6,10 @@ export const basePath = isGithubPages ? `/${repoName}` : "";
 
 const nextConfig: NextConfig = {
   output: "export",
+  // Emit every route as a folder with its own index.html (e.g. /people/alan-engle/index.html).
+  // Apache/HostGator serves these directly via DirectoryIndex; without it, static export
+  // produces extension-less .html files that a plain Apache host will not resolve.
+  trailingSlash: true,
   images: {
     unoptimized: true,
     remotePatterns: [
