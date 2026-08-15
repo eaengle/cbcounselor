@@ -1,0 +1,43 @@
+name: Build for HostGator
+
+# Manual, one-click build that produces a ready-to-upload zip of the static site,
+# compiled for the ROOT of cbcounselor.com (GITHUB_PAGES is intentionally NOT set,
+# so there is no /cbcounselor sub-path). Run it from the Actions tab, then download
+# the "cbcounselor-site" artifact and upload its contents to HostGator's public_html.
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - run: npm ci
+
+      # No GITHUB_PAGES env here -> basePath is "" -> assets resolve at the domain root.
+      - run: npm run build
+
+      # Serve a friendly 404 and turn off directory listing on Apache.
+      - name: Add .htaccess for Apache/HostGator
+        run: |
+          cat > out/.htaccess <<'HTACCESS'
+          Options -Indexes
+          ErrorDocument 404 /404.html
+          HTACCESS
+
+      - name: Zip the site (contents at top level)
+        run: cd out && zip -r ../cbcounselor-site.zip . && cd ..
+
+      - name: Upload the uploadable zip
+        uses: actions/upload-artifact@v4
+        with:
+          name: cbcounselor-site
+          path: cbcounselor-site.zip
+          retention-days: 14
