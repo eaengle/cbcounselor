@@ -63,7 +63,7 @@ export const attorneysByLocale = {
         "Represented a Chinese medical fund in pre-IPO investments in multiple U.S. companies.",
         "Represented Chinese investors in the Series F investment rounds of AirBnB and Uber."
       ],
-      "email": "ning.zhang@cbcounselor.com",
+      "email": "ning@cbcounselor.com",
       "photo": {
         "src": "/people/ning-zhang.png",
         "width": 261,
@@ -126,7 +126,7 @@ export const attorneysByLocale = {
       "representativeMatters": [
         "Successfully represented a major Chinese LED manufacturer as lead counsel in two Section 337 ITC investigations, securing dismissal of the first investigation before trial and a decision of no violation following trial in the second case."
       ],
-      "email": "wesley.johnson@cbcounselor.com",
+      "email": "wjohnson@cbcounselor.com",
       "photo": {
         "src": "/people/wesley-johnson.png",
         "width": 261,
@@ -165,7 +165,7 @@ export const attorneysByLocale = {
         "Achieved favorable early resolutions of multiple patent defense matters based on a broad range of defenses.",
         "Prevailed in various trademark cases on behalf of both plaintiffs and defendants."
       ],
-      "email": "alan.engle@cbcounselor.com",
+      "email": "aengle@cbcounselor.com",
       "photo": {
         "src": "/people/alan-engle.png",
         "width": 261,
@@ -200,7 +200,7 @@ export const attorneysByLocale = {
         "Successfully represented a major medical device manufacturer in an arbitration brought by a terminated technology development partner asserting trade secret misappropriation, breach of contract, fraud, and antitrust violations.",
         "Won a preliminary injunction in a trade dress infringement case for a leading U.S. manufacturer of handheld digital multimeters, leading several competitors to settle favorably and enhancing the client's trade dress marketing strategy."
       ],
-      "email": "edwin.wheeler@cbcounselor.com",
+      "email": "ewheeler@cbcounselor.com",
       "photo": {
         "src": "/people/edwin-wheeler.png",
         "width": 261,
@@ -227,7 +227,7 @@ export const attorneysByLocale = {
         "By combining his knowledge of U.S. intellectual property law with a deep understanding of the e-commerce sector, he delivers tailored legal solutions that address the unique challenges faced by his international clients."
       ],
       "representativeMatters": [],
-      "email": "benjamin.solter@cbcounselor.com",
+      "email": "bsolter@cbcounselor.com",
       "photo": {
         "src": "/people/benjamin-solter.png",
         "width": 261,
@@ -790,7 +790,7 @@ export const attorneysByLocale = {
         "代表中国某医疗基金对多家美国公司进行 Pre-IPO 轮投资。",
         "在 AirBnB 和 Uber 的 F 轮融资中代表中国投资者。"
       ],
-      "email": "ning.zhang@cbcounselor.com",
+      "email": "ning@cbcounselor.com",
       "photo": {
         "src": "/people/ning-zhang.png",
         "width": 261,
@@ -852,7 +852,7 @@ export const attorneysByLocale = {
       "representativeMatters": [
         "作为首席律师代表中国一家大型 LED 制造商参与两起美国国际贸易委员会（ITC）第 337 条款调查；在第一起调查中庭审前获得撤诉，在第二起调查中庭审后获得不违规裁决。"
       ],
-      "email": "wesley.johnson@cbcounselor.com",
+      "email": "wjohnson@cbcounselor.com",
       "photo": {
         "src": "/people/wesley-johnson.png",
         "width": 261,
@@ -891,7 +891,7 @@ export const attorneysByLocale = {
         "基于广泛的抗辩理由，为多个专利抗辩案件提供了有利的早期解决方案。",
         "代表原告和被告在多起商标案件中胜诉。"
       ],
-      "email": "alan.engle@cbcounselor.com",
+      "email": "aengle@cbcounselor.com",
       "photo": {
         "src": "/people/alan-engle.png",
         "width": 261,
@@ -926,7 +926,7 @@ export const attorneysByLocale = {
         "在被终止合作的技术开发伙伴以商业秘密盗用、违约、欺诈和违反反垄断法为由提起的仲裁中，成功代理一家大型医疗器械制造商。",
         "在一起商业外观侵权案中，为美国领先的手持式数字万用表制造商赢得初步禁令，导致一系列竞争对手与客户达成有利和解，并加强了客户的商业外观营销战略。"
       ],
-      "email": "edwin.wheeler@cbcounselor.com",
+      "email": "ewheeler@cbcounselor.com",
       "photo": {
         "src": "/people/edwin-wheeler.png",
         "width": 261,
@@ -953,7 +953,7 @@ export const attorneysByLocale = {
         "Ben将美国知识产权法律方面的专业知识与对电子商务行业的深入理解相结合，为国际客户提供量身定制的法律解决方案，以应对其所面临的独特挑战。"
       ],
       "representativeMatters": [],
-      "email": "benjamin.solter@cbcounselor.com",
+      "email": "bsolter@cbcounselor.com",
       "photo": {
         "src": "/people/benjamin-solter.png",
         "width": 261,
