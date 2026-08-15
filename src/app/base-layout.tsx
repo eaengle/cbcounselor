@@ -9,7 +9,9 @@ import "./globals.css";
 export const siteUrl =
   process.env.GITHUB_PAGES === "true"
     ? "https://eaengle.github.io/cbcounselor"
-    : "http://localhost:3000";
+    : process.env.NODE_ENV === "production"
+      ? "https://cbcounselor.com"
+      : "http://localhost:3000";
 
 export const localeAlternates = {
   en: "/",
