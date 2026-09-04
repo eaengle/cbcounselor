@@ -2,6 +2,7 @@ import { SiteContent } from "@/content/types";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Hero from "@/components/sections/Hero";
+import ScheduleAClassActionCallout from "@/components/sections/ScheduleAClassActionCallout";
 import FeaturedBar from "@/components/sections/FeaturedBar";
 import About from "@/components/sections/About";
 import PracticeAreas from "@/components/sections/PracticeAreas";
@@ -22,6 +23,7 @@ export default function HomePage({ content }: { content: SiteContent }) {
       <Header content={content} />
       <main className="flex-1">
         <Hero content={content} />
+        <ScheduleAClassActionCallout locale={content.locale} />
         <FeaturedBar content={content} />
         <KangolFeature locale={content.locale} />
         <About content={content} />

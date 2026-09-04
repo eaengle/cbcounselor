@@ -403,7 +403,7 @@ export const attorneysByLocale = {
         "Daniel also has extensive experience defending independent e-commerce merchants in intellectual property disputes, particularly in cases involving injunctive orders (Schedule A cases)."
       ],
       "representativeMatters": [],
-      "email": null,
+      "email": "daniel.yuan@cbcounselor.com",
       "photo": {
         "src": "/people/daniel-yuan.png",
         "width": 261,
@@ -1128,7 +1128,7 @@ export const attorneysByLocale = {
         "此外，袁律师在为独立跨境电商商户进行知识产权诉讼辩护方面积累了丰富经验，尤其是涉及禁令的\"附表 A\"（Schedule A）案件。"
       ],
       "representativeMatters": [],
-      "email": null,
+      "email": "daniel.yuan@cbcounselor.com",
       "photo": {
         "src": "/people/daniel-yuan.png",
         "width": 261,
